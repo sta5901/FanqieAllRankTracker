@@ -1,2 +1,4 @@
 playwright==1.41.0
 pytest-playwright==0.4.0
+rich>=13.0.0
+jieba>=0.42.1
