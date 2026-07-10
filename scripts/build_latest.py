@@ -8,7 +8,7 @@
   data/stats_{list_key}.json           → 统计概览
   data/trends/{list_key}/YYYY-MM-DD.json  → 趋势存档
   data/dates.json                      → 全榜日期索引（含 lists 字段）
-  api/lastest/{list_key}/all.json      → 静态 API
+  api/latest/{list_key}/all.json      → 静态 API
 
 使用方式：
     python scripts/build_latest.py                    # 全榜构建
@@ -862,13 +862,13 @@ def build_stats_payload(output: dict, list_key: str) -> dict:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Lastest API（per-list）
+# Latest API（per-list）
 # ─────────────────────────────────────────────────────────────────────────────
-def build_lastest_api(output: dict, base_dir: str, list_key: str):
-    """生成静态 lastest API（per-list）。"""
+def build_latest_api(output: dict, base_dir: str, list_key: str):
+    """生成静态 latest API（per-list）。"""
     api_root = os.path.join(base_dir, "api")
-    lastest_dir = os.path.join(api_root, "lastest", list_key)
-    os.makedirs(lastest_dir, exist_ok=True)
+    latest_dir = os.path.join(api_root, "latest", list_key)
+    os.makedirs(latest_dir, exist_ok=True)
 
     date = output.get("date", "")
     prev_date = output.get("prev_date", "")
@@ -880,11 +880,11 @@ def build_lastest_api(output: dict, base_dir: str, list_key: str):
         "prev_date": prev_date,
         "categories": categories,
     }
-    write_json(os.path.join(lastest_dir, "all.json"), all_payload)
+    write_json(os.path.join(latest_dir, "all.json"), all_payload)
 
     types = [{
         "type": "all",
-        "url": f"api/lastest/{list_key}/all.json",
+        "url": f"api/latest/{list_key}/all.json",
         "category_count": len(categories),
         "book_count": sum(len(cat.get("books", [])) for cat in categories),
     }]
@@ -901,20 +901,20 @@ def build_lastest_api(output: dict, base_dir: str, list_key: str):
         used_filenames.add(filename)
 
         write_json(
-            os.path.join(lastest_dir, f"{filename}.json"),
+            os.path.join(latest_dir, f"{filename}.json"),
             {"type": type_name, "date": date, "prev_date": prev_date, "category": cat, "categories": [cat]}
         )
         types.append({
             "type": type_name,
-            "url": f"api/lastest/{list_key}/{quote(filename)}.json",
+            "url": f"api/latest/{list_key}/{quote(filename)}.json",
             "book_count": len(cat.get("books", [])),
         })
 
-    write_json(os.path.join(lastest_dir, "index.json"), {
+    write_json(os.path.join(latest_dir, "index.json"), {
         "date": date, "prev_date": prev_date, "types": types
     })
 
-    return lastest_dir
+    return latest_dir
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1065,9 +1065,9 @@ def build_single_list(
     write_json(stats_path, stats_payload)
     print(f"  [OK] stats_{list_key}.json")
 
-    # 写入 api/lastest/{list_key}/*.json
-    api_dir = build_lastest_api(output, base_dir, list_key)
-    print(f"  [OK] api/lastest/{list_key}/")
+    # 写入 api/latest/{list_key}/*.json
+    api_dir = build_latest_api(output, base_dir, list_key)
+    print(f"  [OK] api/latest/{list_key}/")
 
     return True
 
