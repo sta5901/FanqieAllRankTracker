@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-10",
+  "prev_date": "",
+  "periods": {
+    "7": {
+      "period": "近 7 日",
+      "source": "rule",
+      "summary": "近 7 日暂无足够数据判断全站热点。",
+      "fallback_summary": "近 7 日暂无足够数据判断全站热点。",
+      "hot_genres": [],
+      "hot_types": [],
+      "hot_themes": []
+    },
+    "14": {
+      "period": "近 14 日",
+      "source": "rule",
+      "summary": "近 14 日暂无足够数据判断全站热点。",
+      "fallback_summary": "近 14 日暂无足够数据判断全站热点。",
+      "hot_genres": [],
+      "hot_types": [],
+      "hot_themes": []
+    },
+    "30": {
+      "period": "近 30 日",
+      "source": "rule",
+      "summary": "近 30 日暂无足够数据判断全站热点。",
+      "fallback_summary": "近 30 日暂无足够数据判断全站热点。",
+      "hot_genres": [],
+      "hot_types": [],
+      "hot_themes": []
+    },
+    "all": {
+      "period": "全部样本",
+      "source": "rule",
+      "summary": "全部样本暂无足够数据判断全站热点。",
+      "fallback_summary": "全部样本暂无足够数据判断全站热点。",
+      "hot_genres": [],
+      "hot_types": [],
+      "hot_themes": []
+    }
+  }
+}
