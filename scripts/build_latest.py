@@ -83,6 +83,18 @@ MALE_GENRE_GROUPS = [
 ]
 
 
+# ─────────────────────────────────────────────────────────────────────────────
+# 工具函数
+# ─────────────────────────────────────────────────────────────────────────────
+def _is_content_filter_error(e):
+    """检测 LLM 内容审查错误（400 contentFilter），这类错误重试无效，应直接跳过。"""
+    msg = str(e)
+    return ("contentFilter" in msg
+            or "敏感内容" in msg
+            or "不安全" in msg
+            or "1301" in msg)
+
+
 def get_genre_groups(list_key: str) -> list:
     return MALE_GENRE_GROUPS if LISTS.get(list_key, {}).get("is_male") else FEMALE_GENRE_GROUPS
 
@@ -421,15 +433,6 @@ def generate_ai_summaries(
 
     client = OpenAI(api_key=api_key, base_url=base_url, timeout=45.0)
     existing_trends = existing_trends or {}
-
-
-def _is_content_filter_error(e):
-    """检测 LLM 内容审查错误（400 contentFilter），这类错误重试无效，应直接跳过。"""
-    msg = str(e)
-    return ("contentFilter" in msg
-            or "敏感内容" in msg
-            or "不安全" in msg
-            or "1301" in msg)
 
     pending, skipped = [], 0
     for cat in categories:
