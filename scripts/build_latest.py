@@ -997,15 +997,27 @@ def build_single_list(
     # AI 总结
     if api_base_url and api_key and api_model:
         print(f"\n  [{list_name}] 使用 {api_model} 生成 AI 总结...")
-        trends = generate_ai_summaries(
-            latest_data["categories"], trends,
-            api_key, api_base_url, api_model,
-            list_key, force=force,
-            existing_trends=existing_trends,
-            trend_path=trend_path,
-            trend_date=latest_data["date"],
-            prev_date=prev_date,
-        )
+        try:
+            trends = generate_ai_summaries(
+                latest_data["categories"], trends,
+                api_key, api_base_url, api_model,
+                list_key, force=force,
+                existing_trends=existing_trends,
+                trend_path=trend_path,
+                trend_date=latest_data["date"],
+                prev_date=prev_date,
+            )
+        except Exception as e:
+            # 任何未预期异常都不要让构建崩溃，降级为纯规则摘要
+            print(f"  [WARN] AI 总结异常，降级为规则摘要: {e}")
+            for cat_name, trend in trends.items():
+                if not trend.get("summary") or is_rule_summary(trend.get("summary", "")):
+                    trend["summary"] = generate_trend_summary_text(cat_name, trend)
+
+        # 防御：万一回 None，使用空 dict（避免后面 .get 崩溃）
+        if trends is None:
+            print("  [WARN] generate_ai_summaries 返回 None，使用空 trends 降级")
+            trends = {}
     else:
         missing = [k for k, v in {
             "API_BASE_URL": api_base_url, "API_KEY": api_key, "API_MODEL": api_model
