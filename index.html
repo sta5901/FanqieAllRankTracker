@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>番茄女频新书榜 · 风向标 | 每日女频趋势追踪</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="番茄小说女频新书榜趋势分析与风向标">
+</head>
+<body>
+    <div class="app-container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1>番茄风向标</h1>
+                <p class="sidebar-subtitle">女频新书榜追踪</p>
+                <p id="update-date" class="update-date">加载中...</p>
+            </div>
+            <nav class="category-nav">
+                <ul id="category-list">
+                    <li class="loading-item">加载中...</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <header class="main-header">
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="菜单">☰</button>
+                <div class="header-left">
+                    <h2 id="current-category-title">全部分类</h2>
+                </div>
+                <div class="header-right">
+                    <a class="github-link-btn" href="https://github.com/wen1701/FanqieRankTracker" target="_blank" rel="noopener noreferrer" aria-label="打开 GitHub 仓库">
+                        <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82A7.65 7.65 0 0 1 8 3.87c.68 0 1.36.09 2 .26 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a class="trend-link-btn" href="trend.html">风向标</a>
+                    <div class="date-presets" id="date-presets">
+                        <button class="preset-btn active" data-preset="latest">最新</button>
+                        <button class="preset-btn" data-preset="yesterday">昨日</button>
+                    </div>
+                    <div class="date-picker-wrap">
+                        <button class="date-nav-btn" id="date-prev" aria-label="前一天" title="前一天">◀</button>
+                        <button class="date-picker-btn" id="date-picker-btn">
+                            <span class="date-icon">DATE</span>
+                            <span id="date-display">加载中...</span>
+                        </button>
+                        <button class="date-nav-btn" id="date-next" aria-label="后一天" title="后一天">▶</button>
+                        <input type="date" id="date-input" class="date-input-hidden">
+                    </div>
+                </div>
+            </header>
+
+            <!-- 风向标区域 -->
+            <section class="trend-panel" id="trend-panel">
+                <div class="trend-ai" id="trend-ai">
+                    <div class="ai-label">AI Signal Brief</div>
+                    <div class="ai-content" id="ai-content"></div>
+                </div>
+            </section>
+
+            <!-- 书籍瀑布流 -->
+            <section class="books-waterfall" id="books-waterfall">
+                <!-- 书籍卡片由 JS 动态渲染 -->
+            </section>
+        </main>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
