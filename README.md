@@ -1,12 +1,9 @@
 # 🏆 番茄全榜风向标 · Fanqie All Rank Tracker
 
-> 🙏 **本项目基于 [FanqieRankTracker](https://github.com/ZTNIAN/FanqieRankTracker) 开发，感谢原作者的开源贡献！**
+> 🙏 **本项目基于 [FanqieRankTracker](https://github.com/ZTNIAN/FanqieRankTracker) 修改二次开发，感谢原作者的开源贡献！**
 >
 > 原项目仅支持追踪番茄小说**女频新书榜**，本项目在其基础上扩展为同时追踪**男频/女频的阅读榜与新书榜**共四个榜单，并对 HTML 页面进行了优化改进。内核本质仍基于原项目，秉承开源精神，特此注明。
 
----
-
-> 👗📖 专注于**番茄小说男频女频阅读榜、新书榜**，每日自动追踪四大榜单排行数据并结合 AI 生成趋势分析，部署为精美的在线看板。
 
 ---
 

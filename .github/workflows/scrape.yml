@@ -31,6 +31,7 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v4
       with:
+        fetch-depth: 0   # 全量历史，支持后续 rebase 再 push
         token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Check today's data for all four lists
@@ -110,11 +111,16 @@ jobs:
         API_MODEL: ${{ secrets.API_MODEL }}
 
     - name: Commit and Push Changes
-      uses: stefanzweifel/git-auto-commit-action@v5
-      with:
-        commit_message: "[Auto] Update Fanqie daily ranks"
-        file_pattern: data api js css
-        branch: main
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add data api js css
+        git commit -m "[Auto] Update Fanqie daily ranks" || echo "no changes to commit"
+        # 先 rebase 远程最新提交，避免 non-fast-forward 被拒
+        git pull --rebase origin main || echo "rebase skipped"
+        git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     # ── Deploy to GitHub Pages ──────────────────────────────────────────────
     - name: Upload Pages artifact

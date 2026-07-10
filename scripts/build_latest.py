@@ -419,8 +419,17 @@ def generate_ai_summaries(
         print("  [WARN] openai 库未安装，跳过 AI 总结。pip install openai")
         return trends
 
-    client = OpenAI(api_key=api_key, base_url=base_url, timeout=120.0)
+    client = OpenAI(api_key=api_key, base_url=base_url, timeout=45.0)
     existing_trends = existing_trends or {}
+
+
+def _is_content_filter_error(e):
+    """检测 LLM 内容审查错误（400 contentFilter），这类错误重试无效，应直接跳过。"""
+    msg = str(e)
+    return ("contentFilter" in msg
+            or "敏感内容" in msg
+            or "不安全" in msg
+            or "1301" in msg)
 
     pending, skipped = [], 0
     for cat in categories:
@@ -451,7 +460,7 @@ def generate_ai_summaries(
         print(f"\n  [BATCH {batch_idx+1}/{len(batches)}] {', '.join(batch_names)}")
         prompt = build_batch_ai_prompt(batch, list_key)
 
-        max_retries, batch_success = 3, False
+        max_retries, batch_success = 2, False
         for attempt in range(1, max_retries + 1):
             try:
                 response = client.chat.completions.create(
@@ -478,6 +487,10 @@ def generate_ai_summaries(
                 batch_success = True
                 break
             except Exception as e:
+                if _is_content_filter_error(e):
+                    print(f"    [SKIP] 内容审查拦截，跳过本批次: {e}")
+                    batch_success = False
+                    break
                 print(f"    [RETRY {attempt}/{max_retries}] {e}")
                 if attempt < max_retries:
                     import time as _time
@@ -492,7 +505,7 @@ def generate_ai_summaries(
         print(f"\n  [RETRY] 逐个重试 {len(failed_cats)} 个失败分类...")
         for cat_name, cat, trend in failed_cats:
             prompt = build_ai_prompt(cat_name, cat, trend, list_key)
-            for attempt in range(1, 4):
+            for attempt in range(1, 3):
                 try:
                     response = client.chat.completions.create(
                         model=model,
@@ -508,8 +521,11 @@ def generate_ai_summaries(
                     _save_trends_incremental(trend_path, trend_date, prev_date, trends)
                     break
                 except Exception as e:
+                    if _is_content_filter_error(e):
+                        print(f"    [SKIP] 内容审查拦截: {cat_name}")
+                        break
                     print(f"    [RETRY {attempt}] {cat_name}: {e}")
-                    if attempt < 3:
+                    if attempt < 2:
                         import time as _time
                         _time.sleep(5 * attempt)
             else:
@@ -774,7 +790,7 @@ def enrich_market_summary_with_ai(payload: dict, api_key: str, base_url: str, mo
         return payload
 
     try:
-        client = OpenAI(api_key=api_key, base_url=base_url, timeout=120.0)
+        client = OpenAI(api_key=api_key, base_url=base_url, timeout=45.0)
         response = client.chat.completions.create(
             model=model,
             messages=[{"role": "user", "content": build_market_ai_prompt(payload, list_key)}],
