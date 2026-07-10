@@ -66,7 +66,7 @@ FEMALE_KEYWORDS = {
 
 def extract_keywords(title: str, intro: str, is_male: bool = False) -> List[str]:
     """
-    从书名和简介中提取关键词标签。
+    从书名和简介中提取关键词标签（基于关键词词库匹配）。
 
     Args:
         title: 书名
@@ -100,12 +100,5 @@ def extract_keywords(title: str, intro: str, is_male: bool = False) -> List[str]
             if pattern in text:
                 found.append(keyword)
                 break
-
-    # 正则：从标题提取副标题（如《XXX：逆袭之路》 → 逆袭）
-    colons = re.findall(r'[：:]\s*([^\]，。！？、\s]{2,8})', title or '')
-    for colon in colons:
-        colon_stripped = colon.strip()
-        if colon_stripped not in found and len(colon_stripped) >= 2:
-            found.append(colon_stripped)
 
     return found[:6]  # 最多 6 个标签

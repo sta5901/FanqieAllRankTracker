@@ -5,23 +5,23 @@
  */
 
 // ─── 全局状态 ────────────────────────────────────────────────────────────────
-const ALL_LISTS = ['female_new', 'female_read', 'male_new', 'male_read'];
+const ALL_LISTS = ['male_new', 'male_read', 'female_new', 'female_read'];
 const LIST_CONFIG = window.FANQIE_LISTS_STATS || {};
 const LIST_NAMES = {
-    female_new: '女频新书榜',
-    female_read: '女频阅读榜',
     male_new: '男频新书榜',
     male_read: '男频阅读榜',
+    female_new: '女频新书榜',
+    female_read: '女频阅读榜',
 };
 const LIST_COLORS = {
-    female_new: '#EC4899',
-    female_read: '#DB2777',
     male_new: '#3B82F6',
-    male_read: '#2563EB',
+    male_read: '#10B981',
+    female_new: '#EC4899',
+    female_read: '#F59E0B',
 };
 const CHART_COLORS = ['#EC4899', '#3B82F6', '#10B981', '#F59E0B', '#8B5CF6', '#06B6D4'];
 
-let currentListKey = localStorage.getItem('stats_list_key') || 'female_new';
+let currentListKey = localStorage.getItem('stats_list_key') || 'male_new';
 let allCharts = {};
 let allStatsData = {};
 
@@ -68,10 +68,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 // ─── Tab 绑定 ────────────────────────────────────────────────────────────────
 function bindTabs() {
-    const tabs = document.querySelectorAll('#stats-rank-tabs .rank-tab');
+    const tabs = document.querySelectorAll('#stats-rank-tabs .list-tab');
     tabs.forEach(tab => {
         tab.addEventListener('click', async () => {
-            const key = tab.dataset.list;
+            const key = tab.dataset.key;
             if (key === currentListKey) return;
             tabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
@@ -82,7 +82,7 @@ function bindTabs() {
     });
 
     // 恢复 Tab 状态
-    const activeTab = document.querySelector(`#stats-rank-tabs .rank-tab[data-list="${currentListKey}"]`);
+    const activeTab = document.querySelector(`#stats-rank-tabs .list-tab[data-key="${currentListKey}"]`);
     if (activeTab) {
         tabs.forEach(t => t.classList.remove('active'));
         activeTab.classList.add('active');
@@ -113,8 +113,8 @@ async function switchList(listKey) {
     // 图表三：趋势线图（异步加载历史数据）
     await renderTrendLine(theme, listKey);
 
-    // 图表四：热力图
-    renderHeatmap(theme, listKey);
+    // 图表四：分类最高/最低/均值
+    renderCategoryStats(theme, statsData);
 
     // 图表五：四榜雷达（已在 loadAllStats 时构建）
     renderRadar(theme);
@@ -131,14 +131,21 @@ function updateOverview(data, listKey) {
     const totalReads = (data.category_reads || []).reduce((s, c) => s + (c.total_reads || 0), 0);
     document.getElementById('total-reads').textContent = formatReads(totalReads);
 
-    // 平均在读
-    const avgReads = data.total_books
-        ? Math.round(totalReads / data.total_books)
-        : 0;
-    document.getElementById('avg-reads').textContent = formatReads(avgReads);
+    // 更新概览文字
+    const summaryEl = document.getElementById('stats-summary-text');
+    const sourceEl = document.getElementById('stats-source');
+    if (summaryEl) {
+        const avgReads = data.total_books
+            ? Math.round(totalReads / data.total_books)
+            : 0;
+        summaryEl.innerHTML = `本期共收录 <strong>${data.total_books || 0}</strong> 部作品，覆盖 <strong>${data.total_categories || 0}</strong> 个分类，平均在读约 <strong>${formatReads(avgReads)}</strong>。`;
+    }
+    if (sourceEl) {
+        sourceEl.textContent = LIST_NAMES[listKey] || listKey;
+    }
 }
 
-// ─── 图表一：分类在读柱状图 ─────────────────────────────────────────────────
+// ─── 图表一：分类在读柱状图（竖向，显示所有分类） ──────────────────────────
 function renderCategoryBar(theme, data) {
     const el = document.getElementById('chart-category-bar');
     if (!el) return;
@@ -153,13 +160,9 @@ function renderCategoryBar(theme, data) {
     }
 
     const chart = allCharts['category-bar'];
-    const cats = data.category_reads
-        .slice(0, 15)
-        .map(c => c.category || c.name)
-        .reverse();
-    const values = data.category_reads
-        .slice(0, 15)
-        .map(c => Math.round((c.total_reads || 0) / 10000)); // 转为万
+    // 显示所有分类
+    const cats = data.category_reads.map(c => c.category || c.name);
+    const values = data.category_reads.map(c => Math.round((c.total_reads || 0) / 10000)); // 转为万
 
     chart.setOption({
         ...theme,
@@ -167,34 +170,47 @@ function renderCategoryBar(theme, data) {
             ...theme.tooltip,
             formatter: params => tooltipFormatter(params, '万'),
         },
+        grid: { left: '3%', right: '4%', bottom: '15%', top: '10%', containLabel: true },
         xAxis: {
-            type: 'value',
-            axisLabel: { color: '#64748B', formatter: v => v + '万' },
-            splitLine: { lineStyle: { color: 'rgba(255,255,255,0.06)' } },
+            type: 'category',
+            data: cats,
+            axisLabel: {
+                color: '#94A3B8',
+                fontSize: 11,
+                rotate: 35,
+                interval: 0,
+            },
             axisLine: { lineStyle: { color: '#334155' } },
         },
         yAxis: {
-            type: 'category',
-            data: cats,
-            axisLabel: { color: '#94A3B8', fontSize: 11 },
+            type: 'value',
+            axisLabel: { color: '#64748B', formatter: v => v + '万' },
+            splitLine: { lineStyle: { color: 'rgba(100,116,139,0.1)' } },
             axisLine: { lineStyle: { color: '#334155' } },
         },
         series: [{
             type: 'bar',
             data: values,
             itemStyle: {
-                color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
-                    { offset: 0, color: LIST_COLORS[currentListKey] || '#EC4899' },
-                    { offset: 1, color: (LIST_COLORS[currentListKey] || '#EC4899') + '88' },
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                    { offset: 0, color: LIST_COLORS[currentListKey] || '#3B82F6' },
+                    { offset: 1, color: (LIST_COLORS[currentListKey] || '#3B82F6') + '66' },
                 ]),
-                borderRadius: [0, 4, 4, 0],
+                borderRadius: [4, 4, 0, 0],
             },
-            barMaxWidth: 28,
+            barMaxWidth: 40,
+            label: {
+                show: true,
+                position: 'top',
+                color: '#94A3B8',
+                fontSize: 10,
+                formatter: params => params.value > 0 ? params.value + '万' : '',
+            },
         }],
     });
 }
 
-// ─── 图表二：Top 20 书籍 ────────────────────────────────────────────────────
+// ─── 图表二：Top 20 书籍（竖向柱状图，显示全部20本） ─────────────────────
 function renderTopBooks(theme, data) {
     const el = document.getElementById('chart-top-books');
     if (!el) return;
@@ -211,9 +227,9 @@ function renderTopBooks(theme, data) {
     const chart = allCharts['top-books'];
     const books = data.top_books.slice(0, 20);
     const names = books.map((b, i) =>
-        (b.title || '').length > 10 ? b.title.slice(0, 10) + '…' : b.title || `#${i + 1}`
-    ).reverse();
-    const values = books.map(b => Math.round((b.reads || b.reads_value || 0) / 10000)).reverse();
+        (b.title || '').length > 8 ? b.title.slice(0, 8) + '…' : b.title || `#${i + 1}`
+    );
+    const values = books.map(b => Math.round((b.reads || b.reads_value || 0) / 10000));
 
     chart.setOption({
         ...theme,
@@ -225,29 +241,42 @@ function renderTopBooks(theme, data) {
                 return `<strong>${b.title || ''}</strong><br/>作者：${b.author || '未知'}<br/>在读：${b.reads_str || '未知'}<br/>分类：${b.category || ''}`;
             },
         },
+        grid: { left: '3%', right: '4%', bottom: '15%', top: '10%', containLabel: true },
         xAxis: {
-            type: 'value',
-            axisLabel: { color: '#64748B', formatter: v => v + '万' },
-            splitLine: { lineStyle: { color: 'rgba(255,255,255,0.06)' } },
+            type: 'category',
+            data: names,
+            axisLabel: {
+                color: '#94A3B8',
+                fontSize: 10,
+                rotate: 45,
+                interval: 0,
+            },
             axisLine: { lineStyle: { color: '#334155' } },
         },
         yAxis: {
-            type: 'category',
-            data: names,
-            axisLabel: { color: '#94A3B8', fontSize: 10 },
+            type: 'value',
+            axisLabel: { color: '#64748B', formatter: v => v + '万' },
+            splitLine: { lineStyle: { color: 'rgba(100,116,139,0.1)' } },
             axisLine: { lineStyle: { color: '#334155' } },
         },
         series: [{
             type: 'bar',
             data: values,
             itemStyle: {
-                color: new echarts.graphic.LinearGradient(0, 0, 1, 0, [
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
                     { offset: 0, color: '#F59E0B' },
-                    { offset: 1, color: '#FBBF24' },
+                    { offset: 1, color: '#FBBF2466' },
                 ]),
-                borderRadius: [0, 4, 4, 0],
+                borderRadius: [4, 4, 0, 0],
             },
-            barMaxWidth: 22,
+            barMaxWidth: 24,
+            label: {
+                show: true,
+                position: 'top',
+                color: '#94A3B8',
+                fontSize: 9,
+                formatter: params => params.value > 0 ? params.value + '万' : '',
+            },
         }],
     });
 }
@@ -344,88 +373,106 @@ async function renderTrendLine(theme, listKey) {
     });
 }
 
-// ─── 图表四：分类热力图 ─────────────────────────────────────────────────────
-function renderHeatmap(theme, listKey) {
-    const el = document.getElementById('chart-heatmap');
+// ─── 图表四：分类最高/最低/均值在读（柱状+折线混合图） ─────────────────────
+function renderCategoryStats(theme, data) {
+    const el = document.getElementById('chart-category-stats');
     if (!el) return;
 
-    const stats = allStatsData[listKey];
-    if (!stats || !stats.category_reads || stats.category_reads.length === 0) {
-        el.innerHTML = '<div class="empty-state-text"><i class="ti ti-flame"></i> 暂无热力数据</div>';
+    if (!data.category_reads || data.category_reads.length === 0) {
+        el.innerHTML = '<div class="empty-state-text"><i class="ti ti-chart-dots"></i> 暂无分类数据</div>';
         return;
     }
 
-    if (!allCharts['heatmap']) {
-        allCharts['heatmap'] = echarts.init(el);
+    // 检查数据是否包含 max/min/avg 字段（新数据才有）
+    const hasStats = data.category_reads[0] && 'max_reads' in data.category_reads[0];
+    if (!hasStats) {
+        el.innerHTML = '<div class="empty-state-text"><i class="ti ti-alert-circle"></i> 需要重新生成统计数据<br/><small>请运行 python scripts/build_latest.py</small></div>';
+        return;
     }
 
-    const chart = allCharts['heatmap'];
-    const cats = stats.category_reads.slice(0, 12).map(c => c.category || c.name);
-    const ranges = ['Top5', 'Top10', 'Top20', 'Top30'];
+    if (!allCharts['category-stats']) {
+        allCharts['category-stats'] = echarts.init(el);
+    }
 
-    // 估算各区间的 reads（Top5 = 最高值*1.5 均摊，递减）
-    const maxReads = stats.category_reads[0]?.total_reads || 1;
-    const heatData = [];
-    cats.forEach((cat, ci) => {
-        ranges.forEach((range, ri) => {
-            const multiplier = [0.5, 0.3, 0.15, 0.05][ri];
-            const catReads = (stats.category_reads[ci]?.total_reads || 0);
-            heatData.push([ri, ci, Math.round(catReads * multiplier / 10000)]);
-        });
-    });
+    const chart = allCharts['category-stats'];
+    const cats = data.category_reads.map(c => c.category || c.name);
+    const maxValues = data.category_reads.map(c => Math.round((c.max_reads || 0) / 10000));
+    const minValues = data.category_reads.map(c => Math.round((c.min_reads || 0) / 10000));
+    const avgValues = data.category_reads.map(c => Math.round((c.avg_reads || 0) / 10000));
 
     chart.setOption({
         ...theme,
+        legend: {
+            ...theme.legend,
+            data: ['最高在读', '最低在读', '均值在读'],
+        },
         tooltip: {
             ...theme.tooltip,
             formatter: params => {
-                return `<strong>${cats[params.value[1]]} · ${ranges[params.value[0]]}</strong><br/>在读：${params.value[2]}万`;
+                let result = `<strong>${params[0].axisValue}</strong><br/>`;
+                params.forEach(p => {
+                    const color = p.color.colorStops ? p.color.colorStops[0].color : p.color;
+                    result += `<span style="display:inline-block;margin-right:4px;border-radius:50%;width:10px;height:10px;background-color:${color};"></span>${p.seriesName}: ${p.value}万<br/>`;
+                });
+                return result;
             },
         },
-        grid: { left: '3%', right: '10%', bottom: '15%', top: '5%', containLabel: true },
+        grid: { left: '3%', right: '4%', bottom: '15%', top: '15%', containLabel: true },
         xAxis: {
             type: 'category',
-            data: ranges,
-            axisLabel: { color: '#94A3B8' },
+            data: cats,
+            axisLabel: {
+                color: '#94A3B8',
+                fontSize: 10,
+                rotate: 35,
+                interval: 0,
+            },
             axisLine: { lineStyle: { color: '#334155' } },
-            splitArea: { show: true, areaStyle: { color: ['rgba(255,255,255,0.02)', 'rgba(0,0,0,0)'] } },
         },
         yAxis: {
-            type: 'category',
-            data: cats,
-            axisLabel: { color: '#94A3B8', fontSize: 10 },
+            type: 'value',
+            axisLabel: { color: '#64748B', formatter: v => v + '万' },
+            splitLine: { lineStyle: { color: 'rgba(100,116,139,0.1)' } },
             axisLine: { lineStyle: { color: '#334155' } },
-            splitArea: { show: true, areaStyle: { color: ['rgba(255,255,255,0.02)', 'rgba(0,0,0,0)'] } },
         },
-        visualMap: {
-            min: 0,
-            max: Math.round(maxReads / 10000),
-            text: { '高': '#EC4899', '低': '#1E293B' },
-            textStyle: { color: '#94A3B8' },
-            inRange: { color: ['#1E293B', '#4C1D95', '#BE185D', '#EC4899'] },
-            calculable: false,
-            orient: 'vertical',
-            right: 0,
-            top: 'center',
-        },
-        series: [{
-            type: 'heatmap',
-            data: heatData,
-            label: {
-                show: true,
-                formatter: params => params.value[2] > 0 ? params.value[2] + '万' : '',
-                color: '#E2E8F0',
-                fontSize: 9,
+        series: [
+            {
+                name: '最高在读',
+                type: 'bar',
+                data: maxValues,
+                itemStyle: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        { offset: 0, color: '#EF4444' },
+                        { offset: 1, color: '#EF444466' },
+                    ]),
+                    borderRadius: [4, 4, 0, 0],
+                },
+                barMaxWidth: 20,
             },
-            itemStyle: {
-                borderColor: 'rgba(30,34,51,0.8)',
-                borderWidth: 1,
-                borderRadius: 2,
+            {
+                name: '最低在读',
+                type: 'bar',
+                data: minValues,
+                itemStyle: {
+                    color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                        { offset: 0, color: '#3B82F6' },
+                        { offset: 1, color: '#3B82F666' },
+                    ]),
+                    borderRadius: [4, 4, 0, 0],
+                },
+                barMaxWidth: 20,
             },
-            emphasis: {
-                itemStyle: { shadowBlur: 8, shadowColor: 'rgba(236,72,153,0.4)' },
+            {
+                name: '均值在读',
+                type: 'line',
+                data: avgValues,
+                smooth: true,
+                lineStyle: { width: 2, color: '#10B981' },
+                itemStyle: { color: '#10B981' },
+                symbol: 'circle',
+                symbolSize: 5,
             },
-        }],
+        ],
     });
 }
 
@@ -445,12 +492,12 @@ function renderRadar(theme) {
         allCharts['radar'] = echarts.init(el);
     }
 
-    // 取所有榜单并集 Top 8 分类
+    // 取所有榜单的分类并集（显示所有分类）
     const allCats = new Set();
     lists.forEach(lk => {
-        (allStatsData[lk].category_reads || []).slice(0, 8).forEach(c => allCats.add(c.category || c.name));
+        (allStatsData[lk].category_reads || []).forEach(c => allCats.add(c.category || c.name));
     });
-    const radarCats = Array.from(allCats).slice(0, 10);
+    const radarCats = Array.from(allCats);
 
     // 找各榜最大值用于归一化
     const maxVal = Math.max(...lists.map(lk =>
@@ -462,20 +509,22 @@ function renderRadar(theme) {
         max: Math.round(maxVal / 10000 * 1.2),
     }));
 
+    // 四榜颜色已改为高区分度：蓝/绿/粉/橙
     const series = lists.map(lk => {
         const reads = radarCats.map(cat => {
             const c = (allStatsData[lk].category_reads || []).find(x => (x.category || x.name) === cat);
             return c ? Math.round((c.total_reads || 0) / 10000) : 0;
         });
+        const color = LIST_COLORS[lk] || '#3B82F6';
         return {
             value: reads,
             name: LIST_NAMES[lk] || lk,
             type: 'radar',
-            lineStyle: { width: 2, color: LIST_COLORS[lk] },
-            itemStyle: { color: LIST_COLORS[lk] },
-            areaStyle: { color: (LIST_COLORS[lk] || '#EC4899') + '33' },
+            lineStyle: { width: 2, color },
+            itemStyle: { color },
+            areaStyle: { color: color + '22' },
             symbol: 'circle',
-            symbolSize: 4,
+            symbolSize: 5,
         };
     });
 
@@ -485,6 +534,7 @@ function renderRadar(theme) {
         legend: {
             ...theme.legend,
             data: lists.map(lk => LIST_NAMES[lk] || lk),
+            top: 0,
         },
         tooltip: {
             ...theme.tooltip,
@@ -500,10 +550,13 @@ function renderRadar(theme) {
         },
         radar: {
             indicator,
-            axisName: { color: '#94A3B8', fontSize: 10 },
-            splitArea: { areaStyle: { color: ['rgba(255,255,255,0.02)', 'rgba(0,0,0,0)'] } },
-            splitLine: { lineStyle: { color: 'rgba(255,255,255,0.08)' } },
-            axisLine: { lineStyle: { color: 'rgba(255,255,255,0.08)' } },
+            center: ['50%', '55%'],
+            radius: '82%',
+            axisName: { color: '#64748B', fontSize: 11 },
+            splitArea: { areaStyle: { color: ['rgba(255,255,255,0.03)', 'rgba(0,0,0,0.02)'] } },
+            splitLine: { lineStyle: { color: 'rgba(100,116,139,0.15)' } },
+            axisLine: { lineStyle: { color: 'rgba(100,116,139,0.15)' } },
+            splitNumber: 5,
         },
         series: [{ type: 'radar', data: series }],
     });

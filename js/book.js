@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let toastTimer = null;
 
     const LISTS = {
-        female_new: { name: '女频新书榜', file_key: 'female_new' },
-        female_read: { name: '女频阅读榜', file_key: 'female_read' },
         male_new: { name: '男频新书榜', file_key: 'male_new' },
         male_read: { name: '男频阅读榜', file_key: 'male_read' },
+        female_new: { name: '女频新书榜', file_key: 'female_new' },
+        female_read: { name: '女频阅读榜', file_key: 'female_read' },
     };
 
     init();
@@ -247,18 +247,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="reads-chart-frame">
                     <svg class="reads-chart" viewBox="0 0 ${layout.width} ${layout.height}" role="img" aria-label="阅读数趋势">
                     ${layout.ticks.map(value => {
-                        const y = layout.yFor(value);
-                        return `
+            const y = layout.yFor(value);
+            return `
                             <line class="chart-grid" x1="${layout.pad.left}" y1="${y}" x2="${layout.width - layout.pad.right}" y2="${y}"></line>
                             <text class="chart-axis-label" x="${layout.pad.left - 12}" y="${y + 4}" text-anchor="end">${formatReads(value)}</text>
                         `;
-                    }).join('')}
+        }).join('')}
                     <line class="chart-axis-base" x1="${layout.pad.left}" y1="${layout.height - layout.pad.bottom}" x2="${layout.width - layout.pad.right}" y2="${layout.height - layout.pad.bottom}"></line>
                     <polyline class="reads-line" points="${points}"></polyline>
                     ${records.map((item, index) => {
-                        if (index !== 0 && index !== records.length - 1 && index % labelStep !== 0) return '';
-                        return `<text class="chart-date-label" x="${layout.points[index].x}" y="${layout.height - 16}" text-anchor="middle">${escapeHtml(item.date.slice(5))}</text>`;
-                    }).join('')}
+            if (index !== 0 && index !== records.length - 1 && index % labelStep !== 0) return '';
+            return `<text class="chart-date-label" x="${layout.points[index].x}" y="${layout.height - 16}" text-anchor="middle">${escapeHtml(item.date.slice(5))}</text>`;
+        }).join('')}
                     <line class="chart-hover-line" x1="0" y1="${layout.pad.top}" x2="0" y2="${layout.height - layout.pad.bottom}"></line>
                     <circle class="reads-hover-point" cx="0" cy="0" r="5"></circle>
                     <rect class="chart-hit-area" x="${layout.pad.left}" y="${layout.pad.top}" width="${layout.innerW}" height="${layout.innerH}"></rect>

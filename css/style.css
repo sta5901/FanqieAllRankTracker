@@ -588,13 +588,25 @@ input:focus-visible {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
-.ti-spin { animation: spin 1s linear infinite; }
+
+.ti-spin {
+    animation: spin 1s linear infinite;
+}
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 .ai-loading,
@@ -606,16 +618,16 @@ input:focus-visible {
 /* ===== Book Grid ===== */
 .books-waterfall {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(292px, 1fr));
-    gap: 16px;
-    align-items: start;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 18px;
+    align-items: stretch;
 }
 
 .book-card {
     position: relative;
     display: grid;
-    grid-template-columns: 98px minmax(0, 1fr);
-    min-height: 188px;
+    grid-template-columns: 168px minmax(0, 1fr);
+    min-height: 220px;
     overflow: hidden;
     border: 1px solid var(--border);
     border-radius: var(--radius-xl);
@@ -638,7 +650,7 @@ input:focus-visible {
 }
 
 .book-cover {
-    min-height: 188px;
+    min-height: 220px;
     background:
         linear-gradient(135deg, rgba(240, 79, 56, 0.18), rgba(14, 165, 233, 0.12)),
         var(--surface-cool);
@@ -649,7 +661,7 @@ input:focus-visible {
 .book-cover img {
     width: 100%;
     height: 100%;
-    min-height: 188px;
+    min-height: 220px;
     object-fit: cover;
     display: block;
     transition: transform 0.5s ease;
@@ -661,7 +673,7 @@ input:focus-visible {
 
 .no-cover {
     height: 100%;
-    min-height: 188px;
+    min-height: 220px;
     padding: 12px;
     color: var(--text-muted);
     display: flex;
@@ -680,6 +692,7 @@ input:focus-visible {
 }
 
 .book-title {
+    min-height: 46px;
     color: var(--text-primary);
     display: -webkit-box;
     overflow: hidden;
@@ -1396,6 +1409,7 @@ input:focus-visible {
 .list-tab.active[data-key="female_read"] {
     color: #EC4899;
 }
+
 .list-tab.active[data-key="male_new"],
 .list-tab.active[data-key="male_read"] {
     color: #3B82F6;
@@ -1419,6 +1433,7 @@ input:focus-visible {
     cursor: pointer;
     outline: none;
 }
+
 .list-selector:focus {
     border-color: var(--accent);
     box-shadow: 0 0 0 3px rgba(240, 79, 56, 0.1);
@@ -1443,7 +1458,9 @@ input:focus-visible {
     flex-wrap: wrap;
     gap: 5px;
     margin-bottom: 6px;
+    min-height: 24px;
 }
+
 .book-tag {
     display: inline-block;
     padding: 2px 8px;
@@ -1760,105 +1777,128 @@ input:focus-visible {
 
 /* ===== stats.html 页面布局 ===== */
 .stats-page {
-    background: var(--bg);
+    background:
+        radial-gradient(circle at 18% -10%, rgba(240, 79, 56, 0.14), transparent 340px),
+        radial-gradient(circle at 90% 0, rgba(14, 165, 233, 0.14), transparent 360px),
+        linear-gradient(180deg, #f3f6fb 0%, #eef3f9 100%);
     min-height: 100vh;
 }
+
 .stats-shell {
-    max-width: 1200px;
+    width: min(1600px, calc(100% - 48px));
     margin: 0 auto;
-    padding: 0 16px 48px;
-}
-.stats-topbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 0 16px;
-    border-bottom: 1px solid var(--border);
-}
-.stats-topbar h1 {
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin: 4px 0 2px;
-}
-.stats-topbar p {
-    color: var(--text-muted);
-    font-size: 0.82rem;
+    padding: 30px 0 56px;
 }
 
-/* ===== 统计概览卡片 ===== */
-.stats-overview {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 12px;
-    margin: 20px 0;
-}
-.stat-card {
-    background: var(--surface);
+.stats-topbar {
+    margin-bottom: 18px;
+    padding: 22px 24px;
     border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 16px 18px;
+    border-radius: var(--radius-xl);
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: var(--shadow-card);
     display: flex;
-    flex-direction: column;
-    gap: 4px;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 22px;
 }
-.stat-label {
-    font-size: 0.78rem;
+
+.stats-topbar-left {
+    min-width: 0;
+}
+
+.stats-topbar h1 {
+    color: var(--text-primary);
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3.1rem);
+    font-weight: 780;
+    line-height: 1.02;
+}
+
+.stats-topbar p {
+    margin-top: 10px;
     color: var(--text-muted);
+    font-size: 0.86rem;
 }
-.stat-value {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: var(--text);
+
+.stats-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* ===== 统计概览 ===== */
+.stats-board {
+    display: grid;
+    grid-template-columns: minmax(320px, 1.15fr) minmax(200px, 0.9fr) minmax(200px, 0.86fr) minmax(220px, 1fr);
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.stat-summary-card {
+    padding: 22px 24px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    background:
+        linear-gradient(135deg, rgba(255, 244, 240, 0.88), rgba(255, 255, 255, 0.95)),
+        var(--surface);
+    box-shadow: var(--shadow-card);
+}
+
+.stat-summary-card h2 {
+    margin-bottom: 10px;
+    color: var(--text-primary);
+    font-size: 1.35rem;
+    font-weight: 760;
+    line-height: 1.22;
+}
+
+.stat-summary-card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.85;
+}
+
+.stat-big-value {
+    margin-top: 6px;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    font-family: var(--font-mono);
+    line-height: 1.1;
 }
 
 /* ===== 图表网格 ===== */
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
 }
-.chart-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 16px 18px;
-    min-height: 360px;
+
+.stats-grid .trend-block {
     display: flex;
     flex-direction: column;
 }
-.chart-card-wide {
-    grid-column: span 2;
+
+.stats-grid .trend-block-wide {
+    grid-column: span 3;
 }
-.chart-card h2 {
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-    color: var(--text);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-.chart-card h2 .ti {
-    color: var(--accent-strong);
-    font-size: 1.1rem;
-}
+
 .chart-container {
     flex: 1;
     min-height: 280px;
+    margin-top: 10px;
 }
 
-/* ===== 四榜 Tab 切换 ===== */
-.stats-rank-tabs {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 4px;
-    overflow-x: auto;
-    padding-bottom: 2px;
+.chart-container-tall {
+    min-height: 460px;
 }
 
 /* ===== Responsive ===== */
 @media (max-width: 1180px) {
+
     .trend-panel,
     .market-board {
         grid-template-columns: 1fr;
@@ -2002,13 +2042,16 @@ input:focus-visible {
         width: 100%;
         justify-content: stretch;
     }
+
     .list-tab {
         flex: 1;
         justify-content: center;
     }
+
     .list-tabs-sm .list-tab {
         padding: 5px 6px;
     }
+
     .list-selector {
         width: 100%;
     }
@@ -2018,13 +2061,16 @@ input:focus-visible {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
+
     .trend-topbar {
         flex-direction: column;
         gap: 12px;
     }
+
     .trend-topbar-left {
         width: 100%;
     }
+
     .trend-controls {
         width: 100%;
         justify-content: flex-start;
@@ -2080,14 +2126,14 @@ input:focus-visible {
     }
 
     .book-card {
-        grid-template-columns: 84px minmax(0, 1fr);
-        min-height: 170px;
+        grid-template-columns: 110px minmax(0, 1fr);
+        min-height: 200px;
     }
 
     .book-cover,
     .book-cover img,
     .no-cover {
-        min-height: 170px;
+        min-height: 200px;
     }
 
     .book-info {
@@ -2108,16 +2154,31 @@ input:focus-visible {
 
     /* ===== stats.html 响应式 ===== */
     .stats-shell {
-        max-width: 1200px;
+        width: min(100%, calc(100% - 32px));
     }
+
     .stats-topbar {
         flex-direction: column;
         align-items: flex-start;
     }
-    .stats-grid {
-        grid-template-columns: 1fr;
+
+    .stats-board {
+        grid-template-columns: 1fr 1fr;
     }
-    .chart-card {
+
+    .stat-summary-card {
+        grid-column: span 2;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stats-grid .trend-block-wide {
+        grid-column: span 2;
+    }
+
+    .stats-grid .trend-block {
         min-height: 300px;
     }
 }

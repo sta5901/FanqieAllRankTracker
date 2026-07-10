@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">类型风向标 · 女频新书榜</title>
+    <title id="page-title">类型风向标 · 男频新书榜</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.14.0/dist/tabler-icons.min.css">
     <meta name="description" id="page-desc" content="按类型聚合番茄小说榜单多日趋势，观察题材风向、上榜波动和阅读增长。">
 </head>
+
 <body class="trend-page">
     <div class="trend-shell">
         <header class="trend-topbar">
@@ -19,17 +21,17 @@
             <div class="trend-controls">
                 <!-- 四榜 Tab 切换 -->
                 <div class="list-tabs list-tabs-sm" id="list-tabs">
-                    <button class="list-tab active" data-key="female_new" title="女频新书榜">
-                        <i class="ti ti-heart"></i><span class="tab-label">女新书</span>
-                    </button>
-                    <button class="list-tab" data-key="female_read" title="女频阅读榜">
-                        <i class="ti ti-heartbeat"></i><span class="tab-label">女阅读</span>
-                    </button>
-                    <button class="list-tab" data-key="male_new" title="男频新书榜">
+                    <button class="list-tab active" data-key="male_new" title="男频新书榜">
                         <i class="ti ti-user"></i><span class="tab-label">男新书</span>
                     </button>
                     <button class="list-tab" data-key="male_read" title="男频阅读榜">
                         <i class="ti ti-users"></i><span class="tab-label">男阅读</span>
+                    </button>
+                    <button class="list-tab" data-key="female_new" title="女频新书榜">
+                        <i class="ti ti-heart"></i><span class="tab-label">女新书</span>
+                    </button>
+                    <button class="list-tab" data-key="female_read" title="女频阅读榜">
+                        <i class="ti ti-heartbeat"></i><span class="tab-label">女阅读</span>
                     </button>
                 </div>
                 <div class="trend-range" id="trend-range">
@@ -99,13 +101,14 @@
     <!-- 四榜配置 -->
     <script>
         window.FANQIE_LISTS = {
-            female_new: { name: "女频新书榜", file_key: "female_new", color: "#EC4899", icon: "ti-heart" },
-            female_read: { name: "女频阅读榜", file_key: "female_read", color: "#F472B6", icon: "ti ti-heartbeat" },
             male_new: { name: "男频新书榜", file_key: "male_new", color: "#3B82F6", icon: "ti-user" },
-            male_read: { name: "男频阅读榜", file_key: "male_read", color: "#60A5FA", icon: "ti-users" }
+            male_read: { name: "男频阅读榜", file_key: "male_read", color: "#60A5FA", icon: "ti-users" },
+            female_new: { name: "女频新书榜", file_key: "female_new", color: "#EC4899", icon: "ti-heart" },
+            female_read: { name: "女频阅读榜", file_key: "female_read", color: "#F472B6", icon: "ti ti-heartbeat" }
         };
-        window.CURRENT_LIST_KEY = "female_new";
+        window.CURRENT_LIST_KEY = "male_new";
     </script>
     <script src="js/trend.js"></script>
 </body>
+
 </html>

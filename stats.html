@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,97 +13,105 @@
     <!-- ECharts CDN -->
     <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
 </head>
+
 <body class="stats-page">
     <div class="stats-shell">
         <header class="stats-topbar">
-            <div>
-                <a href="index.html" class="back-link">
-                    <i class="ti ti-arrow-left"></i> 返回榜单
-                </a>
-                <h1>图表数据</h1>
+            <div class="stats-topbar-left">
+                <a href="index.html" class="back-link"><i class="ti ti-arrow-left"></i> 返回榜单</a>
+                <h1>数据图表</h1>
                 <p id="stats-subtitle">加载中...</p>
+            </div>
+            <div class="stats-controls">
+                <!-- 四榜 Tab 切换 -->
+                <div class="list-tabs list-tabs-sm" id="stats-rank-tabs">
+                    <button class="list-tab active" data-key="male_new" title="男频新书榜">
+                        <i class="ti ti-user"></i><span class="tab-label">男新书</span>
+                    </button>
+                    <button class="list-tab" data-key="male_read" title="男频阅读榜">
+                        <i class="ti ti-users"></i><span class="tab-label">男阅读</span>
+                    </button>
+                    <button class="list-tab" data-key="female_new" title="女频新书榜">
+                        <i class="ti ti-heart"></i><span class="tab-label">女新书</span>
+                    </button>
+                    <button class="list-tab" data-key="female_read" title="女频阅读榜">
+                        <i class="ti ti-heartbeat"></i><span class="tab-label">女阅读</span>
+                    </button>
+                </div>
             </div>
         </header>
 
-        <!-- 榜单 Tab 筛选 -->
-        <div class="rank-tabs stats-rank-tabs" id="stats-rank-tabs">
-            <button class="rank-tab active" data-list="female_new">
-                <i class="ti ti-star"></i> 女频新书榜
-            </button>
-            <button class="rank-tab" data-list="female_read">
-                <i class="ti ti-heart"></i> 女频阅读榜
-            </button>
-            <button class="rank-tab" data-list="male_new">
-                <i class="ti ti-rocket"></i> 男频新书榜
-            </button>
-            <button class="rank-tab" data-list="male_read">
-                <i class="ti ti-user"></i> 男频阅读榜
-            </button>
-        </div>
-
         <!-- 统计概览 -->
-        <section class="stats-overview">
-            <div class="stat-card">
-                <span class="stat-label">上榜作品</span>
-                <strong class="stat-value" id="total-books">--</strong>
-            </div>
-            <div class="stat-card">
-                <span class="stat-label">活跃分类</span>
-                <strong class="stat-value" id="total-cats">--</strong>
-            </div>
-            <div class="stat-card">
-                <span class="stat-label">总在读人数</span>
-                <strong class="stat-value" id="total-reads">--</strong>
-            </div>
-            <div class="stat-card">
-                <span class="stat-label">平均在读</span>
-                <strong class="stat-value" id="avg-reads">--</strong>
-            </div>
+        <section class="stats-board">
+            <article class="stat-summary-card">
+                <span class="panel-kicker">数据总览</span>
+                <h2>榜单阅读数据概览</h2>
+                <p id="stats-summary-text">正在读取最新榜单数据。</p>
+                <small id="stats-source" class="market-source">统计中</small>
+            </article>
+            <article class="market-card">
+                <span class="panel-kicker">上榜作品</span>
+                <div class="stat-big-value" id="total-books">--</div>
+            </article>
+            <article class="market-card">
+                <span class="panel-kicker">活跃分类</span>
+                <div class="stat-big-value" id="total-cats">--</div>
+            </article>
+            <article class="market-card">
+                <span class="panel-kicker">总在读人数</span>
+                <div class="stat-big-value" id="total-reads">--</div>
+            </article>
         </section>
 
         <!-- 图表网格 -->
         <main class="stats-grid">
-            <!-- 图表一：分类在读排行 -->
-            <section class="chart-card chart-card-wide">
-                <h2><i class="ti ti-chart-bar"></i> 分类在读人数排行</h2>
-                <div id="chart-category-bar" class="chart-container"></div>
+            <!-- 图表一：分类在读排行（竖向柱状图，所有分类） -->
+            <section class="trend-block trend-block-wide">
+                <span class="panel-kicker">分类排行</span>
+                <h2>分类在读人数排行</h2>
+                <div id="chart-category-bar" class="chart-container chart-container-tall"></div>
             </section>
 
             <!-- 图表二：单书 Top 20 -->
-            <section class="chart-card">
-                <h2><i class="ti ti-crown"></i> 单书在读 Top 20</h2>
-                <div id="chart-top-books" class="chart-container"></div>
+            <section class="trend-block">
+                <span class="panel-kicker">单书排行</span>
+                <h2>单书在读 Top 20</h2>
+                <div id="chart-top-books" class="chart-container chart-container-tall"></div>
             </section>
 
             <!-- 图表三：趋势线图 -->
-            <section class="chart-card chart-card-wide">
-                <h2><i class="ti ti-trending-up"></i> 分类在读趋势</h2>
+            <section class="trend-block trend-block-wide">
+                <span class="panel-kicker">趋势变化</span>
+                <h2>分类在读趋势</h2>
                 <div id="chart-trend-line" class="chart-container"></div>
             </section>
 
-            <!-- 图表四：热力图 -->
-            <section class="chart-card">
-                <h2><i class="ti ti-flame"></i> 分类阅读热力图</h2>
-                <div id="chart-heatmap" class="chart-container"></div>
+            <!-- 图表四：分类最高/最低/均值在读 -->
+            <section class="trend-block">
+                <span class="panel-kicker">极值分析</span>
+                <h2>分类在读最高/最低/均值</h2>
+                <div id="chart-category-stats" class="chart-container chart-container-tall"></div>
             </section>
 
             <!-- 图表五：四榜对比雷达 -->
-            <section class="chart-card chart-card-wide">
-                <h2><i class="ti ti-radar"></i> 四榜分类对比雷达</h2>
-                <div id="chart-radar-compare" class="chart-container"></div>
+            <section class="trend-block trend-block-wide">
+                <span class="panel-kicker">四榜对比</span>
+                <h2>四榜分类对比雷达</h2>
+                <div id="chart-radar-compare" class="chart-container chart-container-tall"></div>
             </section>
         </main>
     </div>
 
-    <!-- 四榜全局配置（由 JS 使用） -->
+    <!-- 四榜配置 -->
     <script>
-        const FANQIE_LISTS_STATS = {
-            female_new: { name: '女频新书榜', color: '#EC4899', icon: 'ti-star' },
-            female_read: { name: '女频阅读榜', color: '#DB2777', icon: 'ti-heart' },
-            male_new: { name: '男频新书榜', color: '#3B82F6', icon: 'ti-rocket' },
-            male_read: { name: '男频阅读榜', color: '#2563EB', icon: 'ti-user' },
+        window.FANQIE_LISTS_STATS = {
+            male_new: { name: "男频新书榜", file_key: "male_new", color: "#3B82F6", icon: "ti-user" },
+            male_read: { name: "男频阅读榜", file_key: "male_read", color: "#60A5FA", icon: "ti-users" },
+            female_new: { name: "女频新书榜", file_key: "female_new", color: "#EC4899", icon: "ti-heart" },
+            female_read: { name: "女频阅读榜", file_key: "female_read", color: "#F472B6", icon: "ti-heartbeat" }
         };
     </script>
     <script src="js/stats.js"></script>
 </body>
+
 </html>

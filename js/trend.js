@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // 常量
     // ─────────────────────────────────────────────────────────────────────────
     const LISTS = window.FANQIE_LISTS || {
-        female_new: { name: "女频新书榜", file_key: "female_new", color: "#EC4899" },
-        female_read: { name: "女频阅读榜", file_key: "female_read", color: "#F472B6" },
         male_new: { name: "男频新书榜", file_key: "male_new", color: "#3B82F6" },
         male_read: { name: "男频阅读榜", file_key: "male_read", color: "#60A5FA" },
+        female_new: { name: "女频新书榜", file_key: "female_new", color: "#EC4899" },
+        female_read: { name: "女频阅读榜", file_key: "female_read", color: "#F472B6" },
     };
 
     const cacheBuster = `v=${Math.floor(Date.now() / 600000)}`;
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ─────────────────────────────────────────────────────────────────────────
     // 状态
     // ─────────────────────────────────────────────────────────────────────────
-    let currentListKey = window.CURRENT_LIST_KEY || "female_new";
+    let currentListKey = window.CURRENT_LIST_KEY || "male_new";
     let categories = [];
     let trendRows = [];
     let latestData = null;

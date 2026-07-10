@@ -825,10 +825,16 @@ def build_stats_payload(output: dict, list_key: str) -> dict:
     for cat in categories:
         cat_reads = 0
         cat_book_count = 0
+        cat_max_reads = 0
+        cat_min_reads = float('inf')
         for book in cat.get("books", []):
             reads = parse_reads(book.get("reads", "未知"))
             cat_reads += reads
             cat_book_count += 1
+            if reads > cat_max_reads:
+                cat_max_reads = reads
+            if reads < cat_min_reads:
+                cat_min_reads = reads
             top_books.append({
                 "title": book.get("title", ""),
                 "author": book.get("author", ""),
@@ -844,6 +850,9 @@ def build_stats_payload(output: dict, list_key: str) -> dict:
                 "total_reads": round(cat_reads),
                 "reads_str": format_market_reads(cat_reads),
                 "book_count": cat_book_count,
+                "max_reads": round(cat_max_reads),
+                "min_reads": round(cat_min_reads) if cat_book_count > 0 else 0,
+                "avg_reads": round(cat_reads / cat_book_count) if cat_book_count > 0 else 0,
             })
 
     category_reads.sort(key=lambda x: x["total_reads"], reverse=True)

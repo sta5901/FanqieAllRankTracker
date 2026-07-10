@@ -69,7 +69,7 @@ def decode_text(text: str) -> str:
 
 def extract_keywords(title: str, intro: str = "", is_male: bool = False) -> list:
     """
-    从书名和简介中提取关键词标签（P0 规则匹配）。
+    从书名和简介中提取关键词标签（基于关键词词库匹配）。
     is_male=True 时使用男频关键词库，否则使用女频关键词库。
     """
     # 通用关键词库
@@ -103,13 +103,6 @@ def extract_keywords(title: str, intro: str = "", is_male: bool = False) -> list
     for kw in keywords_lib:
         if kw in text:
             matched.append(kw)
-
-    # 冒号后半句提取（如"书名：副标题"）
-    colon_match = re.search(r"[：:]([^\n：:]{2,20})", title)
-    if colon_match:
-        extra = colon_match.group(1).strip()
-        if extra and len(extra) >= 2 and extra not in matched:
-            matched.append(extra)
 
     return matched[:6]
 
@@ -231,8 +224,14 @@ def run_single_list(list_key: str, limit: int = 30, sleep_sec: int = 5):
             except Exception as e:
                 print(f"[{ts()}] [⚠] 分类切换失败 {cat_name}: {e}")
 
-            # 滚动加载
-            for _ in range(5):
+            # 滚动加载（达到目标数量则提前停止）
+            max_scrolls = 10
+            for scroll_i in range(max_scrolls):
+                # 每次滚动前检查当前数量
+                count_js = "document.querySelectorAll('a[href^=\"/page/\"]').length"
+                current_count = page.evaluate(count_js)
+                if current_count >= limit:
+                    break
                 page.evaluate("window.scrollBy(0, window.innerHeight)")
                 time.sleep(1.5)
 

@@ -3,12 +3,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // 常量 & 状态
     // ─────────────────────────────────────────────────────────────────────────
     const LISTS = window.FANQIE_LISTS || {
-        female_new: { name: "女频新书榜", file_key: "female_new", color: "#EC4899", icon: "ti-heart" },
-        female_read: { name: "女频阅读榜", file_key: "female_read", color: "#F472B6", icon: "ti-heartbeat" },
         male_new: { name: "男频新书榜", file_key: "male_new", color: "#3B82F6", icon: "ti-user" },
         male_read: { name: "男频阅读榜", file_key: "male_read", color: "#60A5FA", icon: "ti-users" },
+        female_new: { name: "女频新书榜", file_key: "female_new", color: "#EC4899", icon: "ti-heart" },
+        female_read: { name: "女频阅读榜", file_key: "female_read", color: "#F472B6", icon: "ti-heartbeat" },
     };
-    let currentListKey = window.CURRENT_LIST_KEY || "female_new";
+    let currentListKey = window.CURRENT_LIST_KEY || "male_new";
     let allData = null;
     let typingTimer = null;
     let availableDates = [];     // sorted "YYYY-MM-DD" for current list
@@ -21,23 +21,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // ─────────────────────────────────────────────────────────────────────────
     // DOM 引用
     // ─────────────────────────────────────────────────────────────────────────
-    const categoryList  = document.getElementById('category-list');
-    const waterfall     = document.getElementById('books-waterfall');
-    const updateDate   = document.getElementById('update-date');
+    const categoryList = document.getElementById('category-list');
+    const waterfall = document.getElementById('books-waterfall');
+    const updateDate = document.getElementById('update-date');
     const categoryTitle = document.getElementById('current-category-title');
-    const aiContent     = document.getElementById('ai-content');
-    const trendPanel    = document.getElementById('trend-panel');
+    const aiContent = document.getElementById('ai-content');
+    const trendPanel = document.getElementById('trend-panel');
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const sidebar       = document.getElementById('sidebar');
-    const dateDisplay   = document.getElementById('date-display');
+    const sidebar = document.getElementById('sidebar');
+    const dateDisplay = document.getElementById('date-display');
     const datePickerBtn = document.getElementById('date-picker-btn');
-    const dateInput     = document.getElementById('date-input');
-    const datePrevBtn   = document.getElementById('date-prev');
-    const dateNextBtn   = document.getElementById('date-next');
-    const listTabs      = document.getElementById('list-tabs');
+    const dateInput = document.getElementById('date-input');
+    const datePrevBtn = document.getElementById('date-prev');
+    const dateNextBtn = document.getElementById('date-next');
+    const listTabs = document.getElementById('list-tabs');
     const sidebarSubtitle = document.getElementById('sidebar-subtitle');
-    const trendLinkBtn  = document.getElementById('trend-link');
-    const statsLinkBtn  = document.getElementById('stats-link');
+    const trendLinkBtn = document.getElementById('trend-link');
+    const statsLinkBtn = document.getElementById('stats-link');
 
     // ─────────────────────────────────────────────────────────────────────────
     // Copy Toast
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ─────────────────────────────────────────────────────────────────────────
     function updateDateNav() {
         const isLatest = currentDateIndex === availableDates.length - 1;
-        const isFirst  = currentDateIndex <= 0;
+        const isFirst = currentDateIndex <= 0;
         datePrevBtn.disabled = isFirst;
         dateNextBtn.disabled = isLatest;
 
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const presetBtns = document.querySelectorAll('.preset-btn');
 
     function updatePresetButtons() {
-        const isLatest   = currentDateIndex === availableDates.length - 1;
+        const isLatest = currentDateIndex === availableDates.length - 1;
         const isYesterday = availableDates.length >= 2 && currentDateIndex === availableDates.length - 2;
         presetBtns.forEach(btn => {
             const preset = btn.dataset.preset;
@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const fileKey = LISTS[currentListKey]?.file_key || currentListKey;
         const snapshotUrl = `data/fanqie_${fileKey}_ranks_${fileDateStr}.json?${cacheBuster}`;
-        const trendUrl    = `data/trends/${currentListKey}/${dateStr}.json?${cacheBuster}`;
+        const trendUrl = `data/trends/${currentListKey}/${dateStr}.json?${cacheBuster}`;
 
         Promise.all([
             fetch(snapshotUrl).then(r => r.ok ? r.json() : Promise.reject('No snapshot')),
@@ -467,9 +467,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function escapeHtml(str) {
         return (str || '').replace(/&/g, '&amp;')
-                          .replace(/</g, '&lt;')
-                          .replace(/>/g, '&gt;')
-                          .replace(/\n/g, '<br>');
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/\n/g, '<br>');
     }
 
     // ─────────────────────────────────────────────────────────────────────────
@@ -491,9 +491,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const card = document.createElement('a');
             const bookId = extractBookId(book.url);
             const keywords = book.keywords || [];
-            const keywordsHtml = keywords.length > 0
-                ? `<div class="book-tags">${keywords.slice(0, 3).map(k => `<span class="book-tag">${escapeHtml(k)}</span>`).join('')}</div>`
-                : '';
+            const keywordsHtml = `<div class="book-tags">${keywords.slice(0, 3).map(k => `<span class="book-tag">${escapeHtml(k)}</span>`).join('')}</div>`;
 
             card.href = bookId ? `book.html?id=${encodeURIComponent(bookId)}&list=${currentListKey}` : 'javascript:void(0)';
             card.rel = 'noopener';
