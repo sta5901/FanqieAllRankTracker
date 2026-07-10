@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图表数据 · 番茄风向标</title>
+    <meta name="description" content="番茄小说四榜阅读数据可视化统计">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Tabler Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.14.0/dist/tabler-icons.min.css">
+    <!-- ECharts CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+</head>
+<body class="stats-page">
+    <div class="stats-shell">
+        <header class="stats-topbar">
+            <div>
+                <a href="index.html" class="back-link">
+                    <i class="ti ti-arrow-left"></i> 返回榜单
+                </a>
+                <h1>图表数据</h1>
+                <p id="stats-subtitle">加载中...</p>
+            </div>
+        </header>
+
+        <!-- 榜单 Tab 筛选 -->
+        <div class="rank-tabs stats-rank-tabs" id="stats-rank-tabs">
+            <button class="rank-tab active" data-list="female_new">
+                <i class="ti ti-star"></i> 女频新书榜
+            </button>
+            <button class="rank-tab" data-list="female_read">
+                <i class="ti ti-heart"></i> 女频阅读榜
+            </button>
+            <button class="rank-tab" data-list="male_new">
+                <i class="ti ti-rocket"></i> 男频新书榜
+            </button>
+            <button class="rank-tab" data-list="male_read">
+                <i class="ti ti-user"></i> 男频阅读榜
+            </button>
+        </div>
+
+        <!-- 统计概览 -->
+        <section class="stats-overview">
+            <div class="stat-card">
+                <span class="stat-label">上榜作品</span>
+                <strong class="stat-value" id="total-books">--</strong>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">活跃分类</span>
+                <strong class="stat-value" id="total-cats">--</strong>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">总在读人数</span>
+                <strong class="stat-value" id="total-reads">--</strong>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">平均在读</span>
+                <strong class="stat-value" id="avg-reads">--</strong>
+            </div>
+        </section>
+
+        <!-- 图表网格 -->
+        <main class="stats-grid">
+            <!-- 图表一：分类在读排行 -->
+            <section class="chart-card chart-card-wide">
+                <h2><i class="ti ti-chart-bar"></i> 分类在读人数排行</h2>
+                <div id="chart-category-bar" class="chart-container"></div>
+            </section>
+
+            <!-- 图表二：单书 Top 20 -->
+            <section class="chart-card">
+                <h2><i class="ti ti-crown"></i> 单书在读 Top 20</h2>
+                <div id="chart-top-books" class="chart-container"></div>
+            </section>
+
+            <!-- 图表三：趋势线图 -->
+            <section class="chart-card chart-card-wide">
+                <h2><i class="ti ti-trending-up"></i> 分类在读趋势</h2>
+                <div id="chart-trend-line" class="chart-container"></div>
+            </section>
+
+            <!-- 图表四：热力图 -->
+            <section class="chart-card">
+                <h2><i class="ti ti-flame"></i> 分类阅读热力图</h2>
+                <div id="chart-heatmap" class="chart-container"></div>
+            </section>
+
+            <!-- 图表五：四榜对比雷达 -->
+            <section class="chart-card chart-card-wide">
+                <h2><i class="ti ti-radar"></i> 四榜分类对比雷达</h2>
+                <div id="chart-radar-compare" class="chart-container"></div>
+            </section>
+        </main>
+    </div>
+
+    <!-- 四榜全局配置（由 JS 使用） -->
+    <script>
+        const FANQIE_LISTS_STATS = {
+            female_new: { name: '女频新书榜', color: '#EC4899', icon: 'ti-star' },
+            female_read: { name: '女频阅读榜', color: '#DB2777', icon: 'ti-heart' },
+            male_new: { name: '男频新书榜', color: '#3B82F6', icon: 'ti-rocket' },
+            male_read: { name: '男频阅读榜', color: '#2563EB', icon: 'ti-user' },
+        };
+    </script>
+    <script src="js/stats.js"></script>
+</body>
+</html>

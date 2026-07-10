@@ -587,6 +587,11 @@ input:focus-visible {
     animation: blink 0.8s steps(1) infinite;
 }
 
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+.ti-spin { animation: spin 1s linear infinite; }
+
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
@@ -802,6 +807,9 @@ input:focus-visible {
     font-size: 0.74rem;
     font-weight: 720;
     white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .book-copy-btn:hover {
@@ -1329,6 +1337,163 @@ input:focus-visible {
     box-shadow: 0 10px 20px rgba(240, 79, 56, 0.16);
 }
 
+/* ===== 四榜 Tab 切换 ===== */
+.list-tabs {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 3px;
+}
+
+.list-tabs-sm {
+    gap: 3px;
+    padding: 2px;
+}
+
+.list-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px 12px;
+    border: none;
+    border-radius: calc(var(--radius-lg) - 3px);
+    background: transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: background-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.list-tabs-sm .list-tab {
+    padding: 5px 9px;
+    font-size: 0.74rem;
+    gap: 4px;
+}
+
+.list-tab .tab-label {
+    display: inline;
+}
+
+.list-tab:hover {
+    background: var(--surface);
+    color: var(--text-primary);
+}
+
+.list-tab.active {
+    background: var(--surface);
+    color: var(--accent);
+    font-weight: 800;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-tab.active[data-key="female_new"],
+.list-tab.active[data-key="female_read"] {
+    color: #EC4899;
+}
+.list-tab.active[data-key="male_new"],
+.list-tab.active[data-key="male_read"] {
+    color: #3B82F6;
+}
+
+/* ===== 榜单选择下拉（book 详情页） ===== */
+.list-selector {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 7px 30px 7px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background-color: var(--surface);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%237b8798' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+}
+.list-selector:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(240, 79, 56, 0.1);
+}
+
+/* ===== 空状态通用文字 ===== */
+.empty-state-text {
+    color: var(--text-muted);
+    font-size: 0.88rem;
+    padding: 24px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-direction: column;
+}
+
+/* ===== 书籍关键词标签 ===== */
+.book-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 6px;
+}
+.book-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* ===== 书籍历史记录中的榜单标签 ===== */
+.book-list-label {
+    display: inline-block;
+    padding: 1px 7px;
+    background: var(--bg-strong);
+    color: var(--text-muted);
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-right: 4px;
+}
+
+/* ===== trend 页面标题区 ===== */
+.trend-topbar-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* ===== 列表项辅助 ===== */
+.list-item {
+    display: block;
+    padding-left: 1em;
+    text-indent: -0.6em;
+}
+
+/* ===== AI 摘要内嵌书名高亮 ===== */
+.book-ref {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+/* ===== 市场看板书名 ===== */
+.book-mark {
+    color: var(--accent);
+    font-weight: 500;
+}
+
 .trend-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1593,6 +1758,105 @@ input:focus-visible {
     font-weight: 760;
 }
 
+/* ===== stats.html 页面布局 ===== */
+.stats-page {
+    background: var(--bg);
+    min-height: 100vh;
+}
+.stats-shell {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px 48px;
+}
+.stats-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 16px;
+    border-bottom: 1px solid var(--border);
+}
+.stats-topbar h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 4px 0 2px;
+}
+.stats-topbar p {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+}
+
+/* ===== 统计概览卡片 ===== */
+.stats-overview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+}
+.stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.stat-label {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+.stat-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+/* ===== 图表网格 ===== */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+.chart-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+}
+.chart-card-wide {
+    grid-column: span 2;
+}
+.chart-card h2 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.chart-card h2 .ti {
+    color: var(--accent-strong);
+    font-size: 1.1rem;
+}
+.chart-container {
+    flex: 1;
+    min-height: 280px;
+}
+
+/* ===== 四榜 Tab 切换 ===== */
+.stats-rank-tabs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 1180px) {
     .trend-panel,
@@ -1734,10 +1998,36 @@ input:focus-visible {
         justify-content: center;
     }
 
+    .list-tabs {
+        width: 100%;
+        justify-content: stretch;
+    }
+    .list-tab {
+        flex: 1;
+        justify-content: center;
+    }
+    .list-tabs-sm .list-tab {
+        padding: 5px 6px;
+    }
+    .list-selector {
+        width: 100%;
+    }
+
     .trend-range {
         grid-column: 1 / -1;
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .trend-topbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .trend-topbar-left {
+        width: 100%;
+    }
+    .trend-controls {
+        width: 100%;
+        justify-content: flex-start;
     }
 
     .trend-shell {
@@ -1814,5 +2104,20 @@ input:focus-visible {
     .market-card,
     .trend-block {
         border-radius: var(--radius-lg);
+    }
+
+    /* ===== stats.html 响应式 ===== */
+    .stats-shell {
+        max-width: 1200px;
+    }
+    .stats-topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    .chart-card {
+        min-height: 300px;
     }
 }

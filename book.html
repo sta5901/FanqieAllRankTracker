@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作品详情 · 番茄女频新书榜</title>
+    <title id="page-title">作品详情 · 番茄小说</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.14.0/dist/tabler-icons.min.css">
     <meta name="description" content="番茄小说作品详情、在读趋势与历史上榜记录">
 </head>
 <body class="book-page">
     <main class="book-shell">
         <header class="book-topbar">
-            <a href="index.html" class="back-link">返回榜单</a>
-            <a href="trend.html" class="trend-link-btn">风向标</a>
+            <a href="index.html" class="back-link"><i class="ti ti-arrow-left"></i> 返回榜单</a>
+            <a href="trend.html" class="trend-link-btn"><i class="ti ti-trending-up"></i> 风向标</a>
+            <!-- 榜单选择 -->
+            <select id="list-selector" class="list-selector" title="选择榜单">
+                <option value="">全部榜单</option>
+                <option value="female_new">女频新书榜</option>
+                <option value="female_read">女频阅读榜</option>
+                <option value="male_new">男频新书榜</option>
+                <option value="male_read">男频阅读榜</option>
+            </select>
         </header>
 
         <section id="book-detail" class="book-detail-page">
-            <div class="book-loading">正在读取作品详情...</div>
+            <div class="book-loading"><i class="ti ti-loader-2 ti-spin"></i> 正在读取作品详情...</div>
         </section>
     </main>
 
+    <script>
+        // 默认榜单选择
+        window.DEFAULT_BOOK_LIST = "";
+    </script>
     <script src="js/book.js"></script>
 </body>
 </html>

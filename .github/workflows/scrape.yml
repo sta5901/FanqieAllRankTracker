@@ -13,7 +13,12 @@ on:
   schedule:
     # 每天 UTC 00:00 (北京时间 08:00) 触发
     - cron: '0 0 * * *'
-  workflow_dispatch: # 允许手动在界面上点击 Run workflow
+  workflow_dispatch:
+    inputs:
+      list_key:
+        description: '指定榜单 (留空则爬取全部四榜)'
+        required: false
+        default: ''
 
 jobs:
   scrape-and-commit:
@@ -28,17 +33,36 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Check if today's data exists
+    - name: Check today's data for all four lists
       id: check_data
       run: |
         TODAY=$(date -u +"%Y%m%d")
-        FILE="data/fanqie_female_new_ranks_${TODAY}.json"
-        if [ -f "$FILE" ]; then
-          echo "exists=true" >> $GITHUB_OUTPUT
-          echo "✅ 今日数据已存在: $FILE，跳过爬取"
+        # 四榜列表
+        LISTS="female_new female_read male_new male_read"
+        MISSING=""
+
+        for LIST in $LISTS; do
+          FILE="data/fanqie_${LIST}_ranks_${TODAY}.json"
+          if [ -f "$FILE" ]; then
+            echo "✅ $LIST 今日数据已存在: $FILE"
+          else
+            echo "📭 $LIST 今日数据不存在"
+            MISSING="${MISSING} ${LIST}"
+          fi
+        done
+
+        # 将缺失榜单写入输出
+        MISSING_TRIMMED=$(echo "$MISSING" | xargs)
+        if [ -z "$MISSING_TRIMMED" ]; then
+          echo "all_exists=true" >> $GITHUB_OUTPUT
+          echo "needs_scrape=false" >> $GITHUB_OUTPUT
+          echo "needs_scrape_list=" >> $GITHUB_OUTPUT
+          echo "all_four_lists_exist=true" >> $GITHUB_OUTPUT
         else
-          echo "exists=false" >> $GITHUB_OUTPUT
-          echo "📭 今日数据不存在，将执行爬取"
+          echo "all_exists=false" >> $GITHUB_OUTPUT
+          echo "needs_scrape=true" >> $GITHUB_OUTPUT
+          echo "needs_scrape_list=${MISSING_TRIMMED# }" >> $GITHUB_OUTPUT
+          echo "all_four_lists_exist=false" >> $GITHUB_OUTPUT
         fi
 
     - name: Set up Python
@@ -51,18 +75,35 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        if [ "${{ steps.check_data.outputs.exists }}" = "false" ]; then
+        # 安装 playwright（只在需要爬取时）
+        if [ "${{ steps.check_data.outputs.needs_scrape }}" = "true" ]; then
           playwright install --with-deps chromium
         fi
 
-    - name: Run Scraper
-      if: steps.check_data.outputs.exists == 'false'
-      run: python scrape_fanqie_ranks.py
+    - name: Run Scraper (四榜顺序爬取)
+      if: steps.check_data.outputs.needs_scrape == 'true'
+      run: |
+        # 优先爬取缺失的榜单（列表中每项空格分隔）
+        SCRAPE_LIST="${{ inputs.list_key }}"
+        if [ -z "$SCRAPE_LIST" ]; then
+          SCRAPE_LIST="${{ steps.check_data.outputs.needs_scrape_list }}"
+        fi
+        if [ -z "$SCRAPE_LIST" ]; then
+          SCRAPE_LIST="female_new female_read male_new male_read"
+        fi
+        for LIST in $SCRAPE_LIST; do
+          echo "=== 开始爬取: $LIST ==="
+          python scrape_all.py "$LIST"
+          echo "=== $LIST 完成，休息 10s ==="
+          sleep 10
+        done
       env:
         GITHUB_ACTIONS: true
 
-    - name: Build Latest Data with AI Summary
-      run: pip install openai && python scripts/build_latest.py
+    - name: Build Latest Data with AI Summary (四榜各自构建)
+      run: |
+        pip install openai 2>/dev/null || true
+        python scripts/build_latest.py
       env:
         API_BASE_URL: ${{ secrets.API_BASE_URL }}
         API_KEY: ${{ secrets.API_KEY }}
@@ -72,10 +113,10 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v5
       with:
         commit_message: "[Auto] Update Fanqie daily ranks"
-        file_pattern: data api
+        file_pattern: data api js css
         branch: main
 
-    # ---- Deploy to GitHub Pages (inline, 绕过 GITHUB_TOKEN 不触发其他 workflow 的限制) ----
+    # ── Deploy to GitHub Pages ──────────────────────────────────────────────
     - name: Setup Pages
       uses: actions/configure-pages@v5
       with:

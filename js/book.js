@@ -1,12 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     const detail = document.getElementById('book-detail');
+    const listSelector = document.getElementById('list-selector');
     const cacheBuster = `v=${Math.floor(Date.now() / 600000)}`;
     const maxDays = 30;
     const copyToast = document.createElement('div');
     copyToast.className = 'copy-toast';
-    copyToast.textContent = '书本信息已复制';
+    copyToast.textContent = '已复制';
     document.body.appendChild(copyToast);
     let toastTimer = null;
+
+    const LISTS = {
+        female_new: { name: '女频新书榜', file_key: 'female_new' },
+        female_read: { name: '女频阅读榜', file_key: 'female_read' },
+        male_new: { name: '男频新书榜', file_key: 'male_new' },
+        male_read: { name: '男频阅读榜', file_key: 'male_read' },
+    };
 
     init();
 
@@ -14,18 +22,65 @@ document.addEventListener('DOMContentLoaded', () => {
         const params = new URLSearchParams(window.location.search);
         const bookId = params.get('id');
         const bookTitle = params.get('title');
+        const listKey = params.get('list') || window.DEFAULT_BOOK_LIST || '';
+
         if (!bookId && !bookTitle) {
-            renderEmpty('缺少作品 ID。');
+            renderEmpty('缺少作品 ID 或书名参数。');
             return;
         }
 
+        // 设置下拉框初始值
+        if (listKey && LISTS[listKey]) {
+            listSelector.value = listKey;
+        }
+
+        // 绑定榜单切换
+        listSelector.addEventListener('change', () => {
+            const newList = listSelector.value;
+            const url = new URL(window.location.href);
+            if (newList) {
+                url.searchParams.set('list', newList);
+            } else {
+                url.searchParams.delete('list');
+            }
+            history.replaceState(null, '', url);
+            loadBookDetail(bookId, bookTitle, newList);
+        });
+
+        await loadBookDetail(bookId, bookTitle, listKey);
+    }
+
+    async function loadBookDetail(bookId, bookTitle, listKey) {
+        detail.innerHTML = '<div class="book-loading"><i class="ti ti-loader-2 ti-spin"></i> 加载中...</div>';
+
         try {
             const dateIndex = await fetchJson(`data/dates.json?${cacheBuster}`);
-            const dates = (dateIndex.dates || []).slice().sort().slice(-maxDays);
-            const snapshots = await Promise.all(
-                dates.map(date => fetchJson(`${snapshotUrl(date)}?${cacheBuster}`).catch(() => null))
-            );
-            const records = collectBookRecords(bookId, bookTitle, dates, snapshots);
+            const allDates = (dateIndex.dates || []).slice().sort().slice(-maxDays);
+
+            // 确定要搜索的榜单列表
+            const targetLists = listKey && LISTS[listKey]
+                ? [listKey]
+                : Object.keys(LISTS);
+
+            let records = [];
+
+            for (const lk of targetLists) {
+                const fileKey = LISTS[lk].file_key;
+                const listDates = dateIndex.lists && dateIndex.lists[lk]
+                    ? dateIndex.lists[lk].dates || []
+                    : allDates;
+                const dates = listDates.slice().sort().slice(-maxDays);
+
+                const snapshots = await Promise.all(
+                    dates.map(date =>
+                        fetchJson(`data/fanqie_${fileKey}_ranks_${date.replace(/-/g, '')}.json?${cacheBuster}`)
+                            .catch(() => null)
+                    )
+                );
+                const batch = collectBookRecords(bookId, bookTitle, dates, snapshots);
+                batch.forEach(r => { r._listKey = lk; });
+                records = records.concat(batch);
+            }
 
             if (!records.length) {
                 renderEmpty('最近 30 天榜单中没有找到这本书。');
@@ -37,10 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error(err);
             renderEmpty('作品详情加载失败，请稍后刷新重试。');
         }
-    }
-
-    function snapshotUrl(date) {
-        return `data/fanqie_female_new_ranks_${date.replace(/-/g, '')}.json`;
     }
 
     function fetchJson(url) {
@@ -78,25 +129,31 @@ document.addEventListener('DOMContentLoaded', () => {
         const book = latest.book;
         const chartRecords = compactRecordsByDate(records).filter(item => item.readsValue > 0);
         const maxReads = Math.max(...records.map(item => item.readsValue || 0));
+        const listName = (LISTS[latest._listKey] || {}).name || '';
+        const keywords = book.keywords || [];
+        const keywordsHtml = keywords.length > 0
+            ? `<div class="book-tags">${keywords.map(k => `<span class="book-tag">${escapeHtml(k)}</span>`).join('')}</div>`
+            : '';
 
         detail.innerHTML = `
             <section class="book-detail-hero">
                 <div class="detail-cover">
-                    ${book.cover ? `<img src="${book.cover}" alt="${escapeAttr(book.title)}">` : '<div class="no-cover">暂无封面</div>'}
+                    ${book.cover ? `<img src="${book.cover}" alt="${escapeAttr(book.title)}">` : '<div class="no-cover"><i class="ti ti-photo-off"></i></div>'}
                 </div>
                 <div class="detail-main">
-                    <span class="panel-kicker">${escapeHtml(latest.category)} · 第 ${latest.rank} 名</span>
+                    <span class="panel-kicker">${listName ? escapeHtml(listName) + ' · ' : ''}${escapeHtml(latest.category)} · 第 ${latest.rank} 名</span>
                     <h1>${escapeHtml(book.title)}</h1>
-                    <p class="detail-author">作者：${escapeHtml(book.author || '未知')}</p>
+                    <p class="detail-author"><i class="ti ti-user"></i> ${escapeHtml(book.author || '未知')}</p>
                     <div class="detail-stats">
                         <span><strong>${escapeHtml(latest.readsLabel)}</strong><small>当前在读</small></span>
                         <span><strong>${escapeHtml(formatReads(maxReads))}</strong><small>近30日峰值</small></span>
                         <span><strong>${records.length}</strong><small>上榜记录</small></span>
                     </div>
+                    ${keywordsHtml}
                     <p class="detail-intro">${escapeHtml(book.intro || '暂无简介')}</p>
                     <div class="detail-actions">
-                        <button class="book-copy-btn detail-copy-btn" type="button">复制信息</button>
-                        ${book.url ? `<a class="source-link-btn" href="${escapeAttr(book.url)}" target="_blank" rel="noopener noreferrer">打开番茄原文</a>` : ''}
+                        <button class="book-copy-btn detail-copy-btn" type="button"><i class="ti ti-copy"></i> 复制信息</button>
+                        ${book.url ? `<a class="source-link-btn" href="${escapeAttr(book.url)}" target="_blank" rel="noopener noreferrer"><i class="ti ti-external-link"></i> 打开番茄原文</a>` : ''}
                     </div>
                 </div>
             </section>
@@ -130,11 +187,11 @@ document.addEventListener('DOMContentLoaded', () => {
 链接：${book.url || '无'}`;
         copyText(text).then(() => {
             btn.classList.add('copied');
-            btn.textContent = '已复制';
+            btn.innerHTML = '<i class="ti ti-check"></i> 已复制';
             showCopyToast();
             setTimeout(() => {
                 btn.classList.remove('copied');
-                btn.textContent = '复制信息';
+                btn.innerHTML = '<i class="ti ti-copy"></i> 复制信息';
             }, 1500);
         });
     }
@@ -295,9 +352,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderHistoryRow(record) {
+        const listName = (LISTS[record._listKey] || {}).name || '';
+        const listLabel = listName ? `<span class="book-list-label">${escapeHtml(listName)}</span>` : '';
         return `
             <div class="book-history-row">
                 <time>${escapeHtml(record.date)}</time>
+                ${listLabel}
                 <strong>${escapeHtml(record.category)} · 第 ${record.rank} 名</strong>
                 <span>${escapeHtml(record.readsLabel)}</span>
             </div>
@@ -308,7 +368,7 @@ document.addEventListener('DOMContentLoaded', () => {
         detail.innerHTML = `
             <div class="book-empty-state">
                 <p>${escapeHtml(message)}</p>
-                <a href="index.html" class="back-link">返回榜单</a>
+                <a href="index.html" class="back-link"><i class="ti ti-arrow-left"></i> 返回榜单</a>
             </div>
         `;
     }

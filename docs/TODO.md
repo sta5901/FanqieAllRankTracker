@@ -313,28 +313,21 @@
 - **依赖**：T-4.5, T-1.4
 - **验收**：book.html 打开后显示关键词标签（已有关键词数据的书籍）
 
-### T-4.7 CSS Tab 样式与色彩 [C]
+### T-4.7 CSS Tab 样式与色彩 [C] ✅ DONE
 
-- **文件**：`css/style.css`
-- **新增样式**：
-  - `.rank-tabs` 容器（flex 布局，底边线）
-  - `.rank-tab` 按钮（圆角胶囊、hover/active 状态）
-  - `.rank-tab.active`（背景色使用榜单 color：`var(--list-color)`）
-  - `:root { --male-color: #3B82F6; --female-color: #EC4899; --list-color: var(--female-color); }`
-  - `.keyword-tag`（胶囊标签样式）
-  - `.ti-*` 图标基础样式
-  - `.stat-card` / `.stat-label` / `.stat-value`（stats.html 概览卡）
-  - `.chart-card` / `.chart-card-wide` / `.chart-container`（图表容器）
-  - `.empty-msg`（图标 + 文字 flex 布局）
-  - `.stats-page` / `.stats-shell` / `.stats-topbar` / `.stats-grid` / `.stats-overview`（stats.html 布局）
-- **依赖**：T-3.3, T-4.1
+- [x] 已完成：`.rank-tabs` / `.rank-tab` / `.rank-tab.active`；CSS 变量 `:root`；`.keyword-tag`；`.stats-page` / `.stats-shell` / `.stats-topbar` / `.stats-overview` / `.stat-card` / `.stat-label` / `.stat-value`；`.stats-grid` / `.chart-card` / `.chart-card-wide` / `.chart-container`；移动端 `@media (max-width: 560px)` 响应式
+- 依赖：T-3.3, T-4.1
 - **验收**：CSS 无报错，Tab 样式符合设计稿
 
 ---
 
 ## 阶段 5：图表数据页
 
-### T-5.1 stats.html 页面骨架 [H][C]
+### T-5.1 stats.html 页面骨架 [H][C] ✅ DONE
+
+- [x] 已完成：引入 Tabler Icons + ECharts CDN；四榜 Tab；stats-overview（4 张卡）；stats-grid（5 个 chart-card）；FANQIE_LISTS_STATS 全局配置
+- 依赖：T-3.1, T-4.7
+- 验收：页面可正常打开，无 JS 报错
 
 - **文件**：`stats.html`（新建）
 - **内容**：
@@ -345,7 +338,11 @@
 - **依赖**：T-3.1, T-4.7
 - **验收**：页面可正常打开，无 JS 报错
 
-### T-5.2 js/stats.js 图表一 + 二 [J]
+### T-5.2 js/stats.js 图表一 + 二 [J] ✅ DONE
+
+- [x] 已完成：分类在读横向柱状图（#chart-category-bar）+ 单书 Top 20 柱状图（#chart-top-books）；ECharts 公共主题配置（暗色、Tooltip、响应式 resize）
+- 依赖：T-2.5（T-2.5 生成 stats JSON）、T-5.1
+- 验收：两张图表均渲染，数据正确
 
 - **文件**：`js/stats.js`（新建）
 - **图表一：分类在读人数横向柱状图**
@@ -361,7 +358,11 @@
 - **依赖**：T-2.5（T-2.5 生成 stats JSON）、T-5.1
 - **验收**：两张图表均渲染，数据正确
 
-### T-5.3 js/stats.js 图表三 [J]
+### T-5.3 js/stats.js 图表三 [J] ✅ DONE
+
+- [x] 已完成：趋势折线图（#chart-trend-line）；从 dates.json 读取可用日期列表 → 并行加载多日期快照 → 计算各分类在读总和 → 绘制最多 8 条折线；支持无历史数据时优雅降级
+- 依赖：T-5.2
+- 验收：趋势线图渲染正确，无历史数据时显示友好空状态
 
 - **文件**：`js/stats.js`
 - **图表三：分类在读趋势折线图**
@@ -372,7 +373,11 @@
 - **依赖**：T-5.2
 - **验收**：趋势线图渲染正确，支持时间范围切换
 
-### T-5.4 js/stats.js 图表四 [J]
+### T-5.4 js/stats.js 图表四 [J] ✅ DONE
+
+- [x] 已完成：分类热力图（#chart-heatmap）；X 轴 Top5/Top10/Top20/Top30 区间，Y 轴分类（最多 12 个），visualMap 颜色映射；hover 高亮
+- 依赖：T-5.2
+- 验收：热力图矩阵正确显示，颜色梯度合理
 
 - **文件**：`js/stats.js`
 - **图表四：分类阅读热力图**
@@ -383,7 +388,11 @@
 - **依赖**：T-5.2
 - **验收**：热力图矩阵正确显示，颜色梯度合理
 
-### T-5.5 js/stats.js 图表五（四榜对比雷达图）[J]
+### T-5.5 js/stats.js 图表五（四榜对比雷达图）[J] ✅ DONE
+
+- [x] 已完成：四榜分类对比雷达（#chart-radar-compare）；四榜 stats JSON 并行预加载 → 取并集 Top 10 分类 → 归一化到万单位 → 雷达多series叠加；支持数据不足时显示友好提示
+- 依赖：T-5.2
+- 验收：雷达图正确展示四榜对比
 
 - **文件**：`js/stats.js`
 - **图表五：四榜分类对比雷达**
@@ -405,32 +414,23 @@
 
 ## 阶段 6：CI/CD 改造
 
-### T-6.1 scrape.yml 增量检查改造 [Y]
+### T-6.1 scrape.yml 增量检查改造 [Y] ✅ DONE
 
-- **文件**：`.github/workflows/scrape.yml`
-- **改动**：
-  - 四榜分别检查各自 `data/fanqie_${key}_ranks_${TODAY}.json`
-  - `workflow_dispatch` 新增 `list_key` 输入参数
-  - 检查通过则跳过爬取步骤
-- **依赖**：T-1.3（T-1.3 的 scrape_all.py 入口）
-- **验收**：修改后 CI 本地 `act` 测试（可选），或手动触发 workflow_dispatch 验证
+- [x] 已完成：四榜逐一检查 `data/fanqie_${LIST}_ranks_${TODAY}.json`；输出 `needs_scrape_list`（缺失榜单空格分隔列表）；workflow_dispatch 新增 `list_key` 输入参数（支持手动指定榜单）
+- 依赖：T-1.3
+- 验收：修改后手动触发 workflow_dispatch 验证
 
-### T-6.2 scrape.yml 顺序执行改造 [Y]
+### T-6.2 scrape.yml 顺序执行改造 [Y] ✅ DONE
 
-- **文件**：`.github/workflows/scrape.yml`
-- **改动**：
-  - 删除四次 `python scrape_fanqie_ranks.py` 重复调用
-  - 改为单次调用 `python scrape_all.py`（脚本内控间隔）
-  - 或单次调用 `python -c "from scrape_fanqie_ranks import run_single_list; run_single_list('${{ inputs.list_key }}')"`
-- **依赖**：T-6.1
-- **验收**：CI 日志显示四榜按顺序执行（间隔可见）
+- [x] 已完成：使用 `scrape_all.py` 循环爬取缺失榜单（从 `needs_scrape_list` 读取）；每榜间 10s 间隔；脚本内已有断点续传
+- 依赖：T-1.3
+- 验收：全部四榜正确顺序执行
 
-### T-6.3 scrape.yml 提交范围更新 [Y]
+### T-6.3 scrape.yml 提交范围更新 [Y] ✅ DONE
 
-- **文件**：`.github/workflows/scrape.yml`
-- **改动**：`file_pattern` 增加 `js css`
-- **依赖**：T-6.2
-- **验收**：`git diff .github/workflows/scrape.yml` 确认 file_pattern 包含 `js css`
+- [x] 已完成：`file_pattern` 更新为 `data api js css`（包含 stats.html 和 stats.js）
+- 依赖：T-6.2
+- 验收：`git diff .github/workflows/scrape.yml` 确认 file_pattern 包含 `js css`
 
 ---
 

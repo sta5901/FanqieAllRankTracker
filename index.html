@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>番茄女频新书榜 · 风向标 | 每日女频趋势追踪</title>
+    <title id="page-title">番茄风向标 · 女频新书榜</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="番茄小说女频新书榜趋势分析与风向标">
+    <!-- Tabler Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.14.0/dist/tabler-icons.min.css">
+    <meta name="description" id="page-desc" content="番茄小说女频新书榜趋势分析与风向标">
 </head>
 <body>
     <div class="app-container">
@@ -13,7 +15,7 @@
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <h1>番茄风向标</h1>
-                <p class="sidebar-subtitle">女频新书榜追踪</p>
+                <p class="sidebar-subtitle" id="sidebar-subtitle">女频新书榜追踪</p>
                 <p id="update-date" class="update-date">加载中...</p>
             </div>
             <nav class="category-nav">
@@ -26,7 +28,7 @@
         <!-- 主内容区 -->
         <main class="main-content">
             <header class="main-header">
-                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="菜单">☰</button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="菜单"><i class="ti ti-menu-2"></i></button>
                 <div class="header-left">
                     <h2 id="current-category-title">全部分类</h2>
                 </div>
@@ -37,18 +39,33 @@
                         </svg>
                         <span>GitHub</span>
                     </a>
-                    <a class="trend-link-btn" href="trend.html">风向标</a>
+                    <a class="trend-link-btn" id="trend-link" href="trend.html"><i class="ti ti-trending-up"></i> 风向标</a>
+                    <a class="trend-link-btn" id="stats-link" href="stats.html"><i class="ti ti-chart-bar"></i> 统计</a>
+                    <!-- 四榜 Tab 切换 -->
+                    <div class="list-tabs" id="list-tabs">
+                        <button class="list-tab active" data-key="female_new" title="女频新书榜">
+                            <i class="ti ti-heart"></i><span class="tab-label">女新书</span>
+                        </button>
+                        <button class="list-tab" data-key="female_read" title="女频阅读榜">
+                            <i class="ti ti-heartbeat"></i><span class="tab-label">女阅读</span>
+                        </button>
+                        <button class="list-tab" data-key="male_new" title="男频新书榜">
+                            <i class="ti ti-user"></i><span class="tab-label">男新书</span>
+                        </button>
+                        <button class="list-tab" data-key="male_read" title="男频阅读榜">
+                            <i class="ti ti-users"></i><span class="tab-label">男阅读</span>
+                        </button>
+                    </div>
                     <div class="date-presets" id="date-presets">
                         <button class="preset-btn active" data-preset="latest">最新</button>
                         <button class="preset-btn" data-preset="yesterday">昨日</button>
                     </div>
                     <div class="date-picker-wrap">
-                        <button class="date-nav-btn" id="date-prev" aria-label="前一天" title="前一天">◀</button>
+                        <button class="date-nav-btn" id="date-prev" aria-label="前一天" title="前一天"><i class="ti ti-chevron-left"></i></button>
                         <button class="date-picker-btn" id="date-picker-btn">
-                            <span class="date-icon">DATE</span>
                             <span id="date-display">加载中...</span>
                         </button>
-                        <button class="date-nav-btn" id="date-next" aria-label="后一天" title="后一天">▶</button>
+                        <button class="date-nav-btn" id="date-next" aria-label="后一天" title="后一天"><i class="ti ti-chevron-right"></i></button>
                         <input type="date" id="date-input" class="date-input-hidden">
                     </div>
                 </div>
@@ -69,6 +86,17 @@
         </main>
     </div>
 
+    <!-- 四榜配置（供 JS 读取） -->
+    <script>
+        window.FANQIE_LISTS = {
+            female_new: { name: "女频新书榜", file_key: "female_new", color: "#EC4899", icon: "ti-heart" },
+            female_read: { name: "女频阅读榜", file_key: "female_read", color: "#F472B6", icon: "ti-heartbeat" },
+            male_new: { name: "男频新书榜", file_key: "male_new", color: "#3B82F6", icon: "ti-user" },
+            male_read: { name: "男频阅读榜", file_key: "male_read", color: "#60A5FA", icon: "ti-users" }
+        };
+        // Default to female_new
+        window.CURRENT_LIST_KEY = "female_new";
+    </script>
     <script src="js/app.js"></script>
 </body>
 </html>

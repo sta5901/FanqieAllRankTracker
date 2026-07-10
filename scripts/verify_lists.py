@@ -60,7 +60,7 @@ def verify_list(key: str, cfg: dict) -> dict:
         if os.environ.get("GITHUB_ACTIONS"):
             browser = p.chromium.launch(headless=True)
         else:
-            browser = p.chromium.launch(headless=True, channel="chrome")
+            browser = p.chromium.launch(headless=True)
 
         context = browser.new_context(
             user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
@@ -69,6 +69,8 @@ def verify_list(key: str, cfg: dict) -> dict:
 
         try:
             print(f"  → 正在访问页面...")
+            print(f"  → URL: {url}")
+            print(f"  → 设置15秒超时等待页面加载...")
             page.goto(url, wait_until="load", timeout=15000)
             page.wait_for_selector('a[href^="/page/"]', timeout=8000)
             print(f"  ✓ 页面加载成功")
