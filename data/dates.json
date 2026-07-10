@@ -1,0 +1,41 @@
+{
+  "dates": [
+    "2026-07-06",
+    "2026-07-07",
+    "2026-07-08",
+    "2026-07-09",
+    "2026-07-10"
+  ],
+  "lists": {
+    "female_new": {
+      "name": "女频新书榜",
+      "file_key": "female_new",
+      "dates": [
+        "2026-07-06",
+        "2026-07-07",
+        "2026-07-08",
+        "2026-07-09",
+        "2026-07-10"
+      ],
+      "latest_date": "2026-07-10"
+    },
+    "female_read": {
+      "name": "女频阅读榜",
+      "file_key": "female_read",
+      "dates": [],
+      "latest_date": ""
+    },
+    "male_new": {
+      "name": "男频新书榜",
+      "file_key": "male_new",
+      "dates": [],
+      "latest_date": ""
+    },
+    "male_read": {
+      "name": "男频阅读榜",
+      "file_key": "male_read",
+      "dates": [],
+      "latest_date": ""
+    }
+  }
+}
