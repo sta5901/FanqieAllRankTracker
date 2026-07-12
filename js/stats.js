@@ -19,6 +19,13 @@ const LIST_COLORS = {
     female_new: '#EC4899',
     female_read: '#F59E0B',
 };
+
+function parseReads(reads) {
+    const raw = String(reads || '').replace(',', '').trim();
+    const num = parseFloat(raw);
+    if (Number.isNaN(num)) return 0;
+    return raw.includes('万') ? num * 10000 : num;
+}
 const CHART_COLORS = ['#EC4899', '#3B82F6', '#10B981', '#F59E0B', '#8B5CF6', '#06B6D4'];
 
 let currentListKey = localStorage.getItem('stats_list_key') || 'male_new';
@@ -334,7 +341,7 @@ async function renderTrendLine(theme, listKey) {
             const catData = snap.categories.find(c => c.name === cat);
             if (!catData || !catData.books) return null;
             return Math.round(
-                catData.books.reduce((s, b) => s + parseFloat(b.reads || 0), 0) / 10000
+                catData.books.reduce((s, b) => s + parseReads(b.reads || 0), 0) / 10000
             );
         }),
         itemStyle: { color: CHART_COLORS[idx % CHART_COLORS.length] },
