@@ -1,17 +1,17 @@
 {
-  "date": "2026-07-15",
-  "prev_date": "2026-07-14",
+  "date": "2026-07-17",
+  "prev_date": "2026-07-15",
   "types": [
     {
       "type": "all",
       "url": "api/latest/male_new/all.json",
       "category_count": 19,
-      "book_count": 570
+      "book_count": 569
     },
     {
       "type": "西方奇幻",
       "url": "api/latest/male_new/%E8%A5%BF%E6%96%B9%E5%A5%87%E5%B9%BB.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "东方仙侠",
