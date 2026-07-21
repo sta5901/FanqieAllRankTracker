@@ -909,7 +909,7 @@ input:focus-visible {
         var(--surface);
     box-shadow: var(--shadow-card);
     display: grid;
-    grid-template-columns: 180px minmax(0, 1fr);
+    grid-template-columns: 254px minmax(0, 1fr);
     gap: 22px;
 }
 
