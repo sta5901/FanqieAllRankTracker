@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-02",
-  "prev_date": "2026-09-01",
+  "date": "2026-09-03",
+  "prev_date": "2026-09-02",
   "types": [
     {
       "type": "all",
       "url": "api/latest/male_new/all.json",
       "category_count": 19,
-      "book_count": 567
+      "book_count": 570
     },
     {
       "type": "西方奇幻",
@@ -86,7 +86,7 @@
     {
       "type": "抗战谍战",
       "url": "api/latest/male_new/%E6%8A%97%E6%88%98%E8%B0%8D%E6%88%98.json",
-      "book_count": 27
+      "book_count": 30
     },
     {
       "type": "游戏体育",
