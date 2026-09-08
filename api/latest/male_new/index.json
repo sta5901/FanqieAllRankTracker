@@ -1,17 +1,17 @@
 {
-  "date": "2026-09-07",
-  "prev_date": "2026-09-06",
+  "date": "2026-09-08",
+  "prev_date": "2026-09-07",
   "types": [
     {
       "type": "all",
       "url": "api/latest/male_new/all.json",
       "category_count": 19,
-      "book_count": 539
+      "book_count": 570
     },
     {
       "type": "西方奇幻",
       "url": "api/latest/male_new/%E8%A5%BF%E6%96%B9%E5%A5%87%E5%B9%BB.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "东方仙侠",
@@ -26,12 +26,12 @@
     {
       "type": "都市日常",
       "url": "api/latest/male_new/%E9%83%BD%E5%B8%82%E6%97%A5%E5%B8%B8.json",
-      "book_count": 10
+      "book_count": 30
     },
     {
       "type": "都市修真",
       "url": "api/latest/male_new/%E9%83%BD%E5%B8%82%E4%BF%AE%E7%9C%9F.json",
-      "book_count": 20
+      "book_count": 30
     },
     {
       "type": "都市高武",
