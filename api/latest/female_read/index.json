@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-11",
-  "prev_date": "2026-09-10",
+  "date": "2026-09-12",
+  "prev_date": "2026-09-11",
   "types": [
     {
       "type": "all",
       "url": "api/latest/female_read/all.json",
       "category_count": 18,
-      "book_count": 540
+      "book_count": 490
     },
     {
       "type": "古风世情",
@@ -21,7 +21,7 @@
     {
       "type": "游戏体育",
       "url": "api/latest/female_read/%E6%B8%B8%E6%88%8F%E4%BD%93%E8%82%B2.json",
-      "book_count": 30
+      "book_count": 10
     },
     {
       "type": "女频衍生",
@@ -51,7 +51,7 @@
     {
       "type": "宫斗宅斗",
       "url": "api/latest/female_read/%E5%AE%AB%E6%96%97%E5%AE%85%E6%96%97.json",
-      "book_count": 30
+      "book_count": 0
     },
     {
       "type": "悬疑脑洞",

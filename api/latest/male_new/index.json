@@ -1,22 +1,22 @@
 {
-  "date": "2026-09-11",
-  "prev_date": "2026-09-10",
+  "date": "2026-09-12",
+  "prev_date": "2026-09-11",
   "types": [
     {
       "type": "all",
       "url": "api/latest/male_new/all.json",
       "category_count": 19,
-      "book_count": 569
+      "book_count": 559
     },
     {
       "type": "西方奇幻",
       "url": "api/latest/male_new/%E8%A5%BF%E6%96%B9%E5%A5%87%E5%B9%BB.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "东方仙侠",
       "url": "api/latest/male_new/%E4%B8%9C%E6%96%B9%E4%BB%99%E4%BE%A0.json",
-      "book_count": 30
+      "book_count": 20
     },
     {
       "type": "科幻末世",
@@ -51,7 +51,7 @@
     {
       "type": "都市种田",
       "url": "api/latest/male_new/%E9%83%BD%E5%B8%82%E7%A7%8D%E7%94%B0.json",
-      "book_count": 30
+      "book_count": 29
     },
     {
       "type": "传统玄幻",
