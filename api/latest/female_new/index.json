@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-25",
-  "prev_date": "2026-09-24",
+  "date": "2026-09-26",
+  "prev_date": "2026-09-25",
   "types": [
     {
       "type": "all",
       "url": "api/latest/female_new/all.json",
       "category_count": 18,
-      "book_count": 538
+      "book_count": 539
     },
     {
       "type": "古风世情",
@@ -26,7 +26,7 @@
     {
       "type": "女频衍生",
       "url": "api/latest/female_new/%E5%A5%B3%E9%A2%91%E8%A1%8D%E7%94%9F.json",
-      "book_count": 29
+      "book_count": 30
     },
     {
       "type": "玄幻言情",
