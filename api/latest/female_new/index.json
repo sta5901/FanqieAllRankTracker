@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-06",
-  "prev_date": "2026-10-05",
+  "date": "2026-10-08",
+  "prev_date": "2026-10-06",
   "types": [
     {
       "type": "all",
       "url": "api/latest/female_new/all.json",
       "category_count": 18,
-      "book_count": 540
+      "book_count": 520
     },
     {
       "type": "古风世情",
@@ -91,7 +91,7 @@
     {
       "type": "豪门总裁",
       "url": "api/latest/female_new/%E8%B1%AA%E9%97%A8%E6%80%BB%E8%A3%81.json",
-      "book_count": 30
+      "book_count": 10
     },
     {
       "type": "民国言情",
