@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-09",
-  "prev_date": "2026-10-08",
+  "date": "2026-10-10",
+  "prev_date": "2026-10-09",
   "types": [
     {
       "type": "all",
       "url": "api/latest/male_new/all.json",
       "category_count": 19,
-      "book_count": 560
+      "book_count": 570
     },
     {
       "type": "西方奇幻",
@@ -76,7 +76,7 @@
     {
       "type": "玄幻脑洞",
       "url": "api/latest/male_new/%E7%8E%84%E5%B9%BB%E8%84%91%E6%B4%9E.json",
-      "book_count": 20
+      "book_count": 30
     },
     {
       "type": "悬疑灵异",
