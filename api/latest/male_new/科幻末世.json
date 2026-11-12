@@ -1,72 +1,77 @@
 {
   "type": "科幻末世",
-  "date": "2026-11-11",
-  "prev_date": "2026-11-10",
+  "date": "2026-11-12",
+  "prev_date": "2026-11-11",
   "category": {
     "name": "科幻末世",
     "trend": {
-      "new_count": 1,
-      "dropped_count": 1,
+      "new_count": 2,
+      "dropped_count": 2,
       "new_books": [
-        "末世序列，开局合成奇物斩魄刀"
+        "全民木屋求生：我开局匹配姐妹花",
+        "列车求生：开局选择肉身成圣"
       ],
       "dropped_books": [
         {
-          "title": "公路求生？重生后我直接起飞",
-          "intro": "【重生】+【词条】+【多女】+【不憋屈】+【非快节奏】+【非传统公路文】+【带飞人类】+【有娃】+【战力超模】 公路世界重启，铁锋携记忆重生。 为了成为天选车主，现实谋夺豪华房车。 开局便入手两个金色"
+          "title": "爽翻天！公路求生带着十九个校花",
+          "intro": "【公路求生+房车升级+无敌流+全员美女+轻松无毒】 　　公路求生降临，曹昆与全班女同学被困房车，开局全员坦诚相见！ 　　面对外面的丧尸潮与物资匮乏，曹昆挺身而出，觉醒震惊系统！ 　　从此开启疯狂带飞模"
+        },
+        {
+          "title": "列车求生，我天选福星",
+          "intro": "全球八十亿人被投放进列车求生世界，王大勇醒来时，身边只有九个美女。全车没水没粮，他还被当成危险人物关进储物间。 好在他觉醒SSS级海克斯科技：千立方静止空间、羁绊系统，每通过一座站台，还能抽取全新强化"
         }
       ],
       "top_risers": [
         {
-          "title": "全球入侵：开局剧透丧尸危机",
-          "change": "+6"
-        },
-        {
-          "title": "异星开拓：从一张开拓者卡开始",
+          "title": "全民末日：我能自选SSS级天赋",
           "change": "+4"
         },
         {
-          "title": "序列熔炉：我在末日织界成神",
+          "title": "诡异末世，开局一元秒杀雷之呼吸",
+          "change": "+4"
+        },
+        {
+          "title": "宇宙数据化，开局觉醒无限复活",
           "change": "+3"
         }
       ],
       "top_fallers": [
         {
-          "title": "列车求生，我天选福星",
-          "change": "-5"
+          "title": "公路求生：开启宝箱品质永远加3",
+          "change": "-3"
         },
         {
-          "title": "末世，我有一个藏身处",
-          "change": "-4"
+          "title": "狂病：从获得黑色守望开始",
+          "change": "-2"
         },
         {
-          "title": "末日觉醒，每天一次超级四选一",
+          "title": "刚成银河之主，你让我星海求生？",
           "change": "-2"
         }
       ],
       "reads_growth": [
         {
-          "title": "宇宙数据化，开局觉醒无限复活",
-          "growth": "+1.3万"
+          "title": "全民末日：我能自选SSS级天赋",
+          "growth": "+1.5万"
         },
         {
           "title": "一秒一子弹：我在末世做军火商",
-          "growth": "+1.0万"
+          "growth": "+1.3万"
         },
         {
-          "title": "异星开拓：从一张开拓者卡开始",
-          "growth": "+1.0万"
+          "title": "宇宙数据化，开局觉醒无限复活",
+          "growth": "+1.1万"
         }
       ],
-      "summary": "新增1本上榜；1本掉出（《公路求生？重生后我直接起飞》）；《全球入侵：开局剧透丧尸危机》排名上升+6位；《宇宙数据化，开局觉醒无限复活》阅读量+1.3万。"
+      "summary": "新增2本上榜；2本掉出（《爽翻天！公路求生带着十九个校花》、《列车求生，我天选福星》）；《全民末日：我能自选SSS级天赋》排名上升+4位；《全民末日：我能自选SSS级天赋》阅读量+1.5万。"
     },
     "books": [
       {
         "title": "废土黑作坊：从造一级弹开始",
         "author": "狗儿书",
-        "reads": "54.3万",
+        "reads": "55万",
         "intro": "穿越废土，苏默成了沧墟方舟最底层的游民。 本以为能靠着搓子弹的手艺安安稳稳过日子，却不想搓着搓着，就成了整座方舟最大的军火商。 “我真没想搞这么大，就是专心搓点子弹而已。”",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od602e347311eeb40b752cb5d80db1ab1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=Or%2FHpW09o%2Fqh6pON%2FTIX2Srx2IY%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od602e347311eeb40b752cb5d80db1ab1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=sMz96Uv%2BERonXmWDfaWt1L6OcVc%3D",
         "url": "https://fanqienovel.com/page/7681239069396831294",
         "keywords": [
           "废土"
@@ -75,22 +80,22 @@
       {
         "title": "海洋求生？可我是人鱼公主！",
         "author": "螃蟹9527",
-        "reads": "32.5万",
+        "reads": "33万",
         "intro": "【性转+末世+海洋求生+变百+半无敌+爽文+轻松】 　　海洋求生？ 　　可是初始天赋是变成一条美人鱼哎！ 　　什么求生，跟回家一样！ 　　身为海的女儿，想要什么自己要。 　　常人难以指染的生命禁区，叶沃遛个弯就过去了。 　　恐怖的深海巨兽，叶沃打个招呼就把宝箱拿走了。 　　滔天的海啸是她的冲浪板。 　　无尽的深渊是她的后花园。 　　极尽升华的末日天灾更是她的玩具堆。 　　…… 　　木筏求生？ 　　当别人还在思考怎么把木筏做大做强，心惊胆颤地祈求风暴不要来临的时候。 　　叶沃一把推开木筏： 　　“让暴风雨，来得更猛烈些吧！”",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2odb0c8c26f7934fc60672cae15f7b8dda~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=UQYwII9kXsj90%2FEKv%2FHkRHrrEZM%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2odb0c8c26f7934fc60672cae15f7b8dda~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=7AJnzgvvcVCUu6ivrQ4fBkSWdZI%3D",
         "url": "https://fanqienovel.com/page/7689313853187836953",
         "keywords": [
-          "无敌",
+          "天灾",
           "末世",
-          "天灾"
+          "无敌"
         ]
       },
       {
         "title": "我都觉醒神明序列了系统才来？",
         "author": "云清流风",
-        "reads": "29.1万",
+        "reads": "29.5万",
         "intro": "【末日迁徙求生】【神明序列】【房车升级进化】【多女主爽文】 末日降临，诡异横行，城市沦陷，人类幸存者不得已组成车队，开始了末日大迁徙。 而在末日降临的同时，人类同样觉醒了序列能力，被称为序列超凡者。 林夜则在一开始便觉醒了神明序列005，血祖。 但碍于他谨慎的性格，开局硬生生装成普通人苟了半个月，靠吸人血液升级变强，好不容易把神性之力磨到10%，解锁了神明权柄序列能力：不朽之躯。不死不灭，只要一滴血尚存，便可复活再生。 在他终于不用装孙子的时候，结果系统来了。 “叮！杀戮无限进化系统激活成功！” 林夜：？？？ 老子都觉醒神明序列了系统才来？要你有何用？ “叮！赠送新手大礼包，SSS天赋无限火力、洞察之眼、杀戮点500。” 林夜：“……真香。” 从此，末日迁徙逃亡路上画风突变。 别人逃亡，他猎杀。 别人躲诡异，他追着诡异跑。 别人升级靠诡晶，他靠吸血。 更离谱的是，他发现系统可以万物无限进化。 【普通房车】→【豪华装甲房车】……【天空之城】 【小黑狗】→【镇狱犬】 【神明序列005】→【源血神王】 【简介无力，请入书一观】",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2obc176da8340d06fd8308468f1f001f93~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=PFEpCfPJr8Cp%2Bgu42fe56DSmbK8%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2obc176da8340d06fd8308468f1f001f93~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=0eY7TfoLR7L4Vf2T3A4hzd%2FU8SQ%3D",
         "url": "https://fanqienovel.com/page/7692323258426739736",
         "keywords": [
           "系统"
@@ -99,67 +104,33 @@
       {
         "title": "一秒一子弹：我在末世做军火商",
         "author": "李奢侈",
-        "reads": "16.3万",
+        "reads": "17.6万",
         "intro": "重生末世废土，季常成了避难所最底层难民。 好在重生后，获得百器图鉴录。 只要提供基础材料，一秒即可生产一发子弹。 在军火匮乏的末世，火力即是真理。 “孩儿们，我真没有火力不足恐惧症！” “另外，规矩讲清楚，英雄不问出处，子弹不问开路。懂？”",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o47fc9f26e5258ea3567852fa22049321~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=P8aE1yIu%2BlJCErNhVueH3g%2Fwho8%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o47fc9f26e5258ea3567852fa22049321~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=4TT3pGyB%2FYDh7%2BNGrV%2B4vsxDKj8%3D",
         "url": "https://fanqienovel.com/page/7695640488103136281",
         "keywords": [
-          "重生",
+          "末世",
           "废土",
-          "末世"
+          "重生"
         ]
       },
       {
         "title": "异星开拓：从一张开拓者卡开始",
         "author": "万顷春风",
-        "reads": "14万",
+        "reads": "14.7万",
         "intro": "【星际 + 卡牌 + 升级流 + 开拓 + 黑蚀 + 单主角 + 慢热】 洛星渊穿越了，胎穿到星际时代十八年。 这是一个有超凡力量的世界：人类以卡牌为媒介，觉醒职业卡牌，才能走上超凡之路。 九百多年前，名为黑蚀的存在入侵。人类靠突然出现的卡牌体系把它逼退，从此踏上星海。 洛星渊觉醒的是一张特殊的职业卡：【开拓者】。 理论上它能无限成长。别的职业想晋升，要凑材料、找路子、跑流程；开拓者只要完成“开拓奇遇”就能累积蜕变进度。听起来简单，做起来要命：奇遇随缘触发，有人一年碰不上一次，遇到了也有可能是无法完成的。 所以它被人叫做鸡肋。开局白卡，前期太弱。 前辈们的选择很统一：升到超凡，绑一张新卡，把开拓者当副职业。 好在，身为异世界而来的开拓者，他觉醒了X级天赋【异世之旅】。 别人需要随缘的开拓奇遇，他每周能固定触发三次。经验是普通开拓者的三倍，蜕变进度是两倍。 很多年后，有人问他，一张初始只有白色的开拓者卡，怎么能获得这种成就。 他笑了笑：“抱歉，我根本就没关过。” 设定一览 卡牌品质：灰、白、绿、蓝、紫、橙、红、金、彩 天赋等级：E、D、C、B、A、S、SS、SSS、X 卡牌星级：1~9 星 境界：超凡、星火、王座、圣域",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o62c320c97306e94b6fa6cc383aaeeb69~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=MPB6UftKeoQhOgQ1zoepWOh86j0%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o62c320c97306e94b6fa6cc383aaeeb69~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=eyf2fNun90AfaQ6HaUA2bBMGTGo%3D",
         "url": "https://fanqienovel.com/page/7691171239158631448",
         "keywords": [
           "星际"
         ]
       },
       {
-        "title": "公路求生：开启宝箱品质永远加3",
-        "author": "爱吃汤圆的猴子",
-        "reads": "13.6万",
-        "intro": "欢迎各位求生者来到公路求生游戏！ 想要活下去，就要牢记求生公路规则！ （1）每个求生者都会绑定一辆载具作为交通工具。 （2）求生公路将是求生者的安全区，但也并非绝对安全。 （3）载具是你的安全区，未经允许，无人能够进入。当然它不是坚不可摧的。 （4）求生公路上会有散落的宝箱，请求生者们尽量收集，这可是生存下去的关键！ （5）宝箱里不光有物资，周围可能还存在着未知的风险，请谨慎面对每一个宝箱。 （6）在游戏中以任何方式死亡，都将真正的死亡！ （7）尽可能升级你的车辆，更高级的载具能帮助你抵御更多的危险。 （8）求生公路两边的荒漠不受规则限制，那里有大量的危险但也有丰富的资源。 求生公路第一条铁律：千万不要轻易离开公路，千万不要长时间待在原地，不然你会后悔的。",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od11889390778bb9e9e4f95e8e94858b5~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=xR0ccjlxS5YpmjArXCl%2BZgx7l3A%3D",
-        "url": "https://fanqienovel.com/page/7694122012561640473",
-        "keywords": []
-      },
-      {
-        "title": "末日觉醒，每天一次超级四选一",
-        "author": "风雨西楼",
-        "reads": "13.4万",
-        "intro": "【纯手打】+【末世】+【异能】+【超级四选一】+【无女主】+【小队成长】+【杀伐果断】 林川，一个平平无奇的大学生，却发现自己兄弟是个重生者。 他说末世要来了，结果当夜变异兽就出现，人类死伤惨重。 实力恐怖的变异兽成为人类的灾难。 末世下的人性，更是人类生存的噩梦。 所幸林川觉醒特殊异能【超级四选一】！ 每日凌晨刷新一次选择机会，机会不可留存，必须当日使用！ 【1、情报：关于南城的一条情报！】 【2、物品：十支初级体力恢复药剂！】 【3、技能：中级・锻造精通！】 【4、异能：S级异能・雷霆赦令！】 没有资源？那就抢！ 超凡武器？每日异能白送！ 异能？我全身都是异能！ 凭借异能的特殊，林川组建小队，与小队成员在末世中爆杀一切，打造末世最强小队！",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6594b267094fa47f12689d82275ff908~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=xAhCLCtbV6WoK23FoHUEE0i4j8E%3D",
-        "url": "https://fanqienovel.com/page/7681181706686041150",
-        "keywords": [
-          "重生",
-          "异能",
-          "末世"
-        ]
-      },
-      {
-        "title": "狂病：从获得黑色守望开始",
-        "author": "大四方",
-        "reads": "13.1万",
-        "intro": "评分刚出 【末日】【狂病】【绿色流感】【非异能】【爆兵】【基地建设】 平平无奇的社会牛马林正。 在一场与大货车的相撞中，意外获得了系统，但似乎这个系统和传统的不一样？ 从系统告诉他的信息得知，狂病将在两个月后爆发。 “两个月，那我岂不是有准备的时间了？” 黑色守望、解放军、海军陆战队、美国陆军……全部启动！ 于是乎，一场惊心动魄的围城计划便如火如荼的展开",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o108b27d01ea26d5792e86d6776301455~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=mOncnMM88UVmeGj%2BqryLzwdMF5U%3D",
-        "url": "https://fanqienovel.com/page/7686882815165598782",
-        "keywords": [
-          "异能",
-          "系统"
-        ]
-      },
-      {
         "title": "宇宙数据化，开局觉醒无限复活",
         "author": "三天吃十吨",
-        "reads": "12.9万",
+        "reads": "14万",
         "intro": "陆阳穿越到四千多年后的宇宙数据化时代。 宇宙万族，都可以觉醒为职业者。 生活职业者为文明提供强大的后勤保障和科技辅助，建造星河舰队和行星堡垒。 战斗职业者为文明开疆拓土的先锋，战力之强，甚至可以一击覆灭数光年星空！ 其中，部分战斗职业者能觉醒属于自己的灵魂天赋，强弱不一！ 人类从蓝星崛起，经历四千年血与火，成为了银河系四大顶尖种族之一。 不过相比于整个宇宙，人类依旧渺小无比，如履薄冰。 所有年轻人都希望能觉醒为一名强大的战斗职业者，为人类开疆拓土，书写历史！ 而就在这个万族争霸的时代，陆阳觉醒为了一名战士。 刚觉醒的他，开局灵魂天赋三选一： 【战神（棱彩神话）】：掌握所有战士被动技能…… 【死亡之触（棱彩神话）】：攻击有几率直接击杀目标…… 【不朽（超限·棱彩神话）】：免疫即死攻击，死亡后瞬间复活，无条件限制，无次数限制。 看着三个天赋，陆阳觉得自己好像要无敌了。 他直接选择了超限棱彩神话天赋【不朽】，从此无限复活！ 不仅如此，每升一级还能再获得一个天赋，每升一阶选择的天赋保底棱彩神话级！ ………… 当陆阳突破百级，成为永恒真神，看着自己面板上密密麻麻的棱彩神话级天赋，轻轻叹了口气：“怎么一个能打的都没有？”",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o509a218becded2d09e525664985b0254~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=%2B%2Bmb%2F%2FLvg5DVIV3vuy18EQTzYLI%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o509a218becded2d09e525664985b0254~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=zdw9zfWovhcbaThoz1SwLtQjwXk%3D",
         "url": "https://fanqienovel.com/page/7659383286841494552",
         "keywords": [
           "无敌",
@@ -167,51 +138,72 @@
         ]
       },
       {
-        "title": "暴雨末世，开局异能九选二",
-        "author": "呱呱发财",
-        "reads": "12.2万",
-        "intro": "暴雨+末世+异能+空间+水鬼+杀伐果断+不圣母 两极冰川融化加持续特大暴雨，导致全球百分之九十的陆地被海水淹没。 冰封万年的远古病毒被释放，人类、动物的尸体泡水超过一小时，会变异成无意识只有嗜血本能的水鬼。 就读大学的刘枫，提前得知末世消息，开局获得异能九选二的机会，果断选择时空异能、随身小世界。 没有重生，不知道末世灾难怎么办？ 没关系，重生归来的富家千金沈梦瑶为求抱大腿，已经找上门来了！ 没有钱囤物资怎么办？ 没关系，富家千金已经囤好了。 没有庇护所怎么办？ 没关系，富家千金已经修建好了。 每日坚持更新三章。 【提示：平行世界，请勿带入现实。】 简介无力，请看正文。",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6e269d64605aac8e75cfc1fdc63d7b7b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=MPjHLbPxoC4X%2Bo4L9vqUKGjlWec%3D",
-        "url": "https://fanqienovel.com/page/7682467696239184921",
-        "keywords": [
-          "重生",
-          "异能",
-          "空间",
-          "远古",
-          "末世"
-        ]
-      },
-      {
         "title": "全民末日：我能自选SSS级天赋",
         "author": "七月飞星",
-        "reads": "12万",
+        "reads": "13.5万",
         "intro": "【隐藏特权+开局无敌+无双割草+危机预告+全民求生】 2037年，末日游戏入侵了蓝星，顷刻间城市沦陷，秩序崩塌，无数人在这场浩劫中流离失所。 但苏玄却意外觉醒了金手指，得到了来自未来的危机预告，提醒他错过的各种重大机缘和死亡危机！ 别人还在末日中艰难起步挣扎时，苏玄开局就通过隐藏彩蛋解锁了唯一封弊者权限。 当其他人还在抱怨自己的天赋等级太低，高等天赋堪比中彩票时，苏玄却能在各种SSS级天赋中任意挑选！ 当其他人还在苦苦练级，获取资源时，苏玄从容启动十倍爆率特权，轻松取得旁人遥不可及的神话装备。 于是……危机四伏的末世里，苏玄闲庭信步，早已在不知不觉间登临了末日王座！",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o94dfb8e64210a0ef2f9746c1b7a47e7d~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=G7es6WhsN7udI0ahxvz4y08lOTs%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o94dfb8e64210a0ef2f9746c1b7a47e7d~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=s4F6c4gDPoPN5zycKAnkfTT9%2FU0%3D",
         "url": "https://fanqienovel.com/page/7695736623958330430",
         "keywords": [
-          "无敌",
-          "末世"
+          "末世",
+          "无敌"
         ]
       },
       {
-        "title": "爽翻天！公路求生带着十九个校花",
-        "author": "骑猪去斩龙",
-        "reads": "11.2万",
-        "intro": "【公路求生+房车升级+无敌流+全员美女+轻松无毒】 　　公路求生降临，曹昆与全班女同学被困房车，开局全员坦诚相见！ 　　面对外面的丧尸潮与物资匮乏，曹昆挺身而出，觉醒震惊系统！ 　　从此开启疯狂带飞模式。 　　搜刮盲盒衣物，升级水珠收集器，打造无敌机械傀儡！ 　　别人还在为了几块木头互相厮杀，曹昆已经靠着交易市场赚得盆满钵满。 　　没有恶心的绿茶反派，没有勾心斗角的内讧，只有一群颜值爆表、绝对服从的极品红颜知己！",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oe14ca7e23c3a72e8764fb6bf1bd3e5d5~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=d1SedIyM6Uxz1vTam%2F16Q5TH7qk%3D",
-        "url": "https://fanqienovel.com/page/7698313313700039705",
+        "title": "末日觉醒，每天一次超级四选一",
+        "author": "风雨西楼",
+        "reads": "13.3万",
+        "intro": "【纯手打】+【末世】+【异能】+【超级四选一】+【无女主】+【小队成长】+【杀伐果断】 林川，一个平平无奇的大学生，却发现自己兄弟是个重生者。 他说末世要来了，结果当夜变异兽就出现，人类死伤惨重。 实力恐怖的变异兽成为人类的灾难。 末世下的人性，更是人类生存的噩梦。 所幸林川觉醒特殊异能【超级四选一】！ 每日凌晨刷新一次选择机会，机会不可留存，必须当日使用！ 【1、情报：关于南城的一条情报！】 【2、物品：十支初级体力恢复药剂！】 【3、技能：中级・锻造精通！】 【4、异能：S级异能・雷霆赦令！】 没有资源？那就抢！ 超凡武器？每日异能白送！ 异能？我全身都是异能！ 凭借异能的特殊，林川组建小队，与小队成员在末世中爆杀一切，打造末世最强小队！",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6594b267094fa47f12689d82275ff908~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=1lMYmiTLnHZH2nPTquAEGVZg0H0%3D",
+        "url": "https://fanqienovel.com/page/7681181706686041150",
         "keywords": [
-          "反派",
+          "异能",
+          "末世",
+          "重生"
+        ]
+      },
+      {
+        "title": "公路求生：开启宝箱品质永远加3",
+        "author": "爱吃汤圆的猴子",
+        "reads": "12.9万",
+        "intro": "欢迎各位求生者来到公路求生游戏！ 想要活下去，就要牢记求生公路规则！ （1）每个求生者都会绑定一辆载具作为交通工具。 （2）求生公路将是求生者的安全区，但也并非绝对安全。 （3）载具是你的安全区，未经允许，无人能够进入。当然它不是坚不可摧的。 （4）求生公路上会有散落的宝箱，请求生者们尽量收集，这可是生存下去的关键！ （5）宝箱里不光有物资，周围可能还存在着未知的风险，请谨慎面对每一个宝箱。 （6）在游戏中以任何方式死亡，都将真正的死亡！ （7）尽可能升级你的车辆，更高级的载具能帮助你抵御更多的危险。 （8）求生公路两边的荒漠不受规则限制，那里有大量的危险但也有丰富的资源。 求生公路第一条铁律：千万不要轻易离开公路，千万不要长时间待在原地，不然你会后悔的。",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od11889390778bb9e9e4f95e8e94858b5~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=hVBf7aADf55ZK5Gq8oO%2Fih7N0NE%3D",
+        "url": "https://fanqienovel.com/page/7694122012561640473",
+        "keywords": []
+      },
+      {
+        "title": "狂病：从获得黑色守望开始",
+        "author": "大四方",
+        "reads": "12.8万",
+        "intro": "评分刚出 【末日】【狂病】【绿色流感】【非异能】【爆兵】【基地建设】 平平无奇的社会牛马林正。 在一场与大货车的相撞中，意外获得了系统，但似乎这个系统和传统的不一样？ 从系统告诉他的信息得知，狂病将在两个月后爆发。 “两个月，那我岂不是有准备的时间了？” 黑色守望、解放军、海军陆战队、美国陆军……全部启动！ 于是乎，一场惊心动魄的围城计划便如火如荼的展开",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o108b27d01ea26d5792e86d6776301455~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=5JePvhwHmEUznFYCqPmL3afHRqM%3D",
+        "url": "https://fanqienovel.com/page/7686882815165598782",
+        "keywords": [
           "系统",
-          "无敌"
+          "异能"
+        ]
+      },
+      {
+        "title": "暴雨末世，开局异能九选二",
+        "author": "呱呱发财",
+        "reads": "11.2万",
+        "intro": "暴雨+末世+异能+空间+水鬼+杀伐果断+不圣母 两极冰川融化加持续特大暴雨，导致全球百分之九十的陆地被海水淹没。 冰封万年的远古病毒被释放，人类、动物的尸体泡水超过一小时，会变异成无意识只有嗜血本能的水鬼。 就读大学的刘枫，提前得知末世消息，开局获得异能九选二的机会，果断选择时空异能、随身小世界。 没有重生，不知道末世灾难怎么办？ 没关系，重生归来的富家千金沈梦瑶为求抱大腿，已经找上门来了！ 没有钱囤物资怎么办？ 没关系，富家千金已经囤好了。 没有庇护所怎么办？ 没关系，富家千金已经修建好了。 每日坚持更新三章。 【提示：平行世界，请勿带入现实。】 简介无力，请看正文。",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6e269d64605aac8e75cfc1fdc63d7b7b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=LFPNbxNnNHAFiAN4hk7zHiN76Os%3D",
+        "url": "https://fanqienovel.com/page/7682467696239184921",
+        "keywords": [
+          "远古",
+          "异能",
+          "末世",
+          "重生",
+          "空间"
         ]
       },
       {
         "title": "末世轮盘：开局指定抽取序列魔药",
         "author": "夜阑我听风吹雨",
-        "reads": "9.6万",
+        "reads": "9.9万",
         "intro": "【轮盘末日+诡异降临+寿命/晶核抽取+心狠手辣】 诡异灾变降临，无尽怪物席卷大地，旧时代文明轰然崩塌。 伴随着怪物一同现世的，还有遍布世界的命运轮盘。 世人想要获得超凡力量，只有两条路：献祭自身寿命，或是猎杀怪物，从怪物头颅中挖出晶核，投入轮盘进行抽取。 轮盘奖励包罗万象：序列魔药、超凡职业、诡异奇物、珍稀物资应有尽有。 但抽取全凭运气。 有人耗尽十年寿命，只换来一包方便面；有人拼死搏杀怪物，抽到毫无用处的破烂。 所有人都在赌命，赌那渺茫的一线超凡希望。 而萧禹觉醒了独一无二的能力——指定结果。 不止轮盘抽卡可以锁定目标，一切随机事件，他都能选定自己想要的结局。 别人赌命碰运气，他想要什么，就能拿到什么。 可命运的馈赠，从来都暗藏代价。 怪物环伺，人心叵测，轮盘背后藏着更深层的灾变秘密。 当所有人拼命在末日挣扎求生，萧禹手握指定一切随机结果的力量，在废墟之中，踏出一条属于自己的超凡之路。",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6d3f7dd61e0087e348de14f171af77e9~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=FSXZvPAZM9%2BQKpOowvzBQhACA9A%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6d3f7dd61e0087e348de14f171af77e9~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=QfI2LNALb4iErtcqGmO4vQA4wy4%3D",
         "url": "https://fanqienovel.com/page/7690969468792474649",
         "keywords": [
           "末世"
@@ -222,87 +214,123 @@
         "author": "北沐萧涵",
         "reads": "8.9万",
         "intro": "【星际发展＋举国跑路＋腹黑兔子＋第四天灾】 蓝星历 2033 年，全球地表温度超 220 ℃ 地表，已经沦为一片炼狱！ 全球统一意见，纷纷开始发展地下城。 上一世，张小北作为火种计划中的一员。 获得了进入了休眠仓前往系外寻找新家园的资格。 只是人类的科技进步，还是没能赶上太阳氦闪的速度... 这一世，他重生了。 回到了那个高温末日刚开始的蓝星！ 伴随着他一起回来的，还有一个来自九级文明的神秘系统。 在系统的帮助下，他开启了人类自救的新征程... 鹰酱：我们的航天技术，才是世界第一！ 大毛：放你娘个屁！老子才是！ 脚盆鸡：杀鸡给给！！！ 兔子：喂喂喂？你们在说什么？我在柯伊伯带采矿呢，信号不太好... 鹰酱：？？？ 大毛：？？？ 脚盆鸡：？？？ 兔子：先不聊了，我们发现一处宜居星球，以后漂流瓶联系吧... N 年后，银河系矩尺座悬臂中心。 一颗蔚蓝色的星球再次复刻而出！ 这里，成为了整个银河系的贸易经济中心！ 张小北：我们只是一个热爱和平的发展中文明！ 【报告！三角座星系正在发起对我们边境的掠夺战！】 张小北：这怎么能允许呢？ 通知第 11073 集团军！ 出征三角座星系！ 一个不留！！！",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc76a13b78203df3ffe3ffcff45b92ee8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=gVt1zoh%2FlCGjrnO7%2B9Q9GM5Erto%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc76a13b78203df3ffe3ffcff45b92ee8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=9vmJBmXAq2tbyN%2BpBMrmz2PBNyw%3D",
         "url": "https://fanqienovel.com/page/7690593006243564569",
         "keywords": [
-          "重生",
+          "天灾",
           "系统",
           "星际",
-          "天灾"
+          "重生"
         ]
       },
       {
         "title": "末世：晒太阳变强，开局祖国人！",
         "author": "直白",
-        "reads": "7.7万",
+        "reads": "8.3万",
         "intro": "【末日天灾、真实求生、非无脑爽文、成长类、慢热、群像，杀伐果断、智商在线、求生、全球进化、灵气复苏、异界入侵】 　　十八岁生日当天，宁川成功激活日冕进化系统，只要每天晒晒太阳就能无限叠加四维属性，本想找座海岛安稳躺平当个阿祖，不料暗红血雾瞬间席卷全球！ 　　整颗蓝星面积暴涨百倍，通讯彻底断绝，动植物疯狂变异，百米巨木拔地而起，昔日同窗化作嗜血丧尸，更有域外邪神于迷雾深处窥伺人间！ 　　当其他幸存者还在为半块发霉面包跪地摇尾、为一枚低阶晶核争得头破血流时，宁川已经在天台晒满三小时太阳，双眸迸发五千度赤红热视线，一拳轰穿变异兽王胸膛，靠着猎杀怪物爆出的海量能量点疯狂加点！ 　　圣母道德绑架？单手拎出天台喂丧尸！ 　　跳梁小丑聚众逼宫？热视线横扫十颗人头落地！ 　　在这秩序崩塌的残酷末日，宁川凌空傲立于尸山血海之上：“顺我者昌，逆我者亡，谁敢挡我的路，神明也一并屠给你看！” 　　从祖国人到钢铁大超，再到白银大超、金色大超、至尊大超、思维大超、终极大超！ 　　当域外邪神真身降临蓝星的那一刻，面对化身终极大超的宁川，究竟谁才是真正的神明？",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc720398b7d463fc5f12e92413ecd37a3~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=KhCUMqFMwmfTBt6krlhTuGQhszU%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc720398b7d463fc5f12e92413ecd37a3~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=YM1Oqk6WD%2FfV%2BGEm%2FkxXviUaBkw%3D",
         "url": "https://fanqienovel.com/page/7699115382749006872",
         "keywords": [
+          "天灾",
           "系统",
-          "末世",
-          "天灾"
+          "末世"
         ]
-      },
-      {
-        "title": "刚成银河之主，你让我星海求生？",
-        "author": "温酒剑客",
-        "reads": "7.3万",
-        "intro": "【帝皇】+【暴爽】+【无敌文】+【银河帝国】+【星海求生】+【探索宇宙】 黎元穿越星际时代。 成为了一名弱小的深空流浪者。 他没有放弃，努力在星海求生，最终历经数万年打拼，终于屹立在银河之巅，创立银河帝国，成为银河之主。 当他坐在象征无上权力的银河王座上。 接受亿万文明朝拜。 打算好好享受享受生活时。 【叮——】 【星海求生系统绑定成功！】 【任务1：帮助一颗流浪星球寻找新的家园。】 【任务2：解决三体星与蓝白星的矛盾。】 【任务3：解救一名困在地心深处的少女。】 【任务4：带领反叛军掀翻腐朽的银河帝国。】 【……】 “不是？我都银河之主了，你让我星海求生？” “还有……推翻腐朽的银河帝国什么鬼？” “我推翻我自己？” “这任务简直倒反天罡！” ————————",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o1e7d8d64c76ebce8993f9b4aa8fb7ccc~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=5UNg%2BYBH6oCu97JcmO8mqw5Z3Ww%3D",
-        "url": "https://fanqienovel.com/page/7694974517961051160",
-        "keywords": [
-          "系统",
-          "无敌",
-          "星际"
-        ]
-      },
-      {
-        "title": "美利坚双穿末日，我不吃牛肉",
-        "author": "一夜暴富啊啊啊",
-        "reads": "6.8万",
-        "intro": "【两界穿梭】、【为所欲为】、【不圣母】、【钱、权、人】 张汉克在美利坚流浪，发现自己可以穿越到另外一个丧尸横行的末日世界。 而且可以携带物资穿越。 末日最缺的是什么？食物，物资，武器。 一包泡面换一块黄金，一瓶矿泉水就能让人疯狂。 现代最值钱的是什么？ 黄金、古董、基因药剂、钱、权、武力？ 自此，张汉克便开始了两界倒爷之路。 丧尸世界，某超一流超模： 只要一个面包，我可以满足你任何要求。 美利坚： 张汉克左手超模，右手雪茄，看着面前下一届美利坚话事人，道： “你甚至都不愿意称为为一声教父。” …… 以上，就是全球话事人张汉克的人生经历。 但这些都是后话，当下有一个难题摆在张汉克面前。 那就是，睡了黑帮的老婆，被黑帮持枪找上门应该怎么脱身？ 在线等，挺急的！！",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o11a30eef2e947665c6773b2db662f528~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=2rYqpfxELJUc3WB32STEeFbfgHY%3D",
-        "url": "https://fanqienovel.com/page/7694128280223353881",
-        "keywords": []
       },
       {
         "title": "电梯搜打撤：只有我有安全箱",
         "author": "阿啦噗噗东莎",
-        "reads": "6.7万",
+        "reads": "7万",
         "intro": "【系统、搜打撤、无限流、种田建设、爽文】 全人类穿越到狭窄的电梯世界中，你需要进入楼层世界搜刮物资撤离后扩建你的电梯，在楼层世界里不会真正的死亡，但你会失去所有带入的装备和武器。 为了生存，普通人只敢前往低危险的楼层里小心翼翼地刮地皮，白天通过卖垃圾换取一些面包和水源苟活，晚上缩在不到两平米的电梯里瑟瑟发抖。 丧尸、舔食者、三角头男、异形......形形色色的楼层世界里，人类在恐惧中互相猜忌，出卖和背刺更是家常便饭，所有人胆战心惊地在黑暗中探索，除了...... “我踏马来了！” 浣熊市警察局，在所有人震惊的目光中，李晋一个鱼跃跳进了尸潮，顶着丧尸的撕咬，硬生生翻墙闯了进去。 这野人魔了？！ 朝身后的众人挥了挥手，李晋潇洒地推开警局的大门。 他的目标很简单，把裤裆塞满就行。",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o4ea2bf6146abea1309515c5faf4d5d72~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=jj6PJiBS6RDtwk3%2Fm0EKtTs6Kvs%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o4ea2bf6146abea1309515c5faf4d5d72~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=ycpLJ%2FouG183Z1Erq7n3aHyI9w4%3D",
         "url": "https://fanqienovel.com/page/7679342592051399705",
         "keywords": [
-          "无限流",
           "系统",
-          "种田"
+          "种田",
+          "无限流"
         ]
       },
       {
         "title": "全球入侵：开局剧透丧尸危机",
         "author": "皮皮虾十八号",
-        "reads": "6万",
+        "reads": "6.7万",
         "intro": "“丧尸？巨人？你们也配入侵地球？” 张小白看着手机冷笑。 人类就合该让全宇宙颤抖—— “这是什么？” “《丧尸生物电站建设与运营管理规范（GB/ZQ 2507-2026）》，第一版！ ” …… “进击的巨人世界快要来了，记住！我们的目标是抢运艾族人口！” “巨人比丧尸更值钱！” …… “华夏的巨人蒸汽发电站已稳定运行300个工作日无事故，隔壁美利坚地鸣蒸汽发电站在照亮自由女神像，你们这帮废物还要多久才完工？” “长官，我们掳掠的艾族人口一直在抗议这种不人道的发电方式！”",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oadd0d9ef456bba52615f127ed273b6f6~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=rmKillwQ5zSY7VbvvK61TdN%2Frys%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oadd0d9ef456bba52615f127ed273b6f6~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=ZmWN%2Fr4JxeOp8C28uU66USp2az8%3D",
         "url": "https://fanqienovel.com/page/7514505449127808025",
         "keywords": []
       },
       {
+        "title": "美利坚双穿末日，我不吃牛肉",
+        "author": "一夜暴富啊啊啊",
+        "reads": "6.6万",
+        "intro": "【两界穿梭】、【为所欲为】、【不圣母】、【钱、权、人】 张汉克在美利坚流浪，发现自己可以穿越到另外一个丧尸横行的末日世界。 而且可以携带物资穿越。 末日最缺的是什么？食物，物资，武器。 一包泡面换一块黄金，一瓶矿泉水就能让人疯狂。 现代最值钱的是什么？ 黄金、古董、基因药剂、钱、权、武力？ 自此，张汉克便开始了两界倒爷之路。 丧尸世界，某超一流超模： 只要一个面包，我可以满足你任何要求。 美利坚： 张汉克左手超模，右手雪茄，看着面前下一届美利坚话事人，道： “你甚至都不愿意称为为一声教父。” …… 以上，就是全球话事人张汉克的人生经历。 但这些都是后话，当下有一个难题摆在张汉克面前。 那就是，睡了黑帮的老婆，被黑帮持枪找上门应该怎么脱身？ 在线等，挺急的！！",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o11a30eef2e947665c6773b2db662f528~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=3b3X1JbmpIm8Er7fdI89fSirHQc%3D",
+        "url": "https://fanqienovel.com/page/7694128280223353881",
+        "keywords": []
+      },
+      {
+        "title": "刚成银河之主，你让我星海求生？",
+        "author": "温酒剑客",
+        "reads": "6.6万",
+        "intro": "【帝皇】+【暴爽】+【无敌文】+【银河帝国】+【星海求生】+【探索宇宙】 黎元穿越星际时代。 成为了一名弱小的深空流浪者。 他没有放弃，努力在星海求生，最终历经数万年打拼，终于屹立在银河之巅，创立银河帝国，成为银河之主。 当他坐在象征无上权力的银河王座上。 接受亿万文明朝拜。 打算好好享受享受生活时。 【叮——】 【星海求生系统绑定成功！】 【任务1：帮助一颗流浪星球寻找新的家园。】 【任务2：解决三体星与蓝白星的矛盾。】 【任务3：解救一名困在地心深处的少女。】 【任务4：带领反叛军掀翻腐朽的银河帝国。】 【……】 “不是？我都银河之主了，你让我星海求生？” “还有……推翻腐朽的银河帝国什么鬼？” “我推翻我自己？” “这任务简直倒反天罡！” ————————",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o1e7d8d64c76ebce8993f9b4aa8fb7ccc~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=wsOFrbObahdk5GrKWrhUeR2b4Tg%3D",
+        "url": "https://fanqienovel.com/page/7694974517961051160",
+        "keywords": [
+          "系统",
+          "星际",
+          "无敌"
+        ]
+      },
+      {
         "title": "副本求生：我的天赋是每日签到",
         "author": "我充钱了是VIP",
-        "reads": "6万",
+        "reads": "5.9万",
         "intro": "【综漫】【求生】【爽文】 一朝穿越到二次元世界，然而迎来的不是美好的二次元生活而是现实的毒打。 为了打破阶级只能卷生卷死的考上东大得到上流社会的入场券。 结果转眼的就被拉到了副本求生游戏之中。 所幸这次得到命运眷顾。 觉醒天赋每日签到，并且还获得了一辆房车作为载具。",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o055aed2c104359273cf5aa51d7bb7501~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=a1pFda0FzkJb9YNHZzHKLaY%2FZps%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o055aed2c104359273cf5aa51d7bb7501~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=Bj7smlUoZ59JOB11Evh9U8aSQco%3D",
         "url": "https://fanqienovel.com/page/7695064162677836825",
         "keywords": []
       },
       {
+        "title": "全民木屋求生：我开局匹配姐妹花",
+        "author": "棋行者",
+        "reads": "5.9万",
+        "intro": "【求生+爽文+多女主+不圣母+传说天赋+新设定】 【全民木屋求生开启，正在随机匹配初始室友】 “完了，我分到三个壮汉寝室，要累死了！” “谁运气好分到女生了，羡慕哭！” 陆舟看着眼前的大学校花戚清岚，以及穿着兔子睡衣的校花妹妹戚小桃。 不由得陷入沉思。 熟人开局，指挥权直接到手！ ...... 更逆天的是初始天赋抽取。 别人抽到白色普通、绿色稀有，在荒野苦苦挣扎。 陆舟开局觉醒全服唯一的金色传说天赋【天道酬勤】！ 只要专注行动就能觉醒进度条，而且技能永不倒退！ 【砍树】升到神级，随手一斧就能召唤巨斧虚影，一斧子砍一片森林的见过没有？ 【挖矿】升到神级，每次挖矿暴击万倍！挖出一颗铁锭，暴击万倍，直接变成一万颗！ 【拳法】升到神级，每次挥拳将引动天地感应，一拳轰杀顶级凶兽！ ...... 不仅如此，姐姐戚清岚觉醒史诗级近战枪术，妹妹戚小桃觉醒史诗级治疗神技。 三人组队，直接化身无敌永动机。 别人还在为了一口冷水拼命厮杀。 陆舟已经买空了商城，升级顶级堡垒，物资堆积成山。",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od013fe69a7c35e83fad5737c37cae650~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=aB%2FR0P1hAjbobav6tlLetrvUtJU%3D",
+        "url": "https://fanqienovel.com/page/7695328622462110744",
+        "keywords": [
+          "无敌"
+        ]
+      },
+      {
+        "title": "诡异末世，开局一元秒杀雷之呼吸",
+        "author": "隔日三秋",
+        "reads": "5.6万",
+        "intro": "【诡异末世+升级爽文+超凡序列+一元秒杀系统+末日求生+杀伐果断】 诡异降临，血月当空，致命黑雾！ 江明开局激活一元秒杀系统！ 一元秒杀，日轮刀.鸣雷，附带雷之呼吸大圆满！ 一元秒杀，随身空间1万平，末日物资随便屯！ 一元秒杀，雷帝宝术，踏雷而行，诸诡辟易！ …… 雷霆手段，组建超凡者组织，旧日的诡异横行世界，他独掌文明的曙光！ （多女主，不圣母，不喜勿喷）",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2ob8be33109efbed41cf33ab1cd3fb81b8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=%2BEvzHPl%2FKrKCcfj1FoVhxZHxDz4%3D",
+        "url": "https://fanqienovel.com/page/7547564717036817432",
+        "keywords": [
+          "系统",
+          "末世",
+          "空间"
+        ]
+      },
+      {
+        "title": "黑雾降临：从猎人木屋开始求生",
+        "author": "山寻",
+        "reads": "5.5万",
+        "intro": "【全民求生】【建造庇护所】【种田】【囤货】【极端灾难】【驯化恶兽】【种植】 一觉醒来，全民穿越黑雾世界。 恶兽横行，诡异滋生，活下去成为奢侈品。 极端灾害频繁，生存物资匮乏，求生者为一口粮食淡水争斗杀戮。道德沦丧，法律消失，唯有庇护所是一片净土。 人类回归原始，一庇护所为核心，寻求一丝生机！",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oebdbfc7db322758ae89c77150f68d8b8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=vISR0s5emIJfqSWjx%2Bg2AON0kPw%3D",
+        "url": "https://fanqienovel.com/page/7696828414941989912",
+        "keywords": [
+          "囤货",
+          "种田"
+        ]
+      },
+      {
         "title": "序列熔炉：我在末日织界成神",
         "author": "盛世俗人",
-        "reads": "5.9万",
+        "reads": "5.5万",
         "intro": "【公路求生+末世+诡异+畸变体+动植物变异+超凡序列】 【杀伐果断+不圣母+多女】 穿越末世。 身前是肩高过人的畸变巨犬。 觉醒者的车灯已经远去。 沈阙成了车队的弃子、尾巴。 躺在排水沟里等死时，他捡到一个背包。 包里有一颗心脏。 【序列熔炉】 【检测到素材：精神之心（低阶）】 【是否熔炼？】 “熔”。 序列觉醒的沈阙死里逃生。 凭借【序列熔炉】熔炼万物。 奇物、超凡药剂、序列觉醒药剂，随手可得。 觉醒代价？奇物献祭？超凡药剂后遗症？ 沈阙表示：我不知道啊。 沈阙知道的是：他不圣母，不怯懦，不莽撞，还有残存的人性。 沈阙更知道：他要变强，他要杀穿末世，他要重见骄阳。 【织界序列】（精神系） 【能力：精神感知、念力掌控、精神附魔、精神印记、思想刻印……】",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oe96c4198d3aa1d5adf258ef2759e22b6~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=Hdj%2Bkt6oI6WY9K1qu3uxoaTcN2s%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oe96c4198d3aa1d5adf258ef2759e22b6~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=ufvweE1Z%2FePZIaLBiAknp5Bxick%3D",
         "url": "https://fanqienovel.com/page/7693886753911868478",
         "keywords": [
           "末世"
@@ -311,104 +339,79 @@
       {
         "title": "末世，我有一个藏身处",
         "author": "关将军与椰羊",
-        "reads": "5.9万",
+        "reads": "5.3万",
         "intro": "根据前线记者报道，本次主角穿越时有三名外籍人士遭到牵连，他们分别是：维亚切斯拉夫·巴兰尼科夫，安东·尤丁采夫，尼基塔·布亚诺夫。 让我们为三位外籍人士的不幸遭遇致以深刻的敬意，敬礼！",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2ob0e988a23313258145a8423f2e4456c5~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=h7o3PydDjG4314VuFw1MyY%2F%2BF2Q%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2ob0e988a23313258145a8423f2e4456c5~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=G4oK1nL3CC247NP2vJlrXS9G0hM%3D",
         "url": "https://fanqienovel.com/page/7690746663329090584",
         "keywords": [
           "末世"
         ]
       },
       {
-        "title": "黑雾降临：从猎人木屋开始求生",
-        "author": "山寻",
-        "reads": "5.6万",
-        "intro": "【全民求生】【建造庇护所】【种田】【囤货】【极端灾难】【驯化恶兽】【种植】 一觉醒来，全民穿越黑雾世界。 恶兽横行，诡异滋生，活下去成为奢侈品。 极端灾害频繁，生存物资匮乏，求生者为一口粮食淡水争斗杀戮。道德沦丧，法律消失，唯有庇护所是一片净土。 人类回归原始，一庇护所为核心，寻求一丝生机！",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oebdbfc7db322758ae89c77150f68d8b8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=186L5PZz76j1KqF67k3Fu2TBo5A%3D",
-        "url": "https://fanqienovel.com/page/7696828414941989912",
-        "keywords": [
-          "种田",
-          "囤货"
-        ]
-      },
-      {
-        "title": "全民求生！我觉醒了唯一序列幸运",
-        "author": "那就这样哦",
-        "reads": "5.3万",
-        "intro": "【末世】【全民选择】【求生】【序列】 随着一场红月降临，这个世界彻底乱了！ 后方吃人的怪物紧追不舍！但前方是否还有未知的危险在等着人类…… 有的人觉醒了非凡的能力，有了和怪物抗衡的资本！ 可普通人，只能靠着每日的非凡选择狼狈的活着…… 我叫李阳，觉醒了唯一序列天赋“幸运！”",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o755a6cc9dce97a0272c8976501d6825e~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=PuDXv%2F93pqi%2BHDPc%2FX77RtHnyGw%3D",
-        "url": "https://fanqienovel.com/page/7690513263737441305",
-        "keywords": [
-          "末世"
-        ]
-      },
-      {
-        "title": "诡异末世，开局一元秒杀雷之呼吸",
-        "author": "隔日三秋",
-        "reads": "5.1万",
-        "intro": "【诡异末世+升级爽文+超凡序列+一元秒杀系统+末日求生+杀伐果断】 诡异降临，血月当空，致命黑雾！ 江明开局激活一元秒杀系统！ 一元秒杀，日轮刀.鸣雷，附带雷之呼吸大圆满！ 一元秒杀，随身空间1万平，末日物资随便屯！ 一元秒杀，雷帝宝术，踏雷而行，诸诡辟易！ …… 雷霆手段，组建超凡者组织，旧日的诡异横行世界，他独掌文明的曙光！ （多女主，不圣母，不喜勿喷）",
-        "cover": "https://p9-reading-sign.fqnovelpic.com/novel-pic/p2ob8be33109efbed41cf33ab1cd3fb81b8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=M%2BmxriNTWgcRm%2Fh7uMF9YJXKFaE%3D",
-        "url": "https://fanqienovel.com/page/7547564717036817432",
-        "keywords": [
-          "空间",
-          "系统",
-          "末世"
-        ]
-      },
-      {
-        "title": "列车求生，我天选福星",
-        "author": "七斤八两三钱",
-        "reads": "4.7万",
-        "intro": "全球八十亿人被投放进列车求生世界，王大勇醒来时，身边只有九个美女。全车没水没粮，他还被当成危险人物关进储物间。 好在他觉醒SSS级海克斯科技：千立方静止空间、羁绊系统，每通过一座站台，还能抽取全新强化。别人抢半瓶水，他直接搬空仓库；别人啃发霉饼干，他躺在大床上吃自热火锅。 从此，王大勇不断搜刮站台、囤积物资、抽取强化、升级羁绊。美女们以为他的能力只是仓库，直到异兽围车、粮食断绝，王大勇掏出枪械、装甲和海克斯核心。 当其他列车还在为一块面包拼命时，他已经把自己的列车改造成了移动科技堡垒！",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o7dca6336193107c7a5704380613f1d39~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=Th7K5NmG%2FM5OaX5mm25tyreBG0A%3D",
-        "url": "https://fanqienovel.com/page/7690228212021873688",
-        "keywords": [
-          "空间",
-          "系统"
-        ]
-      },
-      {
         "title": "末世序列，开局合成奇物斩魄刀",
         "author": "厉害了炒饭",
-        "reads": "4.6万",
+        "reads": "4.9万",
         "intro": "（无Ai，纯手工） 【公路求生＋序列进化＋奇物合成+曹贼流】 全民降临末世公路，车外诡异横行，车内物资见底。 想活下去，就得寻找魔药，觉醒序列。 楚舟开局被踢出车队，面对危险，他只有一把破旧的柴刀。 好在，他能合成奇物！ 【生锈长刀＋恶鬼残魂＝斩魄刀】 【旧收音机＋窃语鬼耳骨＝听风收音机】 【钢铁之心＋水＝金属魔药】 一截鬼骨，一块废铁，都可能成为他活过明天的底牌。 起初，他只求熬过第一个夜晚。 后来，诡潮淹没公路，众人绝望之际，一头驮着堡垒的巨龟踏破黑夜。 龟背上，楚舟缓缓拔刀：“这次，该你们让路了。”",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o24c7b0387be1cf33229c9176f05d86b1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=ZSuf3j6ksWRmVW%2FHxeA24DeoUc4%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o24c7b0387be1cf33229c9176f05d86b1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=FO4FKI2VE35LVkevN1HjFFh5v7Q%3D",
         "url": "https://fanqienovel.com/page/7699761868935531582",
         "keywords": [
           "末世"
         ]
       },
       {
-        "title": "人在末世，系统却说是合欢宗！",
-        "author": "菠萝吹吹风",
-        "reads": "4.4万",
-        "intro": "（评分刚出，后面会涨～） 【末日副本＋公路求生＋多种序列＋微恐＋发展合欢宗＋搜打撤＋杀伐果断＋诡异丧尸＋多女主】 2028 年，末日元年。 诡异降临，怪物入侵，城市一夜之间化为废墟。 人类只能被迫放弃家园，四处迁徙，以求博取一线生机。 于此同时，世界各地随机出现各种末日副本。 只要进入副本，就有机会获得各种奖励。 食物，水源，车辆，武器，甚至是序列药剂…… 在求生途中，林欢觉醒了一个古怪系统。 它非要说林欢是修仙界的合欢宗宗主…… 于是…… 当林欢和女诡异签订主仆契约时， 【叮，恭喜宿主招募第一个弟子，奖励须弥空间戒指一枚！】 当林欢获得一辆载具时， 【叮，恭喜宿主获得合欢宗道场，奖励宗门大阵一套！】 当他把来自终焉之地的诡异抓在手上时， 【叮，恭喜宿主获得极品炼丹材料邪神之眸，奖励破圣丹丹方一套！】 …… 本书又名：《大家在末世艰难求生，我在末世修仙！》、《别来了，我的合欢宗太满了！》",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oef3c1a447a0fec97ba1d626d1e79a3d8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=Cwxsc1ICVjhQlHVfsZOZjc9PFSM%3D",
-        "url": "https://fanqienovel.com/page/7663794643812764697",
+        "title": "全民求生！我觉醒了唯一序列幸运",
+        "author": "那就这样哦",
+        "reads": "4.6万",
+        "intro": "【末世】【全民选择】【求生】【序列】 随着一场红月降临，这个世界彻底乱了！ 后方吃人的怪物紧追不舍！但前方是否还有未知的危险在等着人类…… 有的人觉醒了非凡的能力，有了和怪物抗衡的资本！ 可普通人，只能靠着每日的非凡选择狼狈的活着…… 我叫李阳，觉醒了唯一序列天赋“幸运！”",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o755a6cc9dce97a0272c8976501d6825e~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=0GYqx4%2B5RBAvTeZJThcp2CPmBkg%3D",
+        "url": "https://fanqienovel.com/page/7690513263737441305",
         "keywords": [
-          "修仙",
-          "空间",
-          "系统",
           "末世"
         ]
       },
       {
         "title": "公路选择：只有我能看到生存概率",
         "author": "更木十八更",
-        "reads": "4.3万",
+        "reads": "4.4万",
         "intro": "（评分刚开，后面会涨）【公路序列+天幕选择+多女主+末世求生】 那一天，蓝星的城市、海洋、交通工具、食物和水，文明痕迹被彻底抹除。 只剩下无序铺开的公路，全球人类被随机传送到了公路上，动物、植物进化为诡异，对人类展开无休止追杀。 林泽觉醒超凡，双眼能看到选择背后隐藏的生存概率。 面对天幕生死选择，他人避之如蛇蝎，林泽只是默默从选择中收获好处：超凡药剂、魔药、生存物资、奇物、载具……",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o0e571c117e286a5fad08b16154877c74~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=anCoOWJ1EiAUnHcMGOmyXLvK5i8%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o0e571c117e286a5fad08b16154877c74~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=N2DiXR%2FdxrFQgifxclOxQnPe3iM%3D",
         "url": "https://fanqienovel.com/page/7688956775973784600",
         "keywords": [
           "末世"
         ]
       },
       {
+        "title": "列车求生：开局选择肉身成圣",
+        "author": "倚楼听风语",
+        "reads": "4.4万",
+        "intro": "列车求生降临，开局一辆列车，人人觉醒异能，闯副本，杀怪物。 秦浪发现，自己的队友竟全是极品美女。 【叮，神级选择系统已绑定，请宿主选择发展方向】 【1、肉身成圣，一力破万法。2、法系通神，修炼元素异能一日千里。】 秦浪：没别的意思，我只是单纯的想做一个简单粗暴的猛男……",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o1c2c5c19129504a1902caf142a2eed92~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=FZJ2NGlLJX00jHmMGmYuVJigieo%3D",
+        "url": "https://fanqienovel.com/page/7693389986506230809",
+        "keywords": [
+          "系统",
+          "异能"
+        ]
+      },
+      {
+        "title": "人在末世，系统却说是合欢宗！",
+        "author": "菠萝吹吹风",
+        "reads": "4.3万",
+        "intro": "（评分刚出，后面会涨～） 【末日副本＋公路求生＋多种序列＋微恐＋发展合欢宗＋搜打撤＋杀伐果断＋诡异丧尸＋多女主】 2028 年，末日元年。 诡异降临，怪物入侵，城市一夜之间化为废墟。 人类只能被迫放弃家园，四处迁徙，以求博取一线生机。 于此同时，世界各地随机出现各种末日副本。 只要进入副本，就有机会获得各种奖励。 食物，水源，车辆，武器，甚至是序列药剂…… 在求生途中，林欢觉醒了一个古怪系统。 它非要说林欢是修仙界的合欢宗宗主…… 于是…… 当林欢和女诡异签订主仆契约时， 【叮，恭喜宿主招募第一个弟子，奖励须弥空间戒指一枚！】 当林欢获得一辆载具时， 【叮，恭喜宿主获得合欢宗道场，奖励宗门大阵一套！】 当他把来自终焉之地的诡异抓在手上时， 【叮，恭喜宿主获得极品炼丹材料邪神之眸，奖励破圣丹丹方一套！】 …… 本书又名：《大家在末世艰难求生，我在末世修仙！》、《别来了，我的合欢宗太满了！》",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oef3c1a447a0fec97ba1d626d1e79a3d8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=4Gqwlwrcpdf5zVdWR0Mb0jujUvo%3D",
+        "url": "https://fanqienovel.com/page/7663794643812764697",
+        "keywords": [
+          "系统",
+          "末世",
+          "修仙",
+          "空间"
+        ]
+      },
+      {
         "title": "被扔到载具求生？我反手上交国家",
         "author": "月亮也会emo",
-        "reads": "4.3万",
+        "reads": "4.1万",
         "intro": "【龙国是我爹】+【有靠山就是爽】+【载具求生】+【末世生存】+【怎么有这么多条减速带】+【我对龙国也是有点用的】+【多女主】 李东科一个前世牛马被扔到了载具求生世界，在这里每个人开局除了载具什么都没有，只能沿着无穷无尽的公路不断向前驾驶逃生。 有的人拿到豪华跑车，有的人拿到坦克开路，唯独李东科，只有一辆通讯车？！ 没事，给龙国打电话就好了呀！我要把整个公路世界上交国家！ 有怪？ 我的外骨骼想喝血了！ 李东科：这公路……好像能起降战斗机。",
-        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc45110c827023ea0b141156f5de17b75~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=WX8QTfsqXHxT02B%2Fy1JFONtyPs0%3D",
+        "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc45110c827023ea0b141156f5de17b75~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=pfwaU1bBhKrv60UcVkHhNY2zlQo%3D",
         "url": "https://fanqienovel.com/page/7692128842571320345",
         "keywords": [
           "末世"
@@ -420,68 +423,73 @@
     {
       "name": "科幻末世",
       "trend": {
-        "new_count": 1,
-        "dropped_count": 1,
+        "new_count": 2,
+        "dropped_count": 2,
         "new_books": [
-          "末世序列，开局合成奇物斩魄刀"
+          "全民木屋求生：我开局匹配姐妹花",
+          "列车求生：开局选择肉身成圣"
         ],
         "dropped_books": [
           {
-            "title": "公路求生？重生后我直接起飞",
-            "intro": "【重生】+【词条】+【多女】+【不憋屈】+【非快节奏】+【非传统公路文】+【带飞人类】+【有娃】+【战力超模】 公路世界重启，铁锋携记忆重生。 为了成为天选车主，现实谋夺豪华房车。 开局便入手两个金色"
+            "title": "爽翻天！公路求生带着十九个校花",
+            "intro": "【公路求生+房车升级+无敌流+全员美女+轻松无毒】 　　公路求生降临，曹昆与全班女同学被困房车，开局全员坦诚相见！ 　　面对外面的丧尸潮与物资匮乏，曹昆挺身而出，觉醒震惊系统！ 　　从此开启疯狂带飞模"
+          },
+          {
+            "title": "列车求生，我天选福星",
+            "intro": "全球八十亿人被投放进列车求生世界，王大勇醒来时，身边只有九个美女。全车没水没粮，他还被当成危险人物关进储物间。 好在他觉醒SSS级海克斯科技：千立方静止空间、羁绊系统，每通过一座站台，还能抽取全新强化"
           }
         ],
         "top_risers": [
           {
-            "title": "全球入侵：开局剧透丧尸危机",
-            "change": "+6"
-          },
-          {
-            "title": "异星开拓：从一张开拓者卡开始",
+            "title": "全民末日：我能自选SSS级天赋",
             "change": "+4"
           },
           {
-            "title": "序列熔炉：我在末日织界成神",
+            "title": "诡异末世，开局一元秒杀雷之呼吸",
+            "change": "+4"
+          },
+          {
+            "title": "宇宙数据化，开局觉醒无限复活",
             "change": "+3"
           }
         ],
         "top_fallers": [
           {
-            "title": "列车求生，我天选福星",
-            "change": "-5"
+            "title": "公路求生：开启宝箱品质永远加3",
+            "change": "-3"
           },
           {
-            "title": "末世，我有一个藏身处",
-            "change": "-4"
+            "title": "狂病：从获得黑色守望开始",
+            "change": "-2"
           },
           {
-            "title": "末日觉醒，每天一次超级四选一",
+            "title": "刚成银河之主，你让我星海求生？",
             "change": "-2"
           }
         ],
         "reads_growth": [
           {
-            "title": "宇宙数据化，开局觉醒无限复活",
-            "growth": "+1.3万"
+            "title": "全民末日：我能自选SSS级天赋",
+            "growth": "+1.5万"
           },
           {
             "title": "一秒一子弹：我在末世做军火商",
-            "growth": "+1.0万"
+            "growth": "+1.3万"
           },
           {
-            "title": "异星开拓：从一张开拓者卡开始",
-            "growth": "+1.0万"
+            "title": "宇宙数据化，开局觉醒无限复活",
+            "growth": "+1.1万"
           }
         ],
-        "summary": "新增1本上榜；1本掉出（《公路求生？重生后我直接起飞》）；《全球入侵：开局剧透丧尸危机》排名上升+6位；《宇宙数据化，开局觉醒无限复活》阅读量+1.3万。"
+        "summary": "新增2本上榜；2本掉出（《爽翻天！公路求生带着十九个校花》、《列车求生，我天选福星》）；《全民末日：我能自选SSS级天赋》排名上升+4位；《全民末日：我能自选SSS级天赋》阅读量+1.5万。"
       },
       "books": [
         {
           "title": "废土黑作坊：从造一级弹开始",
           "author": "狗儿书",
-          "reads": "54.3万",
+          "reads": "55万",
           "intro": "穿越废土，苏默成了沧墟方舟最底层的游民。 本以为能靠着搓子弹的手艺安安稳稳过日子，却不想搓着搓着，就成了整座方舟最大的军火商。 “我真没想搞这么大，就是专心搓点子弹而已。”",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od602e347311eeb40b752cb5d80db1ab1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=Or%2FHpW09o%2Fqh6pON%2FTIX2Srx2IY%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od602e347311eeb40b752cb5d80db1ab1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=sMz96Uv%2BERonXmWDfaWt1L6OcVc%3D",
           "url": "https://fanqienovel.com/page/7681239069396831294",
           "keywords": [
             "废土"
@@ -490,22 +498,22 @@
         {
           "title": "海洋求生？可我是人鱼公主！",
           "author": "螃蟹9527",
-          "reads": "32.5万",
+          "reads": "33万",
           "intro": "【性转+末世+海洋求生+变百+半无敌+爽文+轻松】 　　海洋求生？ 　　可是初始天赋是变成一条美人鱼哎！ 　　什么求生，跟回家一样！ 　　身为海的女儿，想要什么自己要。 　　常人难以指染的生命禁区，叶沃遛个弯就过去了。 　　恐怖的深海巨兽，叶沃打个招呼就把宝箱拿走了。 　　滔天的海啸是她的冲浪板。 　　无尽的深渊是她的后花园。 　　极尽升华的末日天灾更是她的玩具堆。 　　…… 　　木筏求生？ 　　当别人还在思考怎么把木筏做大做强，心惊胆颤地祈求风暴不要来临的时候。 　　叶沃一把推开木筏： 　　“让暴风雨，来得更猛烈些吧！”",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2odb0c8c26f7934fc60672cae15f7b8dda~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=UQYwII9kXsj90%2FEKv%2FHkRHrrEZM%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2odb0c8c26f7934fc60672cae15f7b8dda~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=7AJnzgvvcVCUu6ivrQ4fBkSWdZI%3D",
           "url": "https://fanqienovel.com/page/7689313853187836953",
           "keywords": [
-            "无敌",
+            "天灾",
             "末世",
-            "天灾"
+            "无敌"
           ]
         },
         {
           "title": "我都觉醒神明序列了系统才来？",
           "author": "云清流风",
-          "reads": "29.1万",
+          "reads": "29.5万",
           "intro": "【末日迁徙求生】【神明序列】【房车升级进化】【多女主爽文】 末日降临，诡异横行，城市沦陷，人类幸存者不得已组成车队，开始了末日大迁徙。 而在末日降临的同时，人类同样觉醒了序列能力，被称为序列超凡者。 林夜则在一开始便觉醒了神明序列005，血祖。 但碍于他谨慎的性格，开局硬生生装成普通人苟了半个月，靠吸人血液升级变强，好不容易把神性之力磨到10%，解锁了神明权柄序列能力：不朽之躯。不死不灭，只要一滴血尚存，便可复活再生。 在他终于不用装孙子的时候，结果系统来了。 “叮！杀戮无限进化系统激活成功！” 林夜：？？？ 老子都觉醒神明序列了系统才来？要你有何用？ “叮！赠送新手大礼包，SSS天赋无限火力、洞察之眼、杀戮点500。” 林夜：“……真香。” 从此，末日迁徙逃亡路上画风突变。 别人逃亡，他猎杀。 别人躲诡异，他追着诡异跑。 别人升级靠诡晶，他靠吸血。 更离谱的是，他发现系统可以万物无限进化。 【普通房车】→【豪华装甲房车】……【天空之城】 【小黑狗】→【镇狱犬】 【神明序列005】→【源血神王】 【简介无力，请入书一观】",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2obc176da8340d06fd8308468f1f001f93~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=PFEpCfPJr8Cp%2Bgu42fe56DSmbK8%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2obc176da8340d06fd8308468f1f001f93~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=0eY7TfoLR7L4Vf2T3A4hzd%2FU8SQ%3D",
           "url": "https://fanqienovel.com/page/7692323258426739736",
           "keywords": [
             "系统"
@@ -514,67 +522,33 @@
         {
           "title": "一秒一子弹：我在末世做军火商",
           "author": "李奢侈",
-          "reads": "16.3万",
+          "reads": "17.6万",
           "intro": "重生末世废土，季常成了避难所最底层难民。 好在重生后，获得百器图鉴录。 只要提供基础材料，一秒即可生产一发子弹。 在军火匮乏的末世，火力即是真理。 “孩儿们，我真没有火力不足恐惧症！” “另外，规矩讲清楚，英雄不问出处，子弹不问开路。懂？”",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o47fc9f26e5258ea3567852fa22049321~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=P8aE1yIu%2BlJCErNhVueH3g%2Fwho8%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o47fc9f26e5258ea3567852fa22049321~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=4TT3pGyB%2FYDh7%2BNGrV%2B4vsxDKj8%3D",
           "url": "https://fanqienovel.com/page/7695640488103136281",
           "keywords": [
-            "重生",
+            "末世",
             "废土",
-            "末世"
+            "重生"
           ]
         },
         {
           "title": "异星开拓：从一张开拓者卡开始",
           "author": "万顷春风",
-          "reads": "14万",
+          "reads": "14.7万",
           "intro": "【星际 + 卡牌 + 升级流 + 开拓 + 黑蚀 + 单主角 + 慢热】 洛星渊穿越了，胎穿到星际时代十八年。 这是一个有超凡力量的世界：人类以卡牌为媒介，觉醒职业卡牌，才能走上超凡之路。 九百多年前，名为黑蚀的存在入侵。人类靠突然出现的卡牌体系把它逼退，从此踏上星海。 洛星渊觉醒的是一张特殊的职业卡：【开拓者】。 理论上它能无限成长。别的职业想晋升，要凑材料、找路子、跑流程；开拓者只要完成“开拓奇遇”就能累积蜕变进度。听起来简单，做起来要命：奇遇随缘触发，有人一年碰不上一次，遇到了也有可能是无法完成的。 所以它被人叫做鸡肋。开局白卡，前期太弱。 前辈们的选择很统一：升到超凡，绑一张新卡，把开拓者当副职业。 好在，身为异世界而来的开拓者，他觉醒了X级天赋【异世之旅】。 别人需要随缘的开拓奇遇，他每周能固定触发三次。经验是普通开拓者的三倍，蜕变进度是两倍。 很多年后，有人问他，一张初始只有白色的开拓者卡，怎么能获得这种成就。 他笑了笑：“抱歉，我根本就没关过。” 设定一览 卡牌品质：灰、白、绿、蓝、紫、橙、红、金、彩 天赋等级：E、D、C、B、A、S、SS、SSS、X 卡牌星级：1~9 星 境界：超凡、星火、王座、圣域",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o62c320c97306e94b6fa6cc383aaeeb69~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=MPB6UftKeoQhOgQ1zoepWOh86j0%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o62c320c97306e94b6fa6cc383aaeeb69~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=eyf2fNun90AfaQ6HaUA2bBMGTGo%3D",
           "url": "https://fanqienovel.com/page/7691171239158631448",
           "keywords": [
             "星际"
           ]
         },
         {
-          "title": "公路求生：开启宝箱品质永远加3",
-          "author": "爱吃汤圆的猴子",
-          "reads": "13.6万",
-          "intro": "欢迎各位求生者来到公路求生游戏！ 想要活下去，就要牢记求生公路规则！ （1）每个求生者都会绑定一辆载具作为交通工具。 （2）求生公路将是求生者的安全区，但也并非绝对安全。 （3）载具是你的安全区，未经允许，无人能够进入。当然它不是坚不可摧的。 （4）求生公路上会有散落的宝箱，请求生者们尽量收集，这可是生存下去的关键！ （5）宝箱里不光有物资，周围可能还存在着未知的风险，请谨慎面对每一个宝箱。 （6）在游戏中以任何方式死亡，都将真正的死亡！ （7）尽可能升级你的车辆，更高级的载具能帮助你抵御更多的危险。 （8）求生公路两边的荒漠不受规则限制，那里有大量的危险但也有丰富的资源。 求生公路第一条铁律：千万不要轻易离开公路，千万不要长时间待在原地，不然你会后悔的。",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od11889390778bb9e9e4f95e8e94858b5~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=xR0ccjlxS5YpmjArXCl%2BZgx7l3A%3D",
-          "url": "https://fanqienovel.com/page/7694122012561640473",
-          "keywords": []
-        },
-        {
-          "title": "末日觉醒，每天一次超级四选一",
-          "author": "风雨西楼",
-          "reads": "13.4万",
-          "intro": "【纯手打】+【末世】+【异能】+【超级四选一】+【无女主】+【小队成长】+【杀伐果断】 林川，一个平平无奇的大学生，却发现自己兄弟是个重生者。 他说末世要来了，结果当夜变异兽就出现，人类死伤惨重。 实力恐怖的变异兽成为人类的灾难。 末世下的人性，更是人类生存的噩梦。 所幸林川觉醒特殊异能【超级四选一】！ 每日凌晨刷新一次选择机会，机会不可留存，必须当日使用！ 【1、情报：关于南城的一条情报！】 【2、物品：十支初级体力恢复药剂！】 【3、技能：中级・锻造精通！】 【4、异能：S级异能・雷霆赦令！】 没有资源？那就抢！ 超凡武器？每日异能白送！ 异能？我全身都是异能！ 凭借异能的特殊，林川组建小队，与小队成员在末世中爆杀一切，打造末世最强小队！",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6594b267094fa47f12689d82275ff908~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=xAhCLCtbV6WoK23FoHUEE0i4j8E%3D",
-          "url": "https://fanqienovel.com/page/7681181706686041150",
-          "keywords": [
-            "重生",
-            "异能",
-            "末世"
-          ]
-        },
-        {
-          "title": "狂病：从获得黑色守望开始",
-          "author": "大四方",
-          "reads": "13.1万",
-          "intro": "评分刚出 【末日】【狂病】【绿色流感】【非异能】【爆兵】【基地建设】 平平无奇的社会牛马林正。 在一场与大货车的相撞中，意外获得了系统，但似乎这个系统和传统的不一样？ 从系统告诉他的信息得知，狂病将在两个月后爆发。 “两个月，那我岂不是有准备的时间了？” 黑色守望、解放军、海军陆战队、美国陆军……全部启动！ 于是乎，一场惊心动魄的围城计划便如火如荼的展开",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o108b27d01ea26d5792e86d6776301455~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=mOncnMM88UVmeGj%2BqryLzwdMF5U%3D",
-          "url": "https://fanqienovel.com/page/7686882815165598782",
-          "keywords": [
-            "异能",
-            "系统"
-          ]
-        },
-        {
           "title": "宇宙数据化，开局觉醒无限复活",
           "author": "三天吃十吨",
-          "reads": "12.9万",
+          "reads": "14万",
           "intro": "陆阳穿越到四千多年后的宇宙数据化时代。 宇宙万族，都可以觉醒为职业者。 生活职业者为文明提供强大的后勤保障和科技辅助，建造星河舰队和行星堡垒。 战斗职业者为文明开疆拓土的先锋，战力之强，甚至可以一击覆灭数光年星空！ 其中，部分战斗职业者能觉醒属于自己的灵魂天赋，强弱不一！ 人类从蓝星崛起，经历四千年血与火，成为了银河系四大顶尖种族之一。 不过相比于整个宇宙，人类依旧渺小无比，如履薄冰。 所有年轻人都希望能觉醒为一名强大的战斗职业者，为人类开疆拓土，书写历史！ 而就在这个万族争霸的时代，陆阳觉醒为了一名战士。 刚觉醒的他，开局灵魂天赋三选一： 【战神（棱彩神话）】：掌握所有战士被动技能…… 【死亡之触（棱彩神话）】：攻击有几率直接击杀目标…… 【不朽（超限·棱彩神话）】：免疫即死攻击，死亡后瞬间复活，无条件限制，无次数限制。 看着三个天赋，陆阳觉得自己好像要无敌了。 他直接选择了超限棱彩神话天赋【不朽】，从此无限复活！ 不仅如此，每升一级还能再获得一个天赋，每升一阶选择的天赋保底棱彩神话级！ ………… 当陆阳突破百级，成为永恒真神，看着自己面板上密密麻麻的棱彩神话级天赋，轻轻叹了口气：“怎么一个能打的都没有？”",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o509a218becded2d09e525664985b0254~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=%2B%2Bmb%2F%2FLvg5DVIV3vuy18EQTzYLI%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o509a218becded2d09e525664985b0254~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=zdw9zfWovhcbaThoz1SwLtQjwXk%3D",
           "url": "https://fanqienovel.com/page/7659383286841494552",
           "keywords": [
             "无敌",
@@ -582,51 +556,72 @@
           ]
         },
         {
-          "title": "暴雨末世，开局异能九选二",
-          "author": "呱呱发财",
-          "reads": "12.2万",
-          "intro": "暴雨+末世+异能+空间+水鬼+杀伐果断+不圣母 两极冰川融化加持续特大暴雨，导致全球百分之九十的陆地被海水淹没。 冰封万年的远古病毒被释放，人类、动物的尸体泡水超过一小时，会变异成无意识只有嗜血本能的水鬼。 就读大学的刘枫，提前得知末世消息，开局获得异能九选二的机会，果断选择时空异能、随身小世界。 没有重生，不知道末世灾难怎么办？ 没关系，重生归来的富家千金沈梦瑶为求抱大腿，已经找上门来了！ 没有钱囤物资怎么办？ 没关系，富家千金已经囤好了。 没有庇护所怎么办？ 没关系，富家千金已经修建好了。 每日坚持更新三章。 【提示：平行世界，请勿带入现实。】 简介无力，请看正文。",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6e269d64605aac8e75cfc1fdc63d7b7b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974607&x-signature=MPjHLbPxoC4X%2Bo4L9vqUKGjlWec%3D",
-          "url": "https://fanqienovel.com/page/7682467696239184921",
-          "keywords": [
-            "重生",
-            "异能",
-            "空间",
-            "远古",
-            "末世"
-          ]
-        },
-        {
           "title": "全民末日：我能自选SSS级天赋",
           "author": "七月飞星",
-          "reads": "12万",
+          "reads": "13.5万",
           "intro": "【隐藏特权+开局无敌+无双割草+危机预告+全民求生】 2037年，末日游戏入侵了蓝星，顷刻间城市沦陷，秩序崩塌，无数人在这场浩劫中流离失所。 但苏玄却意外觉醒了金手指，得到了来自未来的危机预告，提醒他错过的各种重大机缘和死亡危机！ 别人还在末日中艰难起步挣扎时，苏玄开局就通过隐藏彩蛋解锁了唯一封弊者权限。 当其他人还在抱怨自己的天赋等级太低，高等天赋堪比中彩票时，苏玄却能在各种SSS级天赋中任意挑选！ 当其他人还在苦苦练级，获取资源时，苏玄从容启动十倍爆率特权，轻松取得旁人遥不可及的神话装备。 于是……危机四伏的末世里，苏玄闲庭信步，早已在不知不觉间登临了末日王座！",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o94dfb8e64210a0ef2f9746c1b7a47e7d~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=G7es6WhsN7udI0ahxvz4y08lOTs%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o94dfb8e64210a0ef2f9746c1b7a47e7d~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=s4F6c4gDPoPN5zycKAnkfTT9%2FU0%3D",
           "url": "https://fanqienovel.com/page/7695736623958330430",
           "keywords": [
-            "无敌",
-            "末世"
+            "末世",
+            "无敌"
           ]
         },
         {
-          "title": "爽翻天！公路求生带着十九个校花",
-          "author": "骑猪去斩龙",
-          "reads": "11.2万",
-          "intro": "【公路求生+房车升级+无敌流+全员美女+轻松无毒】 　　公路求生降临，曹昆与全班女同学被困房车，开局全员坦诚相见！ 　　面对外面的丧尸潮与物资匮乏，曹昆挺身而出，觉醒震惊系统！ 　　从此开启疯狂带飞模式。 　　搜刮盲盒衣物，升级水珠收集器，打造无敌机械傀儡！ 　　别人还在为了几块木头互相厮杀，曹昆已经靠着交易市场赚得盆满钵满。 　　没有恶心的绿茶反派，没有勾心斗角的内讧，只有一群颜值爆表、绝对服从的极品红颜知己！",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oe14ca7e23c3a72e8764fb6bf1bd3e5d5~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=d1SedIyM6Uxz1vTam%2F16Q5TH7qk%3D",
-          "url": "https://fanqienovel.com/page/7698313313700039705",
+          "title": "末日觉醒，每天一次超级四选一",
+          "author": "风雨西楼",
+          "reads": "13.3万",
+          "intro": "【纯手打】+【末世】+【异能】+【超级四选一】+【无女主】+【小队成长】+【杀伐果断】 林川，一个平平无奇的大学生，却发现自己兄弟是个重生者。 他说末世要来了，结果当夜变异兽就出现，人类死伤惨重。 实力恐怖的变异兽成为人类的灾难。 末世下的人性，更是人类生存的噩梦。 所幸林川觉醒特殊异能【超级四选一】！ 每日凌晨刷新一次选择机会，机会不可留存，必须当日使用！ 【1、情报：关于南城的一条情报！】 【2、物品：十支初级体力恢复药剂！】 【3、技能：中级・锻造精通！】 【4、异能：S级异能・雷霆赦令！】 没有资源？那就抢！ 超凡武器？每日异能白送！ 异能？我全身都是异能！ 凭借异能的特殊，林川组建小队，与小队成员在末世中爆杀一切，打造末世最强小队！",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6594b267094fa47f12689d82275ff908~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=1lMYmiTLnHZH2nPTquAEGVZg0H0%3D",
+          "url": "https://fanqienovel.com/page/7681181706686041150",
           "keywords": [
-            "反派",
+            "异能",
+            "末世",
+            "重生"
+          ]
+        },
+        {
+          "title": "公路求生：开启宝箱品质永远加3",
+          "author": "爱吃汤圆的猴子",
+          "reads": "12.9万",
+          "intro": "欢迎各位求生者来到公路求生游戏！ 想要活下去，就要牢记求生公路规则！ （1）每个求生者都会绑定一辆载具作为交通工具。 （2）求生公路将是求生者的安全区，但也并非绝对安全。 （3）载具是你的安全区，未经允许，无人能够进入。当然它不是坚不可摧的。 （4）求生公路上会有散落的宝箱，请求生者们尽量收集，这可是生存下去的关键！ （5）宝箱里不光有物资，周围可能还存在着未知的风险，请谨慎面对每一个宝箱。 （6）在游戏中以任何方式死亡，都将真正的死亡！ （7）尽可能升级你的车辆，更高级的载具能帮助你抵御更多的危险。 （8）求生公路两边的荒漠不受规则限制，那里有大量的危险但也有丰富的资源。 求生公路第一条铁律：千万不要轻易离开公路，千万不要长时间待在原地，不然你会后悔的。",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od11889390778bb9e9e4f95e8e94858b5~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=hVBf7aADf55ZK5Gq8oO%2Fih7N0NE%3D",
+          "url": "https://fanqienovel.com/page/7694122012561640473",
+          "keywords": []
+        },
+        {
+          "title": "狂病：从获得黑色守望开始",
+          "author": "大四方",
+          "reads": "12.8万",
+          "intro": "评分刚出 【末日】【狂病】【绿色流感】【非异能】【爆兵】【基地建设】 平平无奇的社会牛马林正。 在一场与大货车的相撞中，意外获得了系统，但似乎这个系统和传统的不一样？ 从系统告诉他的信息得知，狂病将在两个月后爆发。 “两个月，那我岂不是有准备的时间了？” 黑色守望、解放军、海军陆战队、美国陆军……全部启动！ 于是乎，一场惊心动魄的围城计划便如火如荼的展开",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o108b27d01ea26d5792e86d6776301455~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061497&x-signature=5JePvhwHmEUznFYCqPmL3afHRqM%3D",
+          "url": "https://fanqienovel.com/page/7686882815165598782",
+          "keywords": [
             "系统",
-            "无敌"
+            "异能"
+          ]
+        },
+        {
+          "title": "暴雨末世，开局异能九选二",
+          "author": "呱呱发财",
+          "reads": "11.2万",
+          "intro": "暴雨+末世+异能+空间+水鬼+杀伐果断+不圣母 两极冰川融化加持续特大暴雨，导致全球百分之九十的陆地被海水淹没。 冰封万年的远古病毒被释放，人类、动物的尸体泡水超过一小时，会变异成无意识只有嗜血本能的水鬼。 就读大学的刘枫，提前得知末世消息，开局获得异能九选二的机会，果断选择时空异能、随身小世界。 没有重生，不知道末世灾难怎么办？ 没关系，重生归来的富家千金沈梦瑶为求抱大腿，已经找上门来了！ 没有钱囤物资怎么办？ 没关系，富家千金已经囤好了。 没有庇护所怎么办？ 没关系，富家千金已经修建好了。 每日坚持更新三章。 【提示：平行世界，请勿带入现实。】 简介无力，请看正文。",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6e269d64605aac8e75cfc1fdc63d7b7b~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=LFPNbxNnNHAFiAN4hk7zHiN76Os%3D",
+          "url": "https://fanqienovel.com/page/7682467696239184921",
+          "keywords": [
+            "远古",
+            "异能",
+            "末世",
+            "重生",
+            "空间"
           ]
         },
         {
           "title": "末世轮盘：开局指定抽取序列魔药",
           "author": "夜阑我听风吹雨",
-          "reads": "9.6万",
+          "reads": "9.9万",
           "intro": "【轮盘末日+诡异降临+寿命/晶核抽取+心狠手辣】 诡异灾变降临，无尽怪物席卷大地，旧时代文明轰然崩塌。 伴随着怪物一同现世的，还有遍布世界的命运轮盘。 世人想要获得超凡力量，只有两条路：献祭自身寿命，或是猎杀怪物，从怪物头颅中挖出晶核，投入轮盘进行抽取。 轮盘奖励包罗万象：序列魔药、超凡职业、诡异奇物、珍稀物资应有尽有。 但抽取全凭运气。 有人耗尽十年寿命，只换来一包方便面；有人拼死搏杀怪物，抽到毫无用处的破烂。 所有人都在赌命，赌那渺茫的一线超凡希望。 而萧禹觉醒了独一无二的能力——指定结果。 不止轮盘抽卡可以锁定目标，一切随机事件，他都能选定自己想要的结局。 别人赌命碰运气，他想要什么，就能拿到什么。 可命运的馈赠，从来都暗藏代价。 怪物环伺，人心叵测，轮盘背后藏着更深层的灾变秘密。 当所有人拼命在末日挣扎求生，萧禹手握指定一切随机结果的力量，在废墟之中，踏出一条属于自己的超凡之路。",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6d3f7dd61e0087e348de14f171af77e9~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=FSXZvPAZM9%2BQKpOowvzBQhACA9A%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o6d3f7dd61e0087e348de14f171af77e9~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=QfI2LNALb4iErtcqGmO4vQA4wy4%3D",
           "url": "https://fanqienovel.com/page/7690969468792474649",
           "keywords": [
             "末世"
@@ -637,87 +632,123 @@
           "author": "北沐萧涵",
           "reads": "8.9万",
           "intro": "【星际发展＋举国跑路＋腹黑兔子＋第四天灾】 蓝星历 2033 年，全球地表温度超 220 ℃ 地表，已经沦为一片炼狱！ 全球统一意见，纷纷开始发展地下城。 上一世，张小北作为火种计划中的一员。 获得了进入了休眠仓前往系外寻找新家园的资格。 只是人类的科技进步，还是没能赶上太阳氦闪的速度... 这一世，他重生了。 回到了那个高温末日刚开始的蓝星！ 伴随着他一起回来的，还有一个来自九级文明的神秘系统。 在系统的帮助下，他开启了人类自救的新征程... 鹰酱：我们的航天技术，才是世界第一！ 大毛：放你娘个屁！老子才是！ 脚盆鸡：杀鸡给给！！！ 兔子：喂喂喂？你们在说什么？我在柯伊伯带采矿呢，信号不太好... 鹰酱：？？？ 大毛：？？？ 脚盆鸡：？？？ 兔子：先不聊了，我们发现一处宜居星球，以后漂流瓶联系吧... N 年后，银河系矩尺座悬臂中心。 一颗蔚蓝色的星球再次复刻而出！ 这里，成为了整个银河系的贸易经济中心！ 张小北：我们只是一个热爱和平的发展中文明！ 【报告！三角座星系正在发起对我们边境的掠夺战！】 张小北：这怎么能允许呢？ 通知第 11073 集团军！ 出征三角座星系！ 一个不留！！！",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc76a13b78203df3ffe3ffcff45b92ee8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=gVt1zoh%2FlCGjrnO7%2B9Q9GM5Erto%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc76a13b78203df3ffe3ffcff45b92ee8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=9vmJBmXAq2tbyN%2BpBMrmz2PBNyw%3D",
           "url": "https://fanqienovel.com/page/7690593006243564569",
           "keywords": [
-            "重生",
+            "天灾",
             "系统",
             "星际",
-            "天灾"
+            "重生"
           ]
         },
         {
           "title": "末世：晒太阳变强，开局祖国人！",
           "author": "直白",
-          "reads": "7.7万",
+          "reads": "8.3万",
           "intro": "【末日天灾、真实求生、非无脑爽文、成长类、慢热、群像，杀伐果断、智商在线、求生、全球进化、灵气复苏、异界入侵】 　　十八岁生日当天，宁川成功激活日冕进化系统，只要每天晒晒太阳就能无限叠加四维属性，本想找座海岛安稳躺平当个阿祖，不料暗红血雾瞬间席卷全球！ 　　整颗蓝星面积暴涨百倍，通讯彻底断绝，动植物疯狂变异，百米巨木拔地而起，昔日同窗化作嗜血丧尸，更有域外邪神于迷雾深处窥伺人间！ 　　当其他幸存者还在为半块发霉面包跪地摇尾、为一枚低阶晶核争得头破血流时，宁川已经在天台晒满三小时太阳，双眸迸发五千度赤红热视线，一拳轰穿变异兽王胸膛，靠着猎杀怪物爆出的海量能量点疯狂加点！ 　　圣母道德绑架？单手拎出天台喂丧尸！ 　　跳梁小丑聚众逼宫？热视线横扫十颗人头落地！ 　　在这秩序崩塌的残酷末日，宁川凌空傲立于尸山血海之上：“顺我者昌，逆我者亡，谁敢挡我的路，神明也一并屠给你看！” 　　从祖国人到钢铁大超，再到白银大超、金色大超、至尊大超、思维大超、终极大超！ 　　当域外邪神真身降临蓝星的那一刻，面对化身终极大超的宁川，究竟谁才是真正的神明？",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc720398b7d463fc5f12e92413ecd37a3~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=KhCUMqFMwmfTBt6krlhTuGQhszU%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc720398b7d463fc5f12e92413ecd37a3~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=YM1Oqk6WD%2FfV%2BGEm%2FkxXviUaBkw%3D",
           "url": "https://fanqienovel.com/page/7699115382749006872",
           "keywords": [
+            "天灾",
             "系统",
-            "末世",
-            "天灾"
+            "末世"
           ]
-        },
-        {
-          "title": "刚成银河之主，你让我星海求生？",
-          "author": "温酒剑客",
-          "reads": "7.3万",
-          "intro": "【帝皇】+【暴爽】+【无敌文】+【银河帝国】+【星海求生】+【探索宇宙】 黎元穿越星际时代。 成为了一名弱小的深空流浪者。 他没有放弃，努力在星海求生，最终历经数万年打拼，终于屹立在银河之巅，创立银河帝国，成为银河之主。 当他坐在象征无上权力的银河王座上。 接受亿万文明朝拜。 打算好好享受享受生活时。 【叮——】 【星海求生系统绑定成功！】 【任务1：帮助一颗流浪星球寻找新的家园。】 【任务2：解决三体星与蓝白星的矛盾。】 【任务3：解救一名困在地心深处的少女。】 【任务4：带领反叛军掀翻腐朽的银河帝国。】 【……】 “不是？我都银河之主了，你让我星海求生？” “还有……推翻腐朽的银河帝国什么鬼？” “我推翻我自己？” “这任务简直倒反天罡！” ————————",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o1e7d8d64c76ebce8993f9b4aa8fb7ccc~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=5UNg%2BYBH6oCu97JcmO8mqw5Z3Ww%3D",
-          "url": "https://fanqienovel.com/page/7694974517961051160",
-          "keywords": [
-            "系统",
-            "无敌",
-            "星际"
-          ]
-        },
-        {
-          "title": "美利坚双穿末日，我不吃牛肉",
-          "author": "一夜暴富啊啊啊",
-          "reads": "6.8万",
-          "intro": "【两界穿梭】、【为所欲为】、【不圣母】、【钱、权、人】 张汉克在美利坚流浪，发现自己可以穿越到另外一个丧尸横行的末日世界。 而且可以携带物资穿越。 末日最缺的是什么？食物，物资，武器。 一包泡面换一块黄金，一瓶矿泉水就能让人疯狂。 现代最值钱的是什么？ 黄金、古董、基因药剂、钱、权、武力？ 自此，张汉克便开始了两界倒爷之路。 丧尸世界，某超一流超模： 只要一个面包，我可以满足你任何要求。 美利坚： 张汉克左手超模，右手雪茄，看着面前下一届美利坚话事人，道： “你甚至都不愿意称为为一声教父。” …… 以上，就是全球话事人张汉克的人生经历。 但这些都是后话，当下有一个难题摆在张汉克面前。 那就是，睡了黑帮的老婆，被黑帮持枪找上门应该怎么脱身？ 在线等，挺急的！！",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o11a30eef2e947665c6773b2db662f528~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=2rYqpfxELJUc3WB32STEeFbfgHY%3D",
-          "url": "https://fanqienovel.com/page/7694128280223353881",
-          "keywords": []
         },
         {
           "title": "电梯搜打撤：只有我有安全箱",
           "author": "阿啦噗噗东莎",
-          "reads": "6.7万",
+          "reads": "7万",
           "intro": "【系统、搜打撤、无限流、种田建设、爽文】 全人类穿越到狭窄的电梯世界中，你需要进入楼层世界搜刮物资撤离后扩建你的电梯，在楼层世界里不会真正的死亡，但你会失去所有带入的装备和武器。 为了生存，普通人只敢前往低危险的楼层里小心翼翼地刮地皮，白天通过卖垃圾换取一些面包和水源苟活，晚上缩在不到两平米的电梯里瑟瑟发抖。 丧尸、舔食者、三角头男、异形......形形色色的楼层世界里，人类在恐惧中互相猜忌，出卖和背刺更是家常便饭，所有人胆战心惊地在黑暗中探索，除了...... “我踏马来了！” 浣熊市警察局，在所有人震惊的目光中，李晋一个鱼跃跳进了尸潮，顶着丧尸的撕咬，硬生生翻墙闯了进去。 这野人魔了？！ 朝身后的众人挥了挥手，李晋潇洒地推开警局的大门。 他的目标很简单，把裤裆塞满就行。",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o4ea2bf6146abea1309515c5faf4d5d72~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=jj6PJiBS6RDtwk3%2Fm0EKtTs6Kvs%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o4ea2bf6146abea1309515c5faf4d5d72~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=ycpLJ%2FouG183Z1Erq7n3aHyI9w4%3D",
           "url": "https://fanqienovel.com/page/7679342592051399705",
           "keywords": [
-            "无限流",
             "系统",
-            "种田"
+            "种田",
+            "无限流"
           ]
         },
         {
           "title": "全球入侵：开局剧透丧尸危机",
           "author": "皮皮虾十八号",
-          "reads": "6万",
+          "reads": "6.7万",
           "intro": "“丧尸？巨人？你们也配入侵地球？” 张小白看着手机冷笑。 人类就合该让全宇宙颤抖—— “这是什么？” “《丧尸生物电站建设与运营管理规范（GB/ZQ 2507-2026）》，第一版！ ” …… “进击的巨人世界快要来了，记住！我们的目标是抢运艾族人口！” “巨人比丧尸更值钱！” …… “华夏的巨人蒸汽发电站已稳定运行300个工作日无事故，隔壁美利坚地鸣蒸汽发电站在照亮自由女神像，你们这帮废物还要多久才完工？” “长官，我们掳掠的艾族人口一直在抗议这种不人道的发电方式！”",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oadd0d9ef456bba52615f127ed273b6f6~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=rmKillwQ5zSY7VbvvK61TdN%2Frys%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oadd0d9ef456bba52615f127ed273b6f6~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=ZmWN%2Fr4JxeOp8C28uU66USp2az8%3D",
           "url": "https://fanqienovel.com/page/7514505449127808025",
           "keywords": []
         },
         {
+          "title": "美利坚双穿末日，我不吃牛肉",
+          "author": "一夜暴富啊啊啊",
+          "reads": "6.6万",
+          "intro": "【两界穿梭】、【为所欲为】、【不圣母】、【钱、权、人】 张汉克在美利坚流浪，发现自己可以穿越到另外一个丧尸横行的末日世界。 而且可以携带物资穿越。 末日最缺的是什么？食物，物资，武器。 一包泡面换一块黄金，一瓶矿泉水就能让人疯狂。 现代最值钱的是什么？ 黄金、古董、基因药剂、钱、权、武力？ 自此，张汉克便开始了两界倒爷之路。 丧尸世界，某超一流超模： 只要一个面包，我可以满足你任何要求。 美利坚： 张汉克左手超模，右手雪茄，看着面前下一届美利坚话事人，道： “你甚至都不愿意称为为一声教父。” …… 以上，就是全球话事人张汉克的人生经历。 但这些都是后话，当下有一个难题摆在张汉克面前。 那就是，睡了黑帮的老婆，被黑帮持枪找上门应该怎么脱身？ 在线等，挺急的！！",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o11a30eef2e947665c6773b2db662f528~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=3b3X1JbmpIm8Er7fdI89fSirHQc%3D",
+          "url": "https://fanqienovel.com/page/7694128280223353881",
+          "keywords": []
+        },
+        {
+          "title": "刚成银河之主，你让我星海求生？",
+          "author": "温酒剑客",
+          "reads": "6.6万",
+          "intro": "【帝皇】+【暴爽】+【无敌文】+【银河帝国】+【星海求生】+【探索宇宙】 黎元穿越星际时代。 成为了一名弱小的深空流浪者。 他没有放弃，努力在星海求生，最终历经数万年打拼，终于屹立在银河之巅，创立银河帝国，成为银河之主。 当他坐在象征无上权力的银河王座上。 接受亿万文明朝拜。 打算好好享受享受生活时。 【叮——】 【星海求生系统绑定成功！】 【任务1：帮助一颗流浪星球寻找新的家园。】 【任务2：解决三体星与蓝白星的矛盾。】 【任务3：解救一名困在地心深处的少女。】 【任务4：带领反叛军掀翻腐朽的银河帝国。】 【……】 “不是？我都银河之主了，你让我星海求生？” “还有……推翻腐朽的银河帝国什么鬼？” “我推翻我自己？” “这任务简直倒反天罡！” ————————",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o1e7d8d64c76ebce8993f9b4aa8fb7ccc~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=wsOFrbObahdk5GrKWrhUeR2b4Tg%3D",
+          "url": "https://fanqienovel.com/page/7694974517961051160",
+          "keywords": [
+            "系统",
+            "星际",
+            "无敌"
+          ]
+        },
+        {
           "title": "副本求生：我的天赋是每日签到",
           "author": "我充钱了是VIP",
-          "reads": "6万",
+          "reads": "5.9万",
           "intro": "【综漫】【求生】【爽文】 一朝穿越到二次元世界，然而迎来的不是美好的二次元生活而是现实的毒打。 为了打破阶级只能卷生卷死的考上东大得到上流社会的入场券。 结果转眼的就被拉到了副本求生游戏之中。 所幸这次得到命运眷顾。 觉醒天赋每日签到，并且还获得了一辆房车作为载具。",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o055aed2c104359273cf5aa51d7bb7501~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974611&x-signature=a1pFda0FzkJb9YNHZzHKLaY%2FZps%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o055aed2c104359273cf5aa51d7bb7501~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=Bj7smlUoZ59JOB11Evh9U8aSQco%3D",
           "url": "https://fanqienovel.com/page/7695064162677836825",
           "keywords": []
         },
         {
+          "title": "全民木屋求生：我开局匹配姐妹花",
+          "author": "棋行者",
+          "reads": "5.9万",
+          "intro": "【求生+爽文+多女主+不圣母+传说天赋+新设定】 【全民木屋求生开启，正在随机匹配初始室友】 “完了，我分到三个壮汉寝室，要累死了！” “谁运气好分到女生了，羡慕哭！” 陆舟看着眼前的大学校花戚清岚，以及穿着兔子睡衣的校花妹妹戚小桃。 不由得陷入沉思。 熟人开局，指挥权直接到手！ ...... 更逆天的是初始天赋抽取。 别人抽到白色普通、绿色稀有，在荒野苦苦挣扎。 陆舟开局觉醒全服唯一的金色传说天赋【天道酬勤】！ 只要专注行动就能觉醒进度条，而且技能永不倒退！ 【砍树】升到神级，随手一斧就能召唤巨斧虚影，一斧子砍一片森林的见过没有？ 【挖矿】升到神级，每次挖矿暴击万倍！挖出一颗铁锭，暴击万倍，直接变成一万颗！ 【拳法】升到神级，每次挥拳将引动天地感应，一拳轰杀顶级凶兽！ ...... 不仅如此，姐姐戚清岚觉醒史诗级近战枪术，妹妹戚小桃觉醒史诗级治疗神技。 三人组队，直接化身无敌永动机。 别人还在为了一口冷水拼命厮杀。 陆舟已经买空了商城，升级顶级堡垒，物资堆积成山。",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2od013fe69a7c35e83fad5737c37cae650~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061501&x-signature=aB%2FR0P1hAjbobav6tlLetrvUtJU%3D",
+          "url": "https://fanqienovel.com/page/7695328622462110744",
+          "keywords": [
+            "无敌"
+          ]
+        },
+        {
+          "title": "诡异末世，开局一元秒杀雷之呼吸",
+          "author": "隔日三秋",
+          "reads": "5.6万",
+          "intro": "【诡异末世+升级爽文+超凡序列+一元秒杀系统+末日求生+杀伐果断】 诡异降临，血月当空，致命黑雾！ 江明开局激活一元秒杀系统！ 一元秒杀，日轮刀.鸣雷，附带雷之呼吸大圆满！ 一元秒杀，随身空间1万平，末日物资随便屯！ 一元秒杀，雷帝宝术，踏雷而行，诸诡辟易！ …… 雷霆手段，组建超凡者组织，旧日的诡异横行世界，他独掌文明的曙光！ （多女主，不圣母，不喜勿喷）",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2ob8be33109efbed41cf33ab1cd3fb81b8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=%2BEvzHPl%2FKrKCcfj1FoVhxZHxDz4%3D",
+          "url": "https://fanqienovel.com/page/7547564717036817432",
+          "keywords": [
+            "系统",
+            "末世",
+            "空间"
+          ]
+        },
+        {
+          "title": "黑雾降临：从猎人木屋开始求生",
+          "author": "山寻",
+          "reads": "5.5万",
+          "intro": "【全民求生】【建造庇护所】【种田】【囤货】【极端灾难】【驯化恶兽】【种植】 一觉醒来，全民穿越黑雾世界。 恶兽横行，诡异滋生，活下去成为奢侈品。 极端灾害频繁，生存物资匮乏，求生者为一口粮食淡水争斗杀戮。道德沦丧，法律消失，唯有庇护所是一片净土。 人类回归原始，一庇护所为核心，寻求一丝生机！",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oebdbfc7db322758ae89c77150f68d8b8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=vISR0s5emIJfqSWjx%2Bg2AON0kPw%3D",
+          "url": "https://fanqienovel.com/page/7696828414941989912",
+          "keywords": [
+            "囤货",
+            "种田"
+          ]
+        },
+        {
           "title": "序列熔炉：我在末日织界成神",
           "author": "盛世俗人",
-          "reads": "5.9万",
+          "reads": "5.5万",
           "intro": "【公路求生+末世+诡异+畸变体+动植物变异+超凡序列】 【杀伐果断+不圣母+多女】 穿越末世。 身前是肩高过人的畸变巨犬。 觉醒者的车灯已经远去。 沈阙成了车队的弃子、尾巴。 躺在排水沟里等死时，他捡到一个背包。 包里有一颗心脏。 【序列熔炉】 【检测到素材：精神之心（低阶）】 【是否熔炼？】 “熔”。 序列觉醒的沈阙死里逃生。 凭借【序列熔炉】熔炼万物。 奇物、超凡药剂、序列觉醒药剂，随手可得。 觉醒代价？奇物献祭？超凡药剂后遗症？ 沈阙表示：我不知道啊。 沈阙知道的是：他不圣母，不怯懦，不莽撞，还有残存的人性。 沈阙更知道：他要变强，他要杀穿末世，他要重见骄阳。 【织界序列】（精神系） 【能力：精神感知、念力掌控、精神附魔、精神印记、思想刻印……】",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oe96c4198d3aa1d5adf258ef2759e22b6~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=Hdj%2Bkt6oI6WY9K1qu3uxoaTcN2s%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oe96c4198d3aa1d5adf258ef2759e22b6~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=ufvweE1Z%2FePZIaLBiAknp5Bxick%3D",
           "url": "https://fanqienovel.com/page/7693886753911868478",
           "keywords": [
             "末世"
@@ -726,104 +757,79 @@
         {
           "title": "末世，我有一个藏身处",
           "author": "关将军与椰羊",
-          "reads": "5.9万",
+          "reads": "5.3万",
           "intro": "根据前线记者报道，本次主角穿越时有三名外籍人士遭到牵连，他们分别是：维亚切斯拉夫·巴兰尼科夫，安东·尤丁采夫，尼基塔·布亚诺夫。 让我们为三位外籍人士的不幸遭遇致以深刻的敬意，敬礼！",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2ob0e988a23313258145a8423f2e4456c5~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=h7o3PydDjG4314VuFw1MyY%2F%2BF2Q%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2ob0e988a23313258145a8423f2e4456c5~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=G4oK1nL3CC247NP2vJlrXS9G0hM%3D",
           "url": "https://fanqienovel.com/page/7690746663329090584",
           "keywords": [
             "末世"
           ]
         },
         {
-          "title": "黑雾降临：从猎人木屋开始求生",
-          "author": "山寻",
-          "reads": "5.6万",
-          "intro": "【全民求生】【建造庇护所】【种田】【囤货】【极端灾难】【驯化恶兽】【种植】 一觉醒来，全民穿越黑雾世界。 恶兽横行，诡异滋生，活下去成为奢侈品。 极端灾害频繁，生存物资匮乏，求生者为一口粮食淡水争斗杀戮。道德沦丧，法律消失，唯有庇护所是一片净土。 人类回归原始，一庇护所为核心，寻求一丝生机！",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oebdbfc7db322758ae89c77150f68d8b8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=186L5PZz76j1KqF67k3Fu2TBo5A%3D",
-          "url": "https://fanqienovel.com/page/7696828414941989912",
-          "keywords": [
-            "种田",
-            "囤货"
-          ]
-        },
-        {
-          "title": "全民求生！我觉醒了唯一序列幸运",
-          "author": "那就这样哦",
-          "reads": "5.3万",
-          "intro": "【末世】【全民选择】【求生】【序列】 随着一场红月降临，这个世界彻底乱了！ 后方吃人的怪物紧追不舍！但前方是否还有未知的危险在等着人类…… 有的人觉醒了非凡的能力，有了和怪物抗衡的资本！ 可普通人，只能靠着每日的非凡选择狼狈的活着…… 我叫李阳，觉醒了唯一序列天赋“幸运！”",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o755a6cc9dce97a0272c8976501d6825e~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=PuDXv%2F93pqi%2BHDPc%2FX77RtHnyGw%3D",
-          "url": "https://fanqienovel.com/page/7690513263737441305",
-          "keywords": [
-            "末世"
-          ]
-        },
-        {
-          "title": "诡异末世，开局一元秒杀雷之呼吸",
-          "author": "隔日三秋",
-          "reads": "5.1万",
-          "intro": "【诡异末世+升级爽文+超凡序列+一元秒杀系统+末日求生+杀伐果断】 诡异降临，血月当空，致命黑雾！ 江明开局激活一元秒杀系统！ 一元秒杀，日轮刀.鸣雷，附带雷之呼吸大圆满！ 一元秒杀，随身空间1万平，末日物资随便屯！ 一元秒杀，雷帝宝术，踏雷而行，诸诡辟易！ …… 雷霆手段，组建超凡者组织，旧日的诡异横行世界，他独掌文明的曙光！ （多女主，不圣母，不喜勿喷）",
-          "cover": "https://p9-reading-sign.fqnovelpic.com/novel-pic/p2ob8be33109efbed41cf33ab1cd3fb81b8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=M%2BmxriNTWgcRm%2Fh7uMF9YJXKFaE%3D",
-          "url": "https://fanqienovel.com/page/7547564717036817432",
-          "keywords": [
-            "空间",
-            "系统",
-            "末世"
-          ]
-        },
-        {
-          "title": "列车求生，我天选福星",
-          "author": "七斤八两三钱",
-          "reads": "4.7万",
-          "intro": "全球八十亿人被投放进列车求生世界，王大勇醒来时，身边只有九个美女。全车没水没粮，他还被当成危险人物关进储物间。 好在他觉醒SSS级海克斯科技：千立方静止空间、羁绊系统，每通过一座站台，还能抽取全新强化。别人抢半瓶水，他直接搬空仓库；别人啃发霉饼干，他躺在大床上吃自热火锅。 从此，王大勇不断搜刮站台、囤积物资、抽取强化、升级羁绊。美女们以为他的能力只是仓库，直到异兽围车、粮食断绝，王大勇掏出枪械、装甲和海克斯核心。 当其他列车还在为一块面包拼命时，他已经把自己的列车改造成了移动科技堡垒！",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o7dca6336193107c7a5704380613f1d39~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=Th7K5NmG%2FM5OaX5mm25tyreBG0A%3D",
-          "url": "https://fanqienovel.com/page/7690228212021873688",
-          "keywords": [
-            "空间",
-            "系统"
-          ]
-        },
-        {
           "title": "末世序列，开局合成奇物斩魄刀",
           "author": "厉害了炒饭",
-          "reads": "4.6万",
+          "reads": "4.9万",
           "intro": "（无Ai，纯手工） 【公路求生＋序列进化＋奇物合成+曹贼流】 全民降临末世公路，车外诡异横行，车内物资见底。 想活下去，就得寻找魔药，觉醒序列。 楚舟开局被踢出车队，面对危险，他只有一把破旧的柴刀。 好在，他能合成奇物！ 【生锈长刀＋恶鬼残魂＝斩魄刀】 【旧收音机＋窃语鬼耳骨＝听风收音机】 【钢铁之心＋水＝金属魔药】 一截鬼骨，一块废铁，都可能成为他活过明天的底牌。 起初，他只求熬过第一个夜晚。 后来，诡潮淹没公路，众人绝望之际，一头驮着堡垒的巨龟踏破黑夜。 龟背上，楚舟缓缓拔刀：“这次，该你们让路了。”",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o24c7b0387be1cf33229c9176f05d86b1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=ZSuf3j6ksWRmVW%2FHxeA24DeoUc4%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o24c7b0387be1cf33229c9176f05d86b1~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=FO4FKI2VE35LVkevN1HjFFh5v7Q%3D",
           "url": "https://fanqienovel.com/page/7699761868935531582",
           "keywords": [
             "末世"
           ]
         },
         {
-          "title": "人在末世，系统却说是合欢宗！",
-          "author": "菠萝吹吹风",
-          "reads": "4.4万",
-          "intro": "（评分刚出，后面会涨～） 【末日副本＋公路求生＋多种序列＋微恐＋发展合欢宗＋搜打撤＋杀伐果断＋诡异丧尸＋多女主】 2028 年，末日元年。 诡异降临，怪物入侵，城市一夜之间化为废墟。 人类只能被迫放弃家园，四处迁徙，以求博取一线生机。 于此同时，世界各地随机出现各种末日副本。 只要进入副本，就有机会获得各种奖励。 食物，水源，车辆，武器，甚至是序列药剂…… 在求生途中，林欢觉醒了一个古怪系统。 它非要说林欢是修仙界的合欢宗宗主…… 于是…… 当林欢和女诡异签订主仆契约时， 【叮，恭喜宿主招募第一个弟子，奖励须弥空间戒指一枚！】 当林欢获得一辆载具时， 【叮，恭喜宿主获得合欢宗道场，奖励宗门大阵一套！】 当他把来自终焉之地的诡异抓在手上时， 【叮，恭喜宿主获得极品炼丹材料邪神之眸，奖励破圣丹丹方一套！】 …… 本书又名：《大家在末世艰难求生，我在末世修仙！》、《别来了，我的合欢宗太满了！》",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oef3c1a447a0fec97ba1d626d1e79a3d8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=Cwxsc1ICVjhQlHVfsZOZjc9PFSM%3D",
-          "url": "https://fanqienovel.com/page/7663794643812764697",
+          "title": "全民求生！我觉醒了唯一序列幸运",
+          "author": "那就这样哦",
+          "reads": "4.6万",
+          "intro": "【末世】【全民选择】【求生】【序列】 随着一场红月降临，这个世界彻底乱了！ 后方吃人的怪物紧追不舍！但前方是否还有未知的危险在等着人类…… 有的人觉醒了非凡的能力，有了和怪物抗衡的资本！ 可普通人，只能靠着每日的非凡选择狼狈的活着…… 我叫李阳，觉醒了唯一序列天赋“幸运！”",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o755a6cc9dce97a0272c8976501d6825e~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=0GYqx4%2B5RBAvTeZJThcp2CPmBkg%3D",
+          "url": "https://fanqienovel.com/page/7690513263737441305",
           "keywords": [
-            "修仙",
-            "空间",
-            "系统",
             "末世"
           ]
         },
         {
           "title": "公路选择：只有我能看到生存概率",
           "author": "更木十八更",
-          "reads": "4.3万",
+          "reads": "4.4万",
           "intro": "（评分刚开，后面会涨）【公路序列+天幕选择+多女主+末世求生】 那一天，蓝星的城市、海洋、交通工具、食物和水，文明痕迹被彻底抹除。 只剩下无序铺开的公路，全球人类被随机传送到了公路上，动物、植物进化为诡异，对人类展开无休止追杀。 林泽觉醒超凡，双眼能看到选择背后隐藏的生存概率。 面对天幕生死选择，他人避之如蛇蝎，林泽只是默默从选择中收获好处：超凡药剂、魔药、生存物资、奇物、载具……",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o0e571c117e286a5fad08b16154877c74~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=anCoOWJ1EiAUnHcMGOmyXLvK5i8%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o0e571c117e286a5fad08b16154877c74~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=N2DiXR%2FdxrFQgifxclOxQnPe3iM%3D",
           "url": "https://fanqienovel.com/page/7688956775973784600",
           "keywords": [
             "末世"
           ]
         },
         {
+          "title": "列车求生：开局选择肉身成圣",
+          "author": "倚楼听风语",
+          "reads": "4.4万",
+          "intro": "列车求生降临，开局一辆列车，人人觉醒异能，闯副本，杀怪物。 秦浪发现，自己的队友竟全是极品美女。 【叮，神级选择系统已绑定，请宿主选择发展方向】 【1、肉身成圣，一力破万法。2、法系通神，修炼元素异能一日千里。】 秦浪：没别的意思，我只是单纯的想做一个简单粗暴的猛男……",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2o1c2c5c19129504a1902caf142a2eed92~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=FZJ2NGlLJX00jHmMGmYuVJigieo%3D",
+          "url": "https://fanqienovel.com/page/7693389986506230809",
+          "keywords": [
+            "系统",
+            "异能"
+          ]
+        },
+        {
+          "title": "人在末世，系统却说是合欢宗！",
+          "author": "菠萝吹吹风",
+          "reads": "4.3万",
+          "intro": "（评分刚出，后面会涨～） 【末日副本＋公路求生＋多种序列＋微恐＋发展合欢宗＋搜打撤＋杀伐果断＋诡异丧尸＋多女主】 2028 年，末日元年。 诡异降临，怪物入侵，城市一夜之间化为废墟。 人类只能被迫放弃家园，四处迁徙，以求博取一线生机。 于此同时，世界各地随机出现各种末日副本。 只要进入副本，就有机会获得各种奖励。 食物，水源，车辆，武器，甚至是序列药剂…… 在求生途中，林欢觉醒了一个古怪系统。 它非要说林欢是修仙界的合欢宗宗主…… 于是…… 当林欢和女诡异签订主仆契约时， 【叮，恭喜宿主招募第一个弟子，奖励须弥空间戒指一枚！】 当林欢获得一辆载具时， 【叮，恭喜宿主获得合欢宗道场，奖励宗门大阵一套！】 当他把来自终焉之地的诡异抓在手上时， 【叮，恭喜宿主获得极品炼丹材料邪神之眸，奖励破圣丹丹方一套！】 …… 本书又名：《大家在末世艰难求生，我在末世修仙！》、《别来了，我的合欢宗太满了！》",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oef3c1a447a0fec97ba1d626d1e79a3d8~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=4Gqwlwrcpdf5zVdWR0Mb0jujUvo%3D",
+          "url": "https://fanqienovel.com/page/7663794643812764697",
+          "keywords": [
+            "系统",
+            "末世",
+            "修仙",
+            "空间"
+          ]
+        },
+        {
           "title": "被扔到载具求生？我反手上交国家",
           "author": "月亮也会emo",
-          "reads": "4.3万",
+          "reads": "4.1万",
           "intro": "【龙国是我爹】+【有靠山就是爽】+【载具求生】+【末世生存】+【怎么有这么多条减速带】+【我对龙国也是有点用的】+【多女主】 李东科一个前世牛马被扔到了载具求生世界，在这里每个人开局除了载具什么都没有，只能沿着无穷无尽的公路不断向前驾驶逃生。 有的人拿到豪华跑车，有的人拿到坦克开路，唯独李东科，只有一辆通讯车？！ 没事，给龙国打电话就好了呀！我要把整个公路世界上交国家！ 有怪？ 我的外骨骼想喝血了！ 李东科：这公路……好像能起降战斗机。",
-          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc45110c827023ea0b141156f5de17b75~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1794974615&x-signature=WX8QTfsqXHxT02B%2Fy1JFONtyPs0%3D",
+          "cover": "https://p3-reading-sign.fqnovelpic.com/novel-pic/p2oc45110c827023ea0b141156f5de17b75~tplv-resize:225:0.image?lk3s=5b7047ff&x-expires=1795061505&x-signature=pfwaU1bBhKrv60UcVkHhNY2zlQo%3D",
           "url": "https://fanqienovel.com/page/7692128842571320345",
           "keywords": [
             "末世"
