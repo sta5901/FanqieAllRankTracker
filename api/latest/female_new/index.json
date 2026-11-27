@@ -1,12 +1,12 @@
 {
-  "date": "2026-11-26",
-  "prev_date": "2026-11-25",
+  "date": "2026-11-27",
+  "prev_date": "2026-11-26",
   "types": [
     {
       "type": "all",
       "url": "api/latest/female_new/all.json",
       "category_count": 18,
-      "book_count": 540
+      "book_count": 520
     },
     {
       "type": "古风世情",
@@ -66,7 +66,7 @@
     {
       "type": "快穿",
       "url": "api/latest/female_new/%E5%BF%AB%E7%A9%BF.json",
-      "book_count": 30
+      "book_count": 10
     },
     {
       "type": "青春甜宠",
